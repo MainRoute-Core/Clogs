@@ -68,15 +68,19 @@ jobs:
 
               // Safely extract categories
               const categoriesArray = Array.isArray(json.Categories) ? json.Categories :[];
+              const tagsArray = Array.isArray(json.Tags) ? json.Tags :[];
 
               // Build Output Structure (One line per attribute as requested)
               blogsData.push({
                 Article: json.Id || baseName,
                 Name: json.Title || baseName,
+                Author: json.Author || "MyWrite",
                 Desc: json.Desc || "",
+                Img: json.Img || "",
                 Url: fileName,
                 Date: json.Date || getGitDate(file),
                 Cat: categoriesArray,
+                Tags: tagsArray,
                 Status: json.Status || "Un"
               });
 

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clog Builder - JSON Markdown Blog Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#181c24" />
+
+  <!-- Marked.js & GitHub Markdown CSS -->
+  <script src="../src/libs/marked.min.js"></script>
+  <link rel="stylesheet" href="../src/libs/github-markdown.min.css">
+  <link rel="stylesheet" href="../src/css/builder.css">
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+  <!-- INLINE SVG SPRITE -->
+
+  <!-- APP HEADER -->
+  <header class="app-header">
+    <h2>Clog Builder</h2>
+    <div style="display: flex; gap: 10px;">
+      <button class="btn btn-secondary" onclick="toggleTheme()" title="Toggle Theme"><svg class="icon"><use href="../src/assets/icons.svg#icon-theme"></use></svg></button>
+      <button class="btn btn-primary" onclick="toggleSettings()"><svg class="icon"><use href="../src/assets/icons.svg#icon-settings"></use></svg> Settings</button>
+    </div>
+  </header>
+
+  <div id="app">
+    <!-- COLLAPSIBLE META DATA -->
+    <div class="meta-accordion">
+      <div class="meta-accordion-header" onclick="toggleMeta()">
+        <span>Post Metadata</span><svg class="icon" id="meta-chevron"><use href="../src/assets/icons.svg#icon-chevron-down"></use></svg>
+      </div>
+      <div class="meta-accordion-content" id="meta-content">
+        <div><label>Blog Title</label><input type="text" id="title" placeholder="Mastering Python..."></div>
+        <div><label>Blog ID (Auto PascalCase)</label><input type="text" id="blog-id" placeholder="MasteringPython"></div>
+        <div><label>Categories</label><div class="multi-select" id="categories-dropdown"><div class="select-box" id="cat-select-box" onclick="toggleDropdown('categories-list')">Select Categories...</div><div class="dropdown-list" id="categories-list"></div></div></div>
+        <div><label>Tags (Comma separated)</label><input type="text" id="tags" placeholder="Python, Code, Web"></div>
+        <div><label>Status</label><select id="status"><option value="Un">Unpublished (Un)</option><option value="Pub">Published (Pub)</option><option value="Not">Not Ready (Not)</option></select></div>
+        <div><label>Author</label><input type="text" id="author" placeholder="John Doe"></div>
+        <div class="full-width"><label>Banner Image URL</label><div style="display: flex; gap: 8px;"><input type="url" id="img" placeholder="https://..." style="flex: 1;"><button class="btn btn-secondary" onclick="triggerBannerUpload()"><svg class="icon"><use href="../src/assets/icons.svg#icon-upload"></use></svg> Upload</button></div></div>
+        <div class="full-width"><label>Short Description (Desc)</label><input type="text" id="desc" placeholder="A brief summary of the post..."></div>
+      </div>
+    </div>
+
+    <!-- TABS & ACTIONS -->
+    <div class="tabs-header">
+      <button class="tab-btn active" onclick="switchTab('editor')">MD Editor</button>
+      <button class="tab-btn" onclick="switchTab('preview')">Preview</button>
+      <button class="tab-btn" onclick="switchTab('json')">JSON Output</button>
+      <div style="flex-grow: 1;"></div>
+      <button class="btn btn-danger" onclick="clearAll()"><svg class="icon"><use href="../src/assets/icons.svg#icon-trash"></use></svg> Clear</button>
+    </div>
+
+    <!-- 1. Editor Pane -->
+    <div id="editorPane" class="pane active">
+      <div class="editor-toolbar">
+        <!-- Text Styles -->
+        <button class="toolbar-btn" onclick="toggleFormat('bold')" title="Bold (Ctrl+B)"><svg class="icon"><use href="../src/assets/icons.svg#icon-bold"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleFormat('italic')" title="Italic (Ctrl+I)"><svg class="icon"><use href="../src/assets/icons.svg#icon-italic"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleFormat('strike')" title="Strikethrough"><svg class="icon"><use href="../src/assets/icons.svg#icon-strike"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleFormat('highlight')" title="Highlight Text"><svg class="icon"><use href="../src/assets/icons.svg#icon-highlight"></use></svg></button>
+        <div class="toolbar-divider"></div>
+        
+        <!-- Headers -->
+        <button class="toolbar-btn" onclick="toggleBlock('h1')" title="H1">H1</button>
+        <button class="toolbar-btn" onclick="toggleBlock('h2')" title="H2">H2</button>
+        <button class="toolbar-btn" onclick="toggleBlock('h3')" title="H3">H3</button>
+        <button class="toolbar-btn" onclick="toggleBlock('h4')" title="H4">H4</button>
+        <button class="toolbar-btn" onclick="toggleBlock('h5')" title="H5">H5</button>
+        <button class="toolbar-btn" onclick="toggleBlock('h6')" title="H6">H6</button>
+        <div class="toolbar-divider"></div>
+
+        <!-- Alignments -->
+        <button class="toolbar-btn" onclick="wrapTags('<div align=\'left\'>\n\n', '\n\n</div>')" title="Align Left"><svg class="icon"><use href="../src/assets/icons.svg#icon-align-left"></use></svg></button>
+        <button class="toolbar-btn" onclick="wrapTags('<div align=\'center\'>\n\n', '\n\n</div>')" title="Align Center"><svg class="icon"><use href="../src/assets/icons.svg#icon-align-center"></use></svg></button>
+        <button class="toolbar-btn" onclick="wrapTags('<div align=\'right\'>\n\n', '\n\n</div>')" title="Align Right"><svg class="icon"><use href="../src/assets/icons.svg#icon-align-right"></use></svg></button>
+        <div class="toolbar-divider"></div>
+
+        <!-- Lists & Indents -->
+        <button class="toolbar-btn" onclick="toggleBlock('ul')" title="Bullet List"><svg class="icon"><use href="../src/assets/icons.svg#icon-ul"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleBlock('ol')" title="Numbered List"><svg class="icon"><use href="../src/assets/icons.svg#icon-ol"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleBlock('task')" title="Task List"><svg class="icon"><use href="../src/assets/icons.svg#icon-task"></use></svg></button>
+        <button class="toolbar-btn" onclick="handleTab(true)" title="Outdent (Shift+Tab)"><svg class="icon"><use href="../src/assets/icons.svg#icon-outdent"></use></svg></button>
+        <button class="toolbar-btn" onclick="handleTab(false)" title="Indent (Tab)"><svg class="icon"><use href="../src/assets/icons.svg#icon-indent"></use></svg></button>
+        <div class="toolbar-divider"></div>
+
+        <!-- Blocks & Callouts -->
+        <button class="toolbar-btn" onclick="toggleBlock('quote')" title="Blockquote"><svg class="icon"><use href="../src/assets/icons.svg#icon-quote"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleCallout('note')" title="GitHub Note Callout"><svg class="icon"><use href="../src/assets/icons.svg#icon-note"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleCallout('warning')" title="GitHub Warning Callout"><svg class="icon"><use href="../src/assets/icons.svg#icon-warning"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleFormat('code')" title="Inline Code"><svg class="icon"><use href="../src/assets/icons.svg#icon-code"></use></svg></button>
+        <button class="toolbar-btn" onclick="toggleFormat('codeblock')" title="Code Block"><svg class="icon"><use href="../src/assets/icons.svg#icon-code"></use></svg> Block</button>
+        <div class="toolbar-divider"></div>
+
+        <!-- Inserts -->
+        <button class="toolbar-btn" onclick="insertSnippet('link')" title="Insert Link (Ctrl+K)"><svg class="icon"><use href="../src/assets/icons.svg#icon-link"></use></svg></button>
+        <button class="toolbar-btn" onclick="triggerEditorUpload()" title="Upload Image"><svg class="icon"><use href="../src/assets/icons.svg#icon-image"></use></svg></button>
+        <button class="toolbar-btn" onclick="insertSnippet('table')" title="Insert Table"><svg class="icon"><use href="../src/assets/icons.svg#icon-table"></use></svg></button>
+        <button class="toolbar-btn" onclick="insertSnippet('hr')" title="Horizontal Rule"><svg class="icon"><use href="../src/assets/icons.svg#icon-hr"></use></svg></button>
+      </div>
+      <textarea id="md-editor-textarea" placeholder="Start writing... (Drag & drop images here)&#10;Shortcuts: Ctrl+B (Bold), Ctrl+I (Italic), Ctrl+K (Link), Tab (Indent/Sub-list)"></textarea>
+    </div>
+
+    <!-- 2. Preview Pane -->
+    <div id="previewPane" class="pane">
+      <article class="clog-container">
+        <img src="" alt="Banner" id="prev-img" class="banner-image" onerror="this.src='https://mainroute-core.github.io/src/social.png'" />
+        <div>
+          <h1 class="clog-title" id="prev-title">Blog Post Title</h1>
+          <div class="clog-meta"><span>Date: <time id="prev-date"></time></span><span>Author: <span id="prev-author"></span></span><div id="prev-tags"></div></div>
+          <div class="markdown-body" id="prev-body"></div>
+        </div>
+      </article>
+    </div>
+
+    <!-- 3. JSON Pane -->
+    <div id="jsonPane" class="pane">
+      <div class="json-header-toolbar">
+        <strong>Structured Payload</strong>
+        <div style="display:flex; gap:10px;">
+          <button class="btn btn-secondary" onclick="copyJSON()"><svg class="icon"><use href="../src/assets/icons.svg#icon-copy"></use></svg> Copy</button>
+          <button class="btn btn-secondary" onclick="downloadJSON()"><svg class="icon"><use href="../src/assets/icons.svg#icon-download"></use></svg> Download</button>
+          <button class="btn btn-primary" onclick="saveJsonToGithub()"><svg class="icon"><use href="../src/assets/icons.svg#icon-github"></use></svg> Push Sync</button>
+        </div>
+      </div>
+      <pre id="json-code-block"></pre>
+    </div>
+  </div>
+
+  <!-- SIDE PANEL: SETTINGS -->
+  <div id="settings-backdrop" class="backdrop" onclick="toggleSettings()"></div>
+  <div id="settings-drawer" class="side-panel">
+    <div class="side-panel-header"><span><svg class="icon"><use href="../src/assets/icons.svg#icon-settings"></use></svg> Configuration</span><button class="toolbar-btn" onclick="toggleSettings()"><svg class="icon"><use href="../src/assets/icons.svg#icon-close"></use></svg></button></div>
+    <div class="side-panel-body">
+      <div><label>GitHub Personal Token</label><input type="password" id="gh-token" placeholder="ghp_..."></div>
+      <div><label>GitHub Owner / Username</label><input type="text" id="gh-owner" placeholder="username"></div>
+      <div><label>GitHub Repo Name</label><input type="text" id="gh-repo" placeholder="my-blog-data"></div>
+      <div><label>Target Branch</label><input type="text" id="gh-branch" placeholder="main" value="main"></div>
+      <div><label>File Target Folder / Path</label><input type="text" id="gh-path" placeholder="posts/" value=""><small style="color:var(--fg-muted);font-size:0.75rem;">Leave empty for root. Filename auto-generates.</small></div>
+      <div><label>ImgBB API Key (Optional)</label><input type="password" id="imgbb-key" placeholder="For anonymous images"></div>
+      <div style="margin-top: auto; padding-top: 20px;"><button class="btn btn-primary full-width" onclick="saveSettings()">Save Configuration</button></div>
+    </div>
+  </div>
+
+  <!-- FILE UPLOAD MODAL -->
+  <div class="modal-overlay" id="upload-modal">
+    <div class="modal">
+      <h3 style="margin-top:0;"><svg class="icon"><use href="../src/assets/icons.svg#icon-upload"></use></svg> Upload Asset</h3>
+      <div style="margin-bottom: 15px; font-size: 0.9rem;">
+        <label style="display: flex; gap: 8px; margin-bottom: 8px;"><input type="radio" name="upload-dest" value="github" checked> GitHub Repo (ImgBanner/)</label>
+        <label style="display: flex; gap: 8px;"><input type="radio" name="upload-dest" value="imgbb"> ImgBB Server</label>
+      </div>
+      <div class="modal-dropzone" id="modal-dropzone" onclick="document.getElementById('modal-file-input').click()"><svg class="icon" style="width: 3rem; height: 3rem; color: var(--primary);"><use href="../src/assets/icons.svg#icon-upload"></use></svg><p style="margin: 10px 0 0 0; font-size: 0.9rem;">Drag & drop image, or click to browse</p><input type="file" id="modal-file-input" style="display: none;" accept="image/*"></div>
+      <div id="modal-status-msg" style="font-size: 0.85rem; margin-bottom: 15px; font-weight: 500; text-align: center;"></div>
+      <div style="display: flex; justify-content: flex-end; gap: 10px;"><button class="btn btn-secondary" onclick="closeUploadModal()">Cancel</button><button class="btn btn-primary" id="modal-upload-btn" onclick="startModalUpload()">Upload</button></div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast" class="toast">Operation Completed</div>
+  <script src="../src/js/builder.js"></script>
+</body>
+</html>
