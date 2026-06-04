@@ -2,7 +2,9 @@
   {
     "Article": "DemoPageOne",
     "Name": "Demo Page One",
+    "Author": "Hello",
     "Desc": "This is A Demo Page",
+    "Img": "",
     "Url": "DemoPage.json",
     "Date": "10-05-2026",
     "Cat": [
@@ -11,33 +13,47 @@
       "Artificial Intelligence",
       "Tutorials"
     ],
+    "Tags": [
+      "Python",
+      "Code",
+      "Page"
+    ],
     "Status": "Pub"
   },
   {
     "Article": "python_list_comprehension",
     "Name": "Mastering Python List Comprehensions",
+    "Author": "",
     "Desc": "",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=1000",
     "Url": "python_list_comprehension.json",
     "Date": "14-05-2024",
     "Cat": [],
+    "Tags": [],
     "Status": "New"
   },
   {
     "Article": "run_python_server",
     "Name": "Run Python Server",
+    "Author": "",
     "Desc": "",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
     "Url": "run_python_server.json",
     "Date": "12-05-2024",
     "Cat": [],
+    "Tags": [],
     "Status": "Pub"
   },
   {
     "Article": "web_scraping_python",
     "Name": "Web Scraping with Python",
+    "Author": "",
     "Desc": "",
+    "Img": "https://images.unsplash.com/photo-1504868584819-f8e905263543?auto=format&fit=crop&q=80&w=1000",
     "Url": "web_scraping_python.json",
     "Date": "16-05-2024",
     "Cat": [],
+    "Tags": [],
     "Status": "Un"
   }
 ]
