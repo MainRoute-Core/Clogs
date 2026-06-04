@@ -1,8 +1,0 @@
-{
-  "Title": "Mastering Python List Comprehensions",
-  "Date": "14-05-2024",
-  "Status": "New",
-  "Tag": ["Python", "Programming", "Tips", "CleanCode"],
-  "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&q=80&w=1000",
-  "Data": "List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence. For example, `squares = [x**2 for x in range(10)]` creates a list of square numbers much faster and more cleanly than a traditional for-loop. They are highly efficient and considered 'Pythonic' code."
-}

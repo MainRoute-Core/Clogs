@@ -238,10 +238,14 @@ label {
     max-height: 200px;
     overflow-y: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .dropdown-list.show {
-    display: block;
+    display: flex;
 }
 
 .dropdown-list label {
@@ -324,6 +328,7 @@ label {
 .clog-container {
     padding: 20px;
     overflow-y: auto;
+    max-height: 75vh;
 }
 
 .banner-image {
@@ -377,7 +382,7 @@ mark {
 #json-code-block {
     padding: 15px;
     margin: 0;
-    overflow-x: auto;
+    white-space: normal;
     background: var(--bg-main);
     flex-grow: 1;
 }
@@ -516,4 +521,25 @@ mark {
         display: flex;
         flex-direction: column;
     }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    margin-block: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 20px;
+    cursor: grab;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: var(--primary-hover);
+    cursor: grabbing;
 }

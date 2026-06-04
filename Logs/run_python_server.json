@@ -1,8 +1,0 @@
-{
-  "Title": "Run Python Server",
-  "Date": "12-05-2024",
-  "Status": "Pub",
-  "Tag": ["Python", "Web", "DevOps", "Server"],
-  "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-  "Data": "Setting up a local web server in Python is incredibly easy. By using the built-in module `http.server`, you can share files across your local network or test static websites without installing third-party software like Nginx or Apache. Simply open your terminal, navigate to your project folder, and run: `python -m http.server 8000`. Your files will now be accessible at http://localhost:8000."
-}

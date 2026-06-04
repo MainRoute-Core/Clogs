@@ -1,8 +1,0 @@
-{
-  "Title": "Web Scraping with Python",
-  "Date": "16-05-2024",
-  "Status": "Un",
-  "Tag": ["Python", "DataScience", "Automation", "BeautifulSoup"],
-  "Img": "https://images.unsplash.com/photo-1504868584819-f8e905263543?auto=format&fit=crop&q=80&w=1000",
-  "Data": "Web scraping is the process of extracting data from websites. In Python, libraries like Requests and Beautiful Soup 4 (BS4) make this task straightforward. First, you use Requests to fetch the HTML content of a webpage, then BS4 allows you to parse that HTML and locate specific elements using CSS selectors or IDs. This is perfect for gathering product prices, news headlines, or financial data automatically."
-}

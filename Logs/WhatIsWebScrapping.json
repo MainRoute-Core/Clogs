@@ -1,0 +1,20 @@
+{
+  "Title": "What Is Web Scrapping?",
+  "Desc": "Web scraping is the process of extracting data from websites",
+  "Author": "MR Intelligence",
+  "Id": "WhatIsWebScrapping",
+  "Tags": [
+    "Web",
+    "Faq",
+    "data",
+    "data collection"
+  ],
+  "Categories": [
+    "Faq",
+    "Tip & Tricks"
+  ],
+  "Date": "04-06-2026",
+  "Img": "",
+  "Status": "Pub",
+  "Data": "### `Web scraping is the process of extracting data from websites.`\n\n---\n\nIn **Python**, libraries like <mark>Requests</mark> and <mark>Beautiful Soup 4 (BS4)</mark> make this task straightforward.\nFirst, you use Requests to fetch the `HTML` content of a webpage, then <mark>BS4</mark> allows you to parse that `HTML` and locate specific elements using `CSS` selectors or `IDs`. This is perfect for gathering product prices, news headlines, or financial data automatically."
+}

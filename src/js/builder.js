@@ -4,7 +4,7 @@ const inputs = { title: document.getElementById('title'), id: document.getElemen
 let uploadTarget = 'editor';
 
 function toggleMeta() { document.getElementById('meta-content').classList.toggle('show'); }
-const AVAILABLE_CATEGORIES = ["Technology", "Programming", "Web Development", "Artificial Intelligence", "Lifestyle", "Business", "Design", "Tutorials", "Finance"];
+const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Artificial Intelligence", "Open Source", "Bussines", "Faq", "Tip & Tricks"];
 AVAILABLE_CATEGORIES.forEach(cat => { const lbl = document.createElement('label'); lbl.innerHTML = `<input type="checkbox" value="${cat}" class="cat-checkbox"> ${cat}`; document.getElementById('categories-list').appendChild(lbl); });
 function toggleDropdown(id) { document.getElementById(id).classList.toggle('show'); }
 document.addEventListener('click', (e) => { if (!e.target.closest('.multi-select')) document.getElementById('categories-list').classList.remove('show'); });
