@@ -4,7 +4,7 @@ const inputs = { title: document.getElementById('title'), id: document.getElemen
 let uploadTarget = 'editor';
 
 function toggleMeta() { document.getElementById('meta-content').classList.toggle('show'); }
-const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Artificial Intelligence", "Open Source", "Bussines", "Faq", "Tip & Tricks"];
+const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Software Development", "Productivity", "Developer Tools", "Developer Productivity", "Developer Marketing", "Content Creation", "Developer Relations", "Artificial Intelligence", "Open Source", "Bussines", "Faq", "Tip & Tricks"];
 AVAILABLE_CATEGORIES.forEach(cat => { const lbl = document.createElement('label'); lbl.innerHTML = `<input type="checkbox" value="${cat}" class="cat-checkbox"> ${cat}`; document.getElementById('categories-list').appendChild(lbl); });
 function toggleDropdown(id) { document.getElementById(id).classList.toggle('show'); }
 document.addEventListener('click', (e) => { if (!e.target.closest('.multi-select')) document.getElementById('categories-list').classList.remove('show'); });
@@ -164,7 +164,7 @@ function getOutputJSON() {
 
 function updatePreview() {
     const data = getOutputJSON();
-    document.getElementById('prev-img').src = data.Img || 'https://mainroute-core.github.io/src/social.png';
+    document.getElementById('prev-img').src = data.Img || '../assets/social.png';
     document.getElementById('prev-title').innerText = data.Title || "Untitled Post";
     document.getElementById('prev-date').innerText = data.Date; document.getElementById('prev-author').innerText = data.Author;
     document.getElementById('prev-tags').innerHTML = data.Categories.map(c => `<span class="cat-badge">${c}</span>`).join('') + data.Tags.map(t => `<span style="margin-right:8px;">#${t}</span>`).join('');
