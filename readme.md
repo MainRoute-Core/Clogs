@@ -14,19 +14,8 @@
 
 ### Clog Reader
 
-## [Build](https://mainroute-core.github.io/Clogs/Reader/)
+[Reader](https://mainroute-core.github.io/Clogs/Reader/)
 
-## Database Structure
-
-### Blog Database
-
-`blogs.json`
-
-Contains metadata and indexes for all blog posts.
-
-### Blog Content Storage
-
-Stores all individual blog post files.
 
 ---
 

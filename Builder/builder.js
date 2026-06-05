@@ -190,7 +190,7 @@ function saveDraft() { localStorage.setItem(STORAGE_KEY, JSON.stringify(getOutpu
 function loadDraft() {
     try {
         const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)); if (!saved) return toggleMeta();
-        inputs.title.value = saved.Title || ''; inputs.id.value = saved.Id || ''; inputs.tags.value = (saved.Tags || []).join(', '); inputs.status.value = saved.Status || 'Un'; inputs.author.value = saved.Author || ''; inputs.img.value = saved.Img || ''; inputs.desc.value = saved.Desc || '';
+        inputs.title.value = saved.Title || ''; inputs.id.value = saved.Id || ''; inputs.tags.value = (saved.Tags || []).join(', '); inputs.status.value = saved.Status || 'Pub'; inputs.author.value = saved.Author || ''; inputs.img.value = saved.Img || ''; inputs.desc.value = saved.Desc || '';
         document.querySelectorAll('.cat-checkbox').forEach(cb => cb.checked = (saved.Categories || []).includes(cb.value));
         updateCategoryText(); editorTextarea.value = saved.Data || '';
     } catch (e) { console.error(e); }
