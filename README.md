@@ -10,11 +10,11 @@
 
 ### Clog Builder
 
-[Build](./Builder/)
+[Build](https://mainroute-core.github.io/Clogs/Builder/)
 
 ### Clog Reader
 
-## [Build](./Reader/)
+## [Build](https://mainroute-core.github.io/Clogs/Reader/)
 
 ## Database Structure
 
