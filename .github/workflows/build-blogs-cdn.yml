@@ -27,7 +27,7 @@ jobs:
           const { execSync } = require("child_process");
 
           // CONFIGURATION
-          const ROOT = "blogs"; // Target Directory
+          const ROOT = "Logs"; // Target Directory
           const OUT = "blogs.json";
 
           if (!fs.existsSync(ROOT)) {
