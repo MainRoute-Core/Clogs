@@ -1,57 +1,99 @@
-# blog
+# Clogs
 
-MainRoute Core Blog Use by https://MainRoute-Core.github.io/blog/ And https://mramzanch.blogspot.com
+**Clogs** is the blog system powering the MainRoute Core Blog:
 
----
-
-This My Clog Builder That Make json Which Contain Markdown of Post Content
-
-Now I need to Make It More Improved and Boosted
-
-1. Make I(s Full Responssiveness for mobile and desktop
-2. Use Side panel for Settings and Configs
-3. Use this configs instead of current
-   - GitHub Personal Token
-   - GitHub Owner / Username
-   - GitHub Repo Name
-   - Target Branch
-   - File Target Path/Folder ('/' to sub & auto fill current name of file by id)
-   - ImgBB API Key (Optional)
-
-4. Use Drop for Meta Inputs
-5. keep everthing same
-6. Use Inline svg like this
-   all svg in a main svgs
-   `<svg><symbol id="id of icon"></symbol></svg>`
-   use as this as
-   `<svg><use href="# icon id"></svg>`
-7. balsoo add download option to downloadv file
-
-> Not give me code yet now only explain
+[https://MainRoute-Core.github.io/Clog/](https://MainRoute-Core.github.io/Clog/)
 
 ---
 
-This My Clog Now Update this to our Ui and Tech look
+## Components
 
-instead of using define configs seperatly need use two paths
+### Clog Builder
 
-db.json(Blogs Database) DB_Path
+[Build](./Builder/)
 
-https://raw.githubusercontent.com/<file name.json> to fetch from repo or "local path<file name.json> " to fetch from local
+### Clog Reader
 
-all Blogs paths Logs_Path 2. https://raw.githubusercontent.com/<file name.json> to fetch from repo or "local path<file name.json> " to fetch from local
+## [Build](./Reader/)
 
-use these parameter for url syncing
+## Database Structure
 
-`?q=` for search queries
-`&tg=` for tags
-`&ct=` for categories + multi category slection support
-`&log=<blod id>` for opened post
-`&log=404` for post not find
+### Blog Database
 
-show clear filter button when filter posts to clear filter
-when user click only on post card banner image/title then open post
-also click tags that shown in post card to filter
-show all categories badges on crads
-fetch 404.html page when show error for post not found
-full mobile and desktop respossiveness
+`blogs.json`
+
+Contains metadata and indexes for all blog posts.
+
+### Blog Content Storage
+
+Stores all individual blog post files.
+
+---
+
+## URL Parameters
+
+The reader supports URL-based state synchronization.
+
+### Search Query
+
+```text
+?q=<search term>
+```
+
+Example:
+
+```text
+?q=javascript
+```
+
+### Tag Filter
+
+```text
+&tg=<tag>
+```
+
+Example:
+
+```text
+&tg=tutorial
+```
+
+### Category Filter
+
+```text
+&ct=<category>
+```
+
+Supports multiple category selection:
+
+```text
+&ct=technology,web-development,opensource
+```
+
+### Open Blog Post
+
+```text
+&log=<blog_id>
+```
+
+Example:
+
+```text
+&log=post-001
+```
+
+### Post Not Found
+
+```text
+&log=404
+```
+
+Displayed when the requested post does not exist.
+
+---
+
+## Example URL
+
+```text
+https://MainRoute-Core.github.io/blog/?q=markdown&tg=tutorial&ct=web-development,opensource&log=post-001
+```
