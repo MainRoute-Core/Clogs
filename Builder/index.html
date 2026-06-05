@@ -8,9 +8,9 @@
   <meta name="theme-color" content="#181c24" />
 
   <!-- Marked.js & GitHub Markdown CSS -->
-  <script src="../src/libs/marked.min.js"></script>
-  <link rel="stylesheet" href="../src/libs/github-markdown.min.css">
-  <link rel="stylesheet" href="../src/css/builder.css">
+  <script src="/Clogs/src/libs/marked.min.js"></script>
+  <link rel="stylesheet" href="/Clogs/src/libs/github-markdown.min.css">
+  <link rel="stylesheet" href="/Clogs/src/css/builder.css">
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 
 </head>
@@ -22,13 +22,13 @@
     <div style="display: flex; gap: 10px;">
       <button class="btn btn-secondary" onclick="toggleTheme()" title="Toggle Theme">
         <svg class="icon">
-          <use href="../src/assets/icons.svg#icon-theme"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-theme"></use>
         </svg>
         Theme
       </button>
       <button class="btn btn-primary" onclick="toggleSettings()">
         <svg class="icon">
-          <use href="../src/assets/icons.svg#icon-settings"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-settings"></use>
         </svg>
         Settings
       </button>
@@ -40,7 +40,7 @@
       <div class="meta-accordion-header" onclick="toggleMeta()">
         <span>Post Metadata</span>
         <svg class="icon" id="meta-chevron">
-          <use href="../src/assets/icons.svg#icon-chevron-down"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-chevron-down"></use>
         </svg>
       </div>
       <div class="meta-accordion-content" id="meta-content">
@@ -72,7 +72,7 @@
         <div class="full-width"><label>Banner Image URL</label>
           <div style="display: flex; gap: 8px;"><input type="url" id="img" placeholder="https://..."
               style="flex: 1;"><button class="btn btn-secondary" onclick="triggerBannerUpload()"><svg class="icon">
-                <use href="../src/assets/icons.svg#icon-upload"></use>
+                <use href="/Clogs/src/assets/icons.svg#icon-upload"></use>
               </svg> Upload</button></div>
         </div>
         <div class="full-width"><label>Short Description (Desc)</label><input type="text" id="desc"
@@ -87,7 +87,7 @@
       <button class="tab-btn" onclick="switchTab('json')">JSON Output</button>
       <div style="flex-grow: 1;"></div>
       <button class="btn btn-danger" onclick="clearAll()"><svg class="icon">
-          <use href="../src/assets/icons.svg#icon-trash"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-trash"></use>
         </svg> Clear</button>
     </div>
 
@@ -96,16 +96,16 @@
       <div class="editor-toolbar">
         <!-- Text Styles -->
         <button class="toolbar-btn" onclick="toggleFormat('bold')" title="Bold (Ctrl+B)"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-bold"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-bold"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleFormat('italic')" title="Italic (Ctrl+I)"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-italic"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-italic"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleFormat('strike')" title="Strikethrough"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-strike"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-strike"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleFormat('highlight')" title="Highlight Text"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-highlight"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-highlight"></use>
           </svg></button>
         <div class="toolbar-divider"></div>
 
@@ -121,66 +121,66 @@
         <!-- Alignments -->
         <button class="toolbar-btn" onclick="wrapTags('<div align=\'left\'>\n\n', '\n\n</div>')" title="Align Left"><svg
             class="icon">
-            <use href="../src/assets/icons.svg#icon-align-left"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-align-left"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="wrapTags('<div align=\'center\'>\n\n', '\n\n</div>')"
           title="Align Center"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-align-center"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-align-center"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="wrapTags('<div align=\'right\'>\n\n', '\n\n</div>')"
           title="Align Right"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-align-right"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-align-right"></use>
           </svg></button>
         <div class="toolbar-divider"></div>
 
         <!-- Lists & Indents -->
         <button class="toolbar-btn" onclick="toggleBlock('ul')" title="Bullet List"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-ul"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-ul"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleBlock('ol')" title="Numbered List"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-ol"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-ol"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleBlock('task')" title="Task List"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-task"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-task"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="handleTab(true)" title="Outdent (Shift+Tab)"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-outdent"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-outdent"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="handleTab(false)" title="Indent (Tab)"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-indent"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-indent"></use>
           </svg></button>
         <div class="toolbar-divider"></div>
 
         <!-- Blocks & Callouts -->
         <button class="toolbar-btn" onclick="toggleBlock('quote')" title="Blockquote"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-quote"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-quote"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleCallout('note')" title="GitHub Note Callout"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-note"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-note"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleCallout('warning')" title="GitHub Warning Callout"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-warning"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-warning"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleFormat('code')" title="Inline Code"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-code"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-code"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="toggleFormat('codeblock')" title="Code Block"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-code"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-code"></use>
           </svg> Block</button>
         <div class="toolbar-divider"></div>
 
         <!-- Inserts -->
         <button class="toolbar-btn" onclick="insertSnippet('link')" title="Insert Link (Ctrl+K)"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-link"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-link"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="triggerEditorUpload()" title="Upload Image"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-image"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-image"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="insertSnippet('table')" title="Insert Table"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-table"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-table"></use>
           </svg></button>
         <button class="toolbar-btn" onclick="insertSnippet('hr')" title="Horizontal Rule"><svg class="icon">
-            <use href="../src/assets/icons.svg#icon-hr"></use>
+            <use href="/Clogs/src/assets/icons.svg#icon-hr"></use>
           </svg></button>
       </div>
       <textarea id="md-editor-textarea"
@@ -209,13 +209,13 @@
         <strong>Structured Payload</strong>
         <div style="display:flex; gap:10px;">
           <button class="btn btn-secondary" onclick="copyJSON()"><svg class="icon">
-              <use href="../src/assets/icons.svg#icon-copy"></use>
+              <use href="/Clogs/src/assets/icons.svg#icon-copy"></use>
             </svg> Copy</button>
           <button class="btn btn-secondary" onclick="downloadJSON()"><svg class="icon">
-              <use href="../src/assets/icons.svg#icon-download"></use>
+              <use href="/Clogs/src/assets/icons.svg#icon-download"></use>
             </svg> Download</button>
           <button class="btn btn-primary" onclick="saveJsonToGithub()"><svg class="icon">
-              <use href="../src/assets/icons.svg#icon-github"></use>
+              <use href="/Clogs/src/assets/icons.svg#icon-github"></use>
             </svg> Push Sync</button>
         </div>
       </div>
@@ -227,9 +227,9 @@
   <div id="settings-backdrop" class="backdrop" onclick="toggleSettings()"></div>
   <div id="settings-drawer" class="side-panel">
     <div class="side-panel-header"><span><svg class="icon">
-          <use href="../src/assets/icons.svg#icon-settings"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-settings"></use>
         </svg> Configuration</span><button class="toolbar-btn" onclick="toggleSettings()"><svg class="icon">
-          <use href="../src/assets/icons.svg#icon-close"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-close"></use>
         </svg></button></div>
     <div class="side-panel-body">
       <div><label>GitHub Personal Token</label><input type="password" id="gh-token" placeholder="ghp_..."></div>
@@ -249,7 +249,7 @@
   <div class="modal-overlay" id="upload-modal">
     <div class="modal">
       <h3 style="margin-top:0;"><svg class="icon">
-          <use href="../src/assets/icons.svg#icon-upload"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-upload"></use>
         </svg> Upload Asset</h3>
       <div style="margin-bottom: 15px; font-size: 0.9rem;">
         <label style="display: flex; gap: 8px; margin-bottom: 8px;"><input type="radio" name="upload-dest"
@@ -259,7 +259,7 @@
       </div>
       <div class="modal-dropzone" id="modal-dropzone" onclick="document.getElementById('modal-file-input').click()"><svg
           class="icon" style="width: 3rem; height: 3rem; color: var(--primary);">
-          <use href="../src/assets/icons.svg#icon-upload"></use>
+          <use href="/Clogs/src/assets/icons.svg#icon-upload"></use>
         </svg>
         <p style="margin: 10px 0 0 0; font-size: 0.9rem;">Drag & drop image, or click to browse</p><input type="file"
           id="modal-file-input" style="display: none;" accept="image/*">
@@ -274,7 +274,7 @@
 
   <!-- TOAST -->
   <div id="toast" class="toast">Operation Completed</div>
-  <script src="../src/js/builder.js"></script>
+  <script src="/Clogs/src/js/builder.js"></script>
 </body>
 
 </html>
