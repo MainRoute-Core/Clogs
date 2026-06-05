@@ -3,7 +3,7 @@ name: Build Blogs Metadata JSON
 on:
   push:
     paths:
-      - "blogs/**/*.json" # Triggers when json files in 'blogs' folder change
+      - "Logs/**/*.json" # Triggers when json files in 'blogs' folder change
   workflow_dispatch:      # Allows manual trigger from Actions tab
 
 permissions:
