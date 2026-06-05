@@ -261,8 +261,6 @@ async function loadAndRenderFullPost(logId) {
 
         const postData = await response.json();
 
-        document.getElementById('full-img').src = postData.Img || dbEntry.Img || 'https://mainroute-core.github.io/src/social.png';
-        document.getElementById('full-title').innerText = postData.Title || dbEntry.Name;
         document.getElementById('full-date').innerText = postData.Date || dbEntry.Date;
         document.getElementById('full-author').innerText = postData.Author || "System Admin";
         document.getElementById('full-meta-block').style.display = 'flex';
@@ -291,8 +289,6 @@ function trigger404Redirect() {
 }
 
 async function render404Page() {
-    document.getElementById('full-img').src = 'https://mainroute-core.github.io/src/social.png';
-    document.getElementById('full-title').innerText = "Publication Not Found";
     document.getElementById('full-meta-block').style.display = 'none';
 
     const bodyContainer = document.getElementById('full-body');
