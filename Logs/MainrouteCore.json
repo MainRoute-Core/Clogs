@@ -3,13 +3,8 @@
   "Desc": "A specialized technology powerhouse engineering high-performance Progressive Web Apps, native mobile experiences, and robust enterprise software.",
   "Author": "Core Lord",
   "Id": "MainrouteCore",
-  "Tags": [
-    "MainRoute Core",
-    "MainRoute",
-    "MRC",
-    "MR Core"
-  ],
-  "Categories": [],
+  "Tags": ["MainRoute Core", "MainRoute", "MRC", "MR Core"],
+  "Categories": ["Technology", "Open Source", "Bussiness", "Faq"],
   "Date": "05-06-2026",
   "Img": "https://mainroute-core.github.io/Clogs/assets/social.png",
   "Status": "Pub",
