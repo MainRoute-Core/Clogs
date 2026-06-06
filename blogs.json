@@ -138,7 +138,7 @@
     "Name": "MainRoute Core",
     "Author": "Core Lord",
     "Desc": "A specialized technology powerhouse engineering high-performance Progressive Web Apps, native mobile experiences, and robust enterprise software.",
-    "Img": "https://mainroute-core.github.io/Clogs/assets/social.png",
+    "Img": "../assets/social.png",
     "Url": "MainrouteCore.json",
     "Date": "05-06-2026",
     "Cat": [
