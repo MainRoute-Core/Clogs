@@ -141,7 +141,12 @@
     "Img": "https://mainroute-core.github.io/Clogs/assets/social.png",
     "Url": "MainrouteCore.json",
     "Date": "05-06-2026",
-    "Cat": [],
+    "Cat": [
+      "Technology",
+      "Open Source",
+      "Bussiness",
+      "Faq"
+    ],
     "Tags": [
       "MainRoute Core",
       "MainRoute",
@@ -201,64 +206,6 @@
       "productivity",
       "maintainability",
       "lightweight tools"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "ActivateIdmForLifetimeUse",
-    "Name": "Activate IDM For Lifetime Use",
-    "Author": "Pro Bandey",
-    "Desc": "IDM (Internet Download Manager) is a popular download manager known for its fast download speeds and enhanced features. This repository provides a method to activate IDM for a lifetime, allowing you to enjoy its full capabilities without limitations.",
-    "Img": "",
-    "Url": "ActivateIdmForLifetimeUse.json",
-    "Date": "04-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Faq",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "idm",
-      "idm-activate",
-      "idm-license",
-      "activate-idm",
-      "idm-pro"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "FreeUpSpaceFromOldWindowsUpdateFiles",
-    "Name": "Free Up Space From Old Windows Update Files",
-    "Author": "Core Lord",
-    "Desc": "",
-    "Img": "https://mainroute-core.github.io/src/social.png",
-    "Url": "FreeUpSpaceFromOldWindowsUpdateFiles.json",
-    "Date": "04-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Tip & Tricks"
-    ],
-    "Tags": [],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsWebScrapping",
-    "Name": "What Is Web Scrapping?",
-    "Author": "MR Intelligence",
-    "Desc": "Web scraping is the process of extracting data from websites",
-    "Img": "",
-    "Url": "WhatIsWebScrapping.json",
-    "Date": "04-06-2026",
-    "Cat": [
-      "Faq",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "Web",
-      "Faq",
-      "data",
-      "data collection"
     ],
     "Status": "Pub"
   }
