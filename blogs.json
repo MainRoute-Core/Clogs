@@ -113,7 +113,7 @@
   {
     "Article": "HowToWriteCleanCommitMessagesThatTeamsLove",
     "Name": "How to Write Clean Commit Messages That Teams Love?",
-    "Author": "MyWrite",
+    "Author": "Pro Bandey",
     "Desc": "Learn how to write clear, consistent Git commit messages that improve collaboration, simplify code reviews, and make project history easier to understand.",
     "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
     "Url": "HowToWriteCleanCommitMessagesThatTeamsLove.json",
@@ -191,7 +191,7 @@
   {
     "Article": "WhatAreServiceWorkersInSimpleTerms",
     "Name": "What Are Service Workers in Simple Terms?",
-    "Author": "MyWrite",
+    "Author": "Pro Bandey",
     "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
     "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
     "Url": "WhatAreServiceWorkersInSimpleTerms.json",
@@ -401,7 +401,7 @@
   {
     "Article": "WhySmallOssToolsBeatBigFrameworKsSometimes",
     "Name": "Why Small OSS Tools Beat Big Frameworks Sometimes?",
-    "Author": "MyWrite",
+    "Author": "Pro Bandey",
     "Desc": "Discover why small open-source software (OSS) tools can sometimes outperform large frameworks. Learn the benefits of simplicity, speed, maintainability, and developer productivity in modern software development.",
     "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
     "Url": "WhySmallOssToolsBeatBigFrameworKsSometimes.json",
