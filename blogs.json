@@ -1,5 +1,221 @@
 [
   {
+    "Article": "AiHallucinationsWhatTheyAreAndHowToReduceThem",
+    "Name": "AI Hallucinations: What They Are and How to Reduce Them",
+    "Author": "MyWrite",
+    "Desc": "Learn what AI hallucinations are, why they happen, their real-world risks, and practical techniques developers, creators, and businesses can use to reduce inaccurate AI-generated content.",
+    "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    "Url": "AiHallucinationsWhatTheyAreAndHowToReduceThem.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Technology",
+      "Developer Tools",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "ai hallucinations",
+      "llm",
+      "machine learning",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development",
+      "ai safety"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HostingAStaticSiteForFreeIn2026",
+    "Name": "Hosting a Static Site for Free in 2026",
+    "Author": "Pro Bandey",
+    "Desc": "Learn the best ways to host a static website for free in 2026. Compare popular platforms, understand their limitations, and choose the right solution for personal projects, portfolios, blogs, and documentation sites.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "HostingAStaticSiteForFreeIn2026.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Developer Tools",
+      "Open Source"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "hosting",
+      "static site",
+      "github",
+      "deployment",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToBackupYourCodeAutomatically",
+    "Name": "How to Backup Your Code Automatically",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to automatically back up your code using Git, cloud services, CI/CD workflows, and best practices that protect your projects from data loss and accidental mistakes.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToBackupYourCodeAutomatically.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "developer tools",
+      "productivity",
+      "git",
+      "github",
+      "backup",
+      "version control",
+      "coding",
+      "programming",
+      "software development",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToContributeDocumentationEvenIfYouDonTCode",
+    "Name": "How to Contribute Documentation Even If You Don’t Code",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to contribute to open source projects by improving documentation, fixing guides, writing tutorials, and helping users—even if you don't write code.",
+    "Img": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "Url": "HowToContributeDocumentationEvenIfYouDonTCode.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Relations"
+    ],
+    "Tags": [
+      "software development",
+      "developer workflow",
+      "productivity",
+      "open source",
+      "github",
+      "documentation",
+      "coding",
+      "programming",
+      "developer tools",
+      "community"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWriteCleanCommitMessagesThatTeamsLove",
+    "Name": "How to Write Clean Commit Messages That Teams Love?",
+    "Author": "MyWrite",
+    "Desc": "Learn how to write clear, consistent Git commit messages that improve collaboration, simplify code reviews, and make project history easier to understand.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToWriteCleanCommitMessagesThatTeamsLove.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "git",
+      "github",
+      "version control",
+      "git commands",
+      "developer workflow",
+      "coding",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ProgressiveWebAppsIn2026StillRelevant",
+    "Name": "Progressive Web Apps in 2026: Still Relevant?",
+    "Author": "Core Lord",
+    "Desc": "Explore the current state of Progressive Web Apps (PWAs) in 2026, their advantages, limitations, real-world use cases, and whether they remain a smart choice for modern web development.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "ProgressiveWebAppsIn2026StillRelevant.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "progressive web apps",
+      "pwa",
+      "service workers",
+      "web performance",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreServiceWorkersInSimpleTerms",
+    "Name": "What Are Service Workers in Simple Terms?",
+    "Author": "MyWrite",
+    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "eb development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "service workers",
+      "pwa",
+      "web performance",
+      "javascript",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "EmailNewslettersForDevelopersWhatToSend",
     "Name": "Email Newsletters for Developers: What to Send",
     "Author": "MyWrite",
@@ -29,7 +245,7 @@
   {
     "Article": "FreeAiToolsWorthTryingThisMonth",
     "Name": "Free AI Tools Worth Trying This Month",
-    "Author": "Pro Bandey",
+    "Author": "MyWrite",
     "Desc": "Discover the best free AI tools worth trying this month for writing, coding, design, research, productivity, and content creation. Explore practical tools that can save time and improve your workflow.",
     "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
     "Url": "FreeAiToolsWorthTryingThisMonth.json",
@@ -158,7 +374,7 @@
   {
     "Article": "WhatIsWebassemblyAndShouldYouLearnIt",
     "Name": "What Is WebAssembly and Should You Learn It?",
-    "Author": "MyWrite",
+    "Author": "Pro Bandey",
     "Desc": "Learn what WebAssembly (Wasm) is, how it works, its real-world use cases, advantages, limitations, and whether web developers should invest time learning it in 2026.",
     "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
     "Url": "WhatIsWebassemblyAndShouldYouLearnIt.json",
@@ -184,7 +400,7 @@
   },
   {
     "Article": "WhySmallOssToolsBeatBigFrameworKsSometimes",
-    "Name": "Why Small OSS Tools Beat Big Framewor?ks Sometimes",
+    "Name": "Why Small OSS Tools Beat Big Frameworks Sometimes?",
     "Author": "MyWrite",
     "Desc": "Discover why small open-source software (OSS) tools can sometimes outperform large frameworks. Learn the benefits of simplicity, speed, maintainability, and developer productivity in modern software development.",
     "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
