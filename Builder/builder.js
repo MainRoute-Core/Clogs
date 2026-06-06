@@ -4,7 +4,7 @@ const inputs = { title: document.getElementById('title'), id: document.getElemen
 let uploadTarget = 'editor';
 
 function toggleMeta() { document.getElementById('meta-content').classList.toggle('show'); }
-const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Software Development", "Productivity", "Developer Tools", "Developer Productivity", "Developer Marketing", "Content Creation", "Developer Relations", "Artificial Intelligence", "Open Source", "Bussines", "Faq", "Tip & Tricks"];
+const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Software Development", "Productivity", "Developer Tools", "Developer Productivity", "Developer Marketing", "Content Creation", "Developer Relations", "Artificial Intelligence", "Open Source", "Bussines", "Tip & Tricks"];
 AVAILABLE_CATEGORIES.forEach(cat => { const lbl = document.createElement('label'); lbl.innerHTML = `<input type="checkbox" value="${cat}" class="cat-checkbox"> ${cat}`; document.getElementById('categories-list').appendChild(lbl); });
 function toggleDropdown(id) { document.getElementById(id).classList.toggle('show'); }
 document.addEventListener('click', (e) => { if (!e.target.closest('.multi-select')) document.getElementById('categories-list').classList.remove('show'); });
@@ -159,7 +159,7 @@ editorTextarea.addEventListener('drop', e => { e.preventDefault(); editorTextare
 editorTextarea.addEventListener('input', saveDraft);
 
 function getOutputJSON() {
-    return { Title: inputs.title.value.trim(), Desc: inputs.desc.value.trim(), Author: inputs.author.value.trim() || "MyWrite", Id: inputs.id.value.trim(), Tags: inputs.tags.value.split(',').map(t => t.trim()).filter(Boolean), Categories: getSelectedCategories(), Date: getFormattedDate(), Img: inputs.img.value.trim(), Status: inputs.status.value, Data: editorTextarea.value };
+    return { Title: inputs.title.value.trim(), Desc: inputs.desc.value.trim(), Author: inputs.author.value.trim() || "Core Lord", Id: inputs.id.value.trim(), Tags: inputs.tags.value.split(',').map(t => t.trim()).filter(Boolean), Categories: getSelectedCategories(), Date: getFormattedDate(), Img: inputs.img.value.trim(), Status: inputs.status.value, Data: editorTextarea.value };
 }
 
 function updatePreview() {
@@ -246,7 +246,7 @@ async function saveJsonToGithub() {
 }
 function downloadJSON() { const blob = new Blob([JSON.stringify(getOutputJSON(), null, 2)], { type: "application/json" }), url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = (inputs.id.value || 'post') + '.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); showStatus("File Downloaded!", "success"); }
 function copyJSON() { navigator.clipboard.writeText(JSON.stringify(getOutputJSON(), null, 2)); showStatus("Copied to Clipboard!", "success"); }
-function clearAll() { if (!confirm("Clear workspace?")) return; Object.values(inputs).forEach(i => i.value = ''); inputs.status.value = 'Un'; document.querySelectorAll('.cat-checkbox').forEach(cb => cb.checked = false); updateCategoryText(); editorTextarea.value = ''; localStorage.removeItem(STORAGE_KEY); switchTab('editor'); }
+function clearAll() { if (!confirm("Clear workspace?")) return; Object.values(inputs).forEach(i => i.value = ''); inputs.status.value = 'Pub'; document.querySelectorAll('.cat-checkbox').forEach(cb => cb.checked = false); updateCategoryText(); editorTextarea.value = ''; localStorage.removeItem(STORAGE_KEY); switchTab('editor'); }
 function getFormattedDate() { const d = new Date(), pad = n => (n < 10 ? '0' : '') + n; return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${d.getFullYear()}`; }
 function toggleTheme() { const h = document.documentElement; h.setAttribute('data-theme', h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }
 function showStatus(text, type = "success") { const t = document.getElementById('toast'); t.innerText = text; t.className = "toast show"; t.classList.add(type === 'error' ? 'error' : (type === 'info' ? 'info' : 'success')); setTimeout(() => t.classList.remove('show'), 3000); }
