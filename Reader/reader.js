@@ -1,9 +1,9 @@
 
-// const DB_Path = "/src/db/blogs.json";
-// const Logs_Path = "/Logs";
+const DB_Path = "../db/blogs.json";
+const Logs_Path = "../Logs/";
 
-const DB_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/output/blogs.json";
-const Logs_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/main/Logs";
+// const DB_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/output/blogs.json";
+// const Logs_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/main/Logs";
 
 let indexData = [];
 let activeFilters = { ct: [], tg: null, q: "" };

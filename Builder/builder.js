@@ -13,21 +13,76 @@ function updateCategoryText() { const checked = getSelectedCategories(); documen
 function getSelectedCategories() { return Array.from(document.querySelectorAll('.cat-checkbox:checked')).map(cb => cb.value); }
 
 function toggleSettings() { document.getElementById('settings-drawer').classList.toggle('open'); document.getElementById('settings-backdrop').classList.toggle('open'); }
+function toggleInfo() { document.getElementById('info-drawer').classList.toggle('open'); document.getElementById('info-backdrop').classList.toggle('open'); }
 function saveSettings() { ['gh_token', 'gh_owner', 'gh_repo', 'gh_branch', 'gh_path', 'imgbb_key'].forEach(k => localStorage.setItem(k, document.getElementById(k.replace('_', '-')).value.trim())); showStatus("Configuration saved!", "success"); toggleSettings(); }
 function loadSettings() { ['gh_token', 'gh_owner', 'gh_repo', 'gh_branch', 'gh_path', 'imgbb_key'].forEach(k => { let val = localStorage.getItem(k) || ''; if (k === 'gh_branch' && !val) val = 'main'; document.getElementById(k.replace('_', '-')).value = val; }); }
 
 const editorTextarea = document.getElementById('md-editor-textarea');
 
+document.addEventListener('keydown', (e) => {
+    const shift = e.shiftKey;
+    const alt = e.altKey;
+    if (e.ctrlKey || e.metaKey) {
+        switch (e.key.toLowerCase()) {
+            case (alt && "t"): e.preventDefault(); toggleTheme(); break;
+            case (alt && "i"): e.preventDefault(); toggleInfo(); break;
+            case (alt && "s"): e.preventDefault(); toggleSettings(); break;
+            case (alt && "m"): e.preventDefault(); toggleMeta(); break;
+            case (alt && "g"): e.preventDefault(); triggerBannerUpload(); break;
+
+            case (alt && "e"): e.preventDefault(); switchTab('editor'); break;
+            case (alt && "p"): e.preventDefault(); switchTab('preview'); break;
+            case (alt && "j"): e.preventDefault(); switchTab('json'); break;
+
+            case (alt && "c"): e.preventDefault(); copyJSON(); break;
+            case `s`: e.preventDefault(); saveJSON(); break;
+            case `p`: e.preventDefault(); pushToGithub(); break;
+            case (alt && "a"): e.preventDefault(); clearAll(); break;
+        }
+    };
+});
+
 editorTextarea.addEventListener('keydown', (e) => {
+    const shift = e.shiftKey;
+    const alt = e.altKey;
     if (e.ctrlKey || e.metaKey) {
         switch (e.key.toLowerCase()) {
             case 'b': e.preventDefault(); toggleFormat('bold'); break;
             case 'i': e.preventDefault(); toggleFormat('italic'); break;
+            case '~': e.preventDefault(); toggleFormat('strike'); break;
+            case 'h': e.preventDefault(); toggleFormat('highlight'); break;
+
+            case '1': e.preventDefault(); toggleBlock('h1'); break;
+            case '2': e.preventDefault(); toggleBlock('h2'); break;
+            case '3': e.preventDefault(); toggleBlock('h3'); break;
+            case '4': e.preventDefault(); toggleBlock('h4'); break;
+            case '5': e.preventDefault(); toggleBlock('h5'); break;
+            case '6': e.preventDefault(); toggleBlock('h6'); break;
+
+            case (shift && "l"): e.preventDefault(); wrapTags('<div align=\'left\'>\n\n', '\n\n</div>'); break;
+            case (shift && "c"): e.preventDefault(); wrapTags('<div align=\'center\'>\n\n', '\n\n</div>'); break;
+            case (shift && "r"): e.preventDefault(); wrapTags('<div align=\'right\'>\n\n', '\n\n</div>'); break;
+
+            case 'u': e.preventDefault(); toggleBlock('ul'); break;
+            case 'o': e.preventDefault(); toggleBlock('ol'); break;
+            case `[`: e.preventDefault(); toggleBlock('task'); break;
+
+            case (shift && '"'): e.preventDefault(); toggleBlock('quote'); break;
+
+            case '!': e.preventDefault(); toggleCallout('note'); break;
+            case '?': e.preventDefault(); toggleCallout('warning'); break;
+
+            case '`': e.preventDefault(); toggleFormat('code'); break;
+            case '<': e.preventDefault(); toggleFormat('codeblock'); break;
+
+            case 'g': e.preventDefault(); triggerEditorUpload(); break;
+
             case 'k': e.preventDefault(); insertSnippet('link'); break;
-            case 's': e.preventDefault(); saveJsonToGithub(); break;
+            case '|': e.preventDefault(); insertSnippet('table'); break;
+            case '-': e.preventDefault(); insertSnippet('hr'); break;
         }
-    }
-    if (e.key === 'Tab') { e.preventDefault(); handleTab(e.shiftKey); }
+    };
+    if (e.key === 'Tab') { e.preventDefault(); handleTab(e.shiftKey); };
 });
 
 function handleTab(isShift) {
@@ -56,7 +111,7 @@ function toggleFormat(type) {
     const start = editorTextarea.selectionStart, end = editorTextarea.selectionEnd, text = editorTextarea.value, selected = text.substring(start, end);
     let before = '', after = '';
     if (type === 'bold') { before = '**'; after = '**'; }
-    if (type === 'italic') { before = '*'; after = '*'; }
+    if (type === 'italic') { before = '_'; after = '_'; }
     if (type === 'strike') { before = '~~'; after = '~~'; }
     if (type === 'highlight') { before = '<mark>'; after = '</mark>'; }
     if (type === 'code') { before = '`'; after = '`'; }
@@ -164,10 +219,11 @@ function getOutputJSON() {
 
 function updatePreview() {
     const data = getOutputJSON();
-    document.getElementById('prev-img').src = data.Img || '../assets/social.png';
+    document.getElementById('prev-img').src = data.Img || 'social.png';
     document.getElementById('prev-title').innerText = data.Title || "Untitled Post";
     document.getElementById('prev-date').innerText = data.Date; document.getElementById('prev-author').innerText = data.Author;
-    document.getElementById('prev-tags').innerHTML = data.Categories.map(c => `<span class="cat-badge">${c}</span>`).join('') + data.Tags.map(t => `<span style="margin-right:8px;">#${t}</span>`).join('');
+    document.getElementById('prev-cat').innerHTML = data.Categories.map(c => `<span class="cat-badge">${c}</span>`).join('');
+    document.getElementById('prev-tag').innerHTML = data.Tags.map(t => `<span style="margin-right:8px;">#${t}</span>`).join('');
 
     let htmlData = data.Data || "";
     htmlData = htmlData.replace(/> \[!NOTE\]\n(> .*\n?)+/g, match => `<div style="border-left:4px solid #3b82f6; padding:10px; background:rgba(59,130,246,0.1); margin-bottom:15px;"><strong>📘 Note</strong><br/>${marked.parse(match.replace(/> \[!NOTE\]\n/, '').replace(/^> /gm, ''))}</div>`);
@@ -234,7 +290,7 @@ async function startModalUpload() {
 document.getElementById('upload-modal').addEventListener('click', e => e.target.id === 'upload-modal' && closeUploadModal());
 
 function resolveGhPath() { let folder = localStorage.getItem('gh_path') || ''; if (folder && folder.endsWith('/')) folder = folder.slice(0, -1); return folder ? `${folder}/${(inputs.id.value || 'untitled')}.json` : `${(inputs.id.value || 'untitled')}.json`; }
-async function saveJsonToGithub() {
+async function pushToGithub() {
     const token = localStorage.getItem('gh_token'), owner = localStorage.getItem('gh_owner'), repo = localStorage.getItem('gh_repo'), branch = localStorage.getItem('gh_branch') || 'main';
     if (!token || !owner || !repo) return showStatus("Configure credentials first", "error");
     const path = resolveGhPath(), base64 = btoa(unescape(encodeURIComponent(JSON.stringify(getOutputJSON(), null, 2)))), url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`, headers = { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' };
@@ -245,9 +301,7 @@ async function saveJsonToGithub() {
     } catch (e) { showStatus(`Sync failed: ${e.message}`, "error"); }
 }
 
-function downloadJSON() { const blob = new Blob([JSON.stringify(getOutputJSON(), null, 2)], { type: "application/json" }), url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = (inputs.id.value || 'post') + '.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); showStatus("File Downloaded!", "success"); }
-function downloadJSON2() { const blob = new Blob([JSON.stringify(getOutputJSON(), null, 2)], { type: "application/json" }), url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = (inputs.id.value || 'post') + '.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); showStatus("File Downloaded!", "success"); }
-function copyJSON() { navigator.clipboard.writeText(JSON.stringify(getOutputJSON(), null, 2)); showStatus("Copied to Clipboard!", "success"); }
+function saveJSON() { const blob = new Blob([JSON.stringify(getOutputJSON(), null, 2)], { type: "application/json" }), url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = (inputs.id.value || 'post') + '.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); showStatus("File Downloaded!", "success"); } function copyJSON() { navigator.clipboard.writeText(JSON.stringify(getOutputJSON(), null, 2)); showStatus("Copied to Clipboard!", "success"); }
 function clearAll() { if (!confirm("Clear workspace?")) return; Object.values(inputs).forEach(i => i.value = ''); inputs.status.value = 'Pub'; document.querySelectorAll('.cat-checkbox').forEach(cb => cb.checked = false); updateCategoryText(); editorTextarea.value = ''; localStorage.removeItem(STORAGE_KEY); switchTab('editor'); }
 function getFormattedDate() { const d = new Date(), pad = n => (n < 10 ? '0' : '') + n; return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${d.getFullYear()}`; }
 function toggleTheme() { const h = document.documentElement; h.setAttribute('data-theme', h.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); }

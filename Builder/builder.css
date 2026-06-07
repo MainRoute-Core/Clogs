@@ -113,10 +113,11 @@ body {
 }
 
 .toolbar-divider {
-    width: 1px;
+    display: none;
+    width: 2px;
     background: var(--border);
     margin: 0 4px;
-    height: 20px;
+    height: 30px;
 }
 
 input,
@@ -208,8 +209,23 @@ label {
     display: grid;
 }
 
-.full-width {
+.meta-accordion-content-setion {
     grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.meta-accordion-content .full-width {
+    width: 100%;
+}
+
+.meta-accordion-content textarea {
+    min-height: 75px;
+    height: 80px;
+    max-height: 200px;
+    width: 100%;
+    resize: vertical;
 }
 
 .multi-select {
@@ -218,6 +234,9 @@ label {
 
 .select-box {
     padding: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--bg-card);
@@ -263,9 +282,16 @@ label {
 
 .tabs-header {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 5px;
-    flex-wrap: wrap;
     margin-bottom: 10px;
+}
+
+.tabs-header-section {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 }
 
 .tab-btn {
@@ -276,7 +302,7 @@ label {
     cursor: pointer;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    font-size: 0.95rem;
+    font-size: small;
 }
 
 .tab-btn.active {
@@ -307,6 +333,7 @@ label {
     border-bottom: 1px solid var(--border);
     background: var(--bg-card);
     align-items: center;
+    justify-content: space-between;
 }
 
 #md-editor-textarea {
@@ -348,8 +375,27 @@ label {
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
     color: var(--fg-muted);
     font-size: 0.9rem;
+}
+
+.clog-meta-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid var(--border);
+    color: var(--fg-muted);
+    font-size: 0.9rem;
+}
+
+.clog-meta-bottom .tags div {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 .cat-badge {
@@ -505,6 +551,19 @@ mark {
 
 .toast.show {
     transform: translateX(-50%) translateY(0);
+}
+
+
+@media (min-width: 480px) {
+
+    .meta-accordion-content-setion,
+    .tabs-header {
+        flex-direction: row;
+    }
+
+    .toolbar-divider {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
