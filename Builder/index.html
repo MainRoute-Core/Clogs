@@ -86,9 +86,16 @@
       <button class="tab-btn" onclick="switchTab('preview')">Preview</button>
       <button class="tab-btn" onclick="switchTab('json')">JSON Output</button>
       <div style="flex-grow: 1;"></div>
-      <button class="btn btn-danger" onclick="clearAll()"><svg class="icon">
+      <button class="btn btn-secondary" onclick="downloadJSON2()">
+            <svg class="icon">
+              <use href="icons.svg#icon-download"></use>
+            </svg>Download
+      </button>
+      <button class="btn btn-danger" onclick="clearAll()">
+        <svg class="icon">
           <use href="icons.svg#icon-trash"></use>
-        </svg> Clear</button>
+        </svg> Clear
+      </button>
     </div>
 
     <!-- 1. Editor Pane -->
@@ -189,16 +196,6 @@
 
     <!-- 2. Preview Pane -->
     <div id="previewPane" class="pane">
-      <div class="json-header-toolbar">
-        <strong>Preview Payload</strong>
-        <div style="display:flex; gap:10px;">
-          <button class="btn btn-secondary" onclick="downloadJSON2()">
-            <svg class="icon">
-              <use href="icons.svg#icon-download"></use>
-            </svg> Download
-          </button>
-        </div>
-      </div>
       <article class="clog-container">
         <img src="" alt="Banner" id="prev-img" class="banner-image"
           onerror="this.src='../assets/social.png'" />
