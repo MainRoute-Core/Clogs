@@ -46,11 +46,11 @@
       <div class="meta-accordion-content" id="meta-content">
         <div>
           <label>Blog Title</label>
-          <input type="text" id="title" placeholder="Mastering Python...">
+          <input type="text" id="title" placeholder="What Is Web...">
         </div>
         <div>
           <label>Blog ID (Auto PascalCase)</label>
-          <input type="text" id="blog-id" placeholder="MasteringPython">
+          <input type="text" id="blog-id" placeholder="WhatIsWeb">
         </div>
         <div>
           <label>Categories</label>
@@ -61,14 +61,14 @@
         </div>
         <div>
           <label>Tags (Comma separated)</label>
-          <input type="text" id="tags" placeholder="Python, Code, Web">
+          <input type="text" id="tags" placeholder="Code, Web,...">
         </div>
         <div><label>Status</label><select id="status">
-            <option value="Un">Unpublished (Un)</option>
-            <option value="Pub">Published (Pub)</option>
-            <option value="Not">Not Ready (Not)</option>
+            <option value="Un">Unpublished</option>
+            <option selected value="Pub">Published </option>
+            <option value="Not">Not Ready</option>
           </select></div>
-        <div><label>Author</label><input type="text" id="author" placeholder="John Doe"></div>
+        <div><label>Author</label><input type="text" id="author" autocomplete="on" value="Core Lord" placeholder="Core Lord"></div>
         <div class="full-width"><label>Banner Image URL</label>
           <div style="display: flex; gap: 8px;"><input type="url" id="img" placeholder="https://..."
               style="flex: 1;"><button class="btn btn-secondary" onclick="triggerBannerUpload()"><svg class="icon">
