@@ -244,7 +244,9 @@ async function saveJsonToGithub() {
         updateRes.ok ? showStatus("Pushed to GitHub!", "success") : showStatus(`Failed: ${(await updateRes.json()).message}`, "error");
     } catch (e) { showStatus(`Sync failed: ${e.message}`, "error"); }
 }
+
 function downloadJSON() { const blob = new Blob([JSON.stringify(getOutputJSON(), null, 2)], { type: "application/json" }), url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = (inputs.id.value || 'post') + '.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); showStatus("File Downloaded!", "success"); }
+function downloadJSON2() { const blob = new Blob([JSON.stringify(getOutputJSON(), null, 2)], { type: "application/json" }), url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download = (inputs.id.value || 'post') + '.json'; document.body.appendChild(a); a.click(); document.body.removeChild(a); URL.revokeObjectURL(url); showStatus("File Downloaded!", "success"); }
 function copyJSON() { navigator.clipboard.writeText(JSON.stringify(getOutputJSON(), null, 2)); showStatus("Copied to Clipboard!", "success"); }
 function clearAll() { if (!confirm("Clear workspace?")) return; Object.values(inputs).forEach(i => i.value = ''); inputs.status.value = 'Pub'; document.querySelectorAll('.cat-checkbox').forEach(cb => cb.checked = false); updateCategoryText(); editorTextarea.value = ''; localStorage.removeItem(STORAGE_KEY); switchTab('editor'); }
 function getFormattedDate() { const d = new Date(), pad = n => (n < 10 ? '0' : '') + n; return `${pad(d.getDate())}-${pad(d.getMonth() + 1)}-${d.getFullYear()}`; }
