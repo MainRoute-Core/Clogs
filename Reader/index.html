@@ -1,12 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Clog - Premium Markdown Reader</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#181c24" />
 
-  <!-- Marked.js Markdown Parser (CDN for immediate plug-n-play, update to local if needed) -->
+  <!-- Marked.js Markdown Parser -->
   <script src="libs/marked.min.js"></script>
   <!-- GitHub Styled Markdown CSS -->
   <link rel="stylesheet" href="libs/github-markdown.min.css">
@@ -17,58 +18,82 @@
 
 
 </head>
+
 <body>
 
   <!-- INLINE SVGs -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="icon-book" viewBox="0 0 24 24"><path d="M21 4H7c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 18V6h14v12H7zM3 8h2v12H3z"/></symbol>
-    <symbol id="icon-theme" viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4C12.92 3.04 12.46 3 12 3z"/></symbol>
-    <symbol id="icon-search" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></symbol>
-    <symbol id="icon-category" viewBox="0 0 24 24"><path d="M12 2l-5.5 9h11zM3 13.5h8v8H3zM16.5 13.5c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></symbol>
-    <symbol id="icon-tag" viewBox="0 0 24 24"><path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.41l9 9c.36.36.86.58 1.41.58s1.05-.22 1.41-.59l7-7c.36-.36.59-.86.59-1.41s-.23-1.06-.59-1.41zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"/></symbol>
-    <symbol id="icon-back" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></symbol>
-    <symbol id="icon-sync" viewBox="0 0 24 24"><path d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z"/></symbol>
-    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></symbol>
-    <symbol id="icon-check" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></symbol>
+    <symbol id="icon-book" viewBox="0 0 24 24">
+      <path
+        d="M21 4H7c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 18V6h14v12H7zM3 8h2v12H3z" />
+    </symbol>
+    <symbol id="icon-theme" viewBox="0 0 24 24">
+      <path
+        d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4C12.92 3.04 12.46 3 12 3z" />
+    </symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24">
+      <path
+        d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+    </symbol>
+    <symbol id="icon-category" viewBox="0 0 24 24">
+      <path d="M12 2l-5.5 9h11zM3 13.5h8v8H3zM16.5 13.5c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z" />
+    </symbol>
+    <symbol id="icon-back" viewBox="0 0 24 24">
+      <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z" />
+    </symbol>
+    <symbol id="icon-sync" viewBox="0 0 24 24">
+      <path
+        d="M12 4V1L8 5l4 4V6c3.31 0 6 2.69 6 6 0 1.01-.25 1.97-.7 2.8l1.46 1.46C19.54 15.03 20 13.57 20 12c0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8L5.24 7.74C4.46 8.97 4 10.43 4 12c0 4.42 3.58 8 8 8v3l4-4-4-4v3z" />
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+    </symbol>
   </svg>
 
   <div id="app">
     <!-- NAVIGATION -->
     <nav class="navbar">
-      <a class="brand" onclick="clearFiltersAndHome()">
-        <svg class="icon" style="color: var(--primary);"><use href="#icon-book"></use></svg>
+      <a class="brand" onclick="clearFiltersAndHome()" title="Home | Reset all filters">
+        <svg class="icon" style="color: var(--primary);">
+          <use href="#icon-book"></use>
+        </svg>
         <span>Clog Reader</span>
       </a>
       <div class="nav-controls">
-        <div class="status-badge" id="source-badge">Sync Status</div>
-        <button class="btn" onclick="toggleTheme()" style="padding: 6px 12px; font-size: 0.8rem;">
-          <svg class="icon"><use href="#icon-theme"></use></svg> Theme
+        <div class="status-badge" id="source-badge" title="Database Sync Method">Sync Status</div>
+        <button class="btn" onclick="toggleTheme()" style="padding: 6px 12px; font-size: 0.8rem;"
+          title="Switch Color Theme">
+          <svg class="icon">
+            <use href="#icon-theme"></use>
+          </svg> Theme
         </button>
       </div>
     </nav>
 
     <!-- SEARCH INTERFACE -->
     <div class="search-wrapper" id="main-search-container">
-      <svg class="icon search-icon"><use href="#icon-search"></use></svg>
-      <input type="search" class="search-input" id="search-bar" placeholder="Search publications by title, tags, summaries..." oninput="handleSearchInput()">
+      <svg class="icon search-icon">
+        <use href="#icon-search"></use>
+      </svg>
+      <input type="search" class="search-input" id="search-bar"
+        placeholder="Search publications by title, tags, summaries, authors..." oninput="handleSearchInput()"
+        title="Type to filter results">
     </div>
 
     <!-- LAYOUT GRID -->
     <div class="layout-grid" id="main-layout-wrapper">
-      
+
       <!-- SIDEBAR FILTERS -->
       <aside class="sidebar">
         <!-- Categories Multi-Select -->
         <div class="sidebar-card">
-          <div class="sidebar-title"><svg class="icon"><use href="#icon-category"></use></svg> Categories</div>
+          <div class="sidebar-title" title="Select one or multiple categories to filter publications"><svg class="icon">
+              <use href="#icon-category"></use>
+            </svg> Categories</div>
           <ul class="filter-list" id="category-filter-list">
-            <!-- Populated by JS -->
-          </ul>
-        </div>
-        <!-- Tags Single/Multi-Select -->
-        <div class="sidebar-card">
-          <div class="sidebar-title"><svg class="icon"><use href="#icon-tag"></use></svg> Tags</div>
-          <ul class="filter-list" id="tag-filter-list">
             <!-- Populated by JS -->
           </ul>
         </div>
@@ -78,8 +103,12 @@
       <main class="content-area">
         <div class="grid-header">
           <span id="results-count">Retrieving publications...</span>
-          <button class="btn btn-danger hidden" id="clear-filters-btn" onclick="clearFiltersAndHome()" style="padding: 4px 10px; font-size: 0.8rem;">
-            <svg class="icon" style="width: 1rem; height: 1rem;"><use href="#icon-close"></use></svg> Clear Filters
+          <button class="btn btn-danger hidden" id="clear-filters-btn" onclick="clearFiltersAndHome()"
+            style="padding: 4px 10px; font-size: 0.8rem;"
+            title="Reset all search queries, author, category and tag filters">
+            <svg class="icon" style="width: 1rem; height: 1rem;">
+              <use href="#icon-close"></use>
+            </svg> Clear Filters
           </button>
         </div>
         <div class="post-grid" id="publication-grid">
@@ -91,8 +120,10 @@
     <!-- SINGLE POST READER -->
     <div class="reader-pane" id="main-reader-pane">
       <div class="back-btn-wrapper">
-        <button class="btn" onclick="exitReaderView()">
-          <svg class="icon"><use href="#icon-back"></use></svg> Back to Publications
+        <button class="btn" onclick="exitReaderView()" title="Return to publication list">
+          <svg class="icon">
+            <use href="#icon-back"></use>
+          </svg> Back to Publications
         </button>
       </div>
 
@@ -102,7 +133,8 @@
           <div class="clog-meta" id="full-meta-block">
             <div class="clog-meta-sub">
               <div class="clog-meta-item"><span>Date:</span> <time id="full-date"></time></div>
-              <div class="clog-meta-item"><span>Author:</span> <span id="full-author"></span></div>
+              <div class="clog-meta-item"><span>Author:</span> <span id="full-author" class="clickable-author"
+                  title="Filter by this author" style="cursor: pointer; text-decoration: underline;"></span></div>
             </div>
             <div class="clog-meta-item clog-tags" id="full-tags"></div>
           </div>
@@ -117,12 +149,16 @@
     <!-- LOADER -->
     <div id="loader-status" style="display:none;">
       <div class="loading-spinner">
-        <svg class="icon" style="width: 3rem; height: 3rem; color: var(--primary); animation: spin 1s linear infinite;"><use href="#icon-sync"></use></svg>
+        <svg class="icon" style="width: 3rem; height: 3rem; color: var(--primary); animation: spin 1s linear infinite;">
+          <use href="#icon-sync"></use>
+        </svg>
         <span>Processing request...</span>
       </div>
     </div>
   </div>
 
-<script src="reader.js"></script>
+  <script src="reader.js"></script>
+  <script src="libs/toaster.js"></script>
 </body>
+
 </html>

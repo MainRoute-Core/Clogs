@@ -1,4 +1,3 @@
-
 const DB_Path = "../db/blogs.json";
 const Logs_Path = "../Logs/";
 
@@ -6,7 +5,7 @@ const Logs_Path = "../Logs/";
 // const Logs_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/main/Logs";
 
 let indexData = [];
-let activeFilters = { ct: [], tg: null, q: "" };
+let activeFilters = { ct: [], tg: null, q: "", author: null };
 
 document.addEventListener('DOMContentLoaded', () => {
     updateUIStyles();
@@ -54,6 +53,7 @@ function processUrlParamsAndRoute() {
 
     activeFilters.q = params.get('q') || "";
     activeFilters.tg = params.get('tg') || null;
+    activeFilters.author = params.get('author') || null;
 
     const ctParam = params.get('ct');
     activeFilters.ct = ctParam ? ctParam.split(',').filter(Boolean) : [];
@@ -77,6 +77,9 @@ function updateUrlState() {
     if (activeFilters.tg) url.searchParams.set('tg', activeFilters.tg);
     else url.searchParams.delete('tg');
 
+    if (activeFilters.author) url.searchParams.set('author', activeFilters.author);
+    else url.searchParams.delete('author');
+
     if (activeFilters.q) url.searchParams.set('q', activeFilters.q);
     else url.searchParams.delete('q');
 
@@ -95,11 +98,9 @@ function showListView() {
 
 function buildSidebarFilters() {
     const categoriesMap = {};
-    const tagsMap = {};
 
     indexData.forEach(item => {
         (item.Cat || []).forEach(c => { if (c) categoriesMap[c] = (categoriesMap[c] || 0) + 1; });
-        (item.Tags || []).forEach(t => { if (t) tagsMap[t] = (tagsMap[t] || 0) + 1; });
     });
 
     const catList = document.getElementById('category-filter-list');
@@ -109,25 +110,15 @@ function buildSidebarFilters() {
         const li = document.createElement('li');
         li.className = `filter-item ${isActive ? 'active' : ''}`;
         li.onclick = () => toggleCategoryFilter(cat);
+        li.setAttribute('title', isActive ? `Click to deselect ${cat}` : `Click to filter by category: ${cat}`);
         li.innerHTML = `
           <div style="display:flex; align-items:center;">
             <span class="checkbox-box">${isActive ? '<svg class="icon" style="width:12px;height:12px;"><use href="#icon-check"></use></svg>' : ''}</span>
             <span>${cat}</span>
           </div>
-          <span class="filter-count">${categoriesMap[cat]}</span>
+          <span class="filter-count" title="${categoriesMap[cat]} publications in this category">${categoriesMap[cat]}</span>
         `;
         catList.appendChild(li);
-    });
-
-    const tagList = document.getElementById('tag-filter-list');
-    tagList.innerHTML = Object.keys(tagsMap).length > 0 ? '' : '<li style="font-size:0.85rem; opacity:0.6;">Tags generated from fetched data</li>';
-    Object.keys(tagsMap).sort().forEach(tag => {
-        const isActive = activeFilters.tg === tag;
-        const li = document.createElement('li');
-        li.className = `filter-item ${isActive ? 'active' : ''}`;
-        li.onclick = () => { activeFilters.tg = (activeFilters.tg === tag) ? null : tag; updateUrlState(); };
-        li.innerHTML = `<span>#${tag}</span><span class="filter-count">${tagsMap[tag]}</span>`;
-        tagList.appendChild(li);
     });
 }
 
@@ -141,21 +132,29 @@ function renderPostList() {
         }
         if (activeFilters.tg && (!item.Tags || !item.Tags.includes(activeFilters.tg))) return false;
 
+        if (activeFilters.author) {
+            if (!item.Author || item.Author.toLowerCase() !== activeFilters.author.toLowerCase()) return false;
+        }
+
         if (activeFilters.q) {
             const query = activeFilters.q.toLowerCase();
             const inTitle = item.Name && item.Name.toLowerCase().includes(query);
             const inDesc = item.Desc && item.Desc.toLowerCase().includes(query);
-            // const isAuthor = item.Author && item.Desc.toLowerCase().includes(query);
+            const inAuthor = item.Author && item.Author.toLowerCase().includes(query);
             const inCats = item.Cat && item.Cat.some(c => c.toLowerCase().includes(query));
             const inTags = item.Tags && item.Tags.some(t => t.toLowerCase().includes(query));
-            if (!inTitle && !inDesc && !inCats && !inTags) return false;
+            if (!inTitle && !inDesc && !inAuthor && !inCats && !inTags) return false;
         }
         return true;
     });
 
     const clearBtn = document.getElementById('clear-filters-btn');
-    if (activeFilters.ct.length > 0 || activeFilters.tg || activeFilters.q) {
-        document.getElementById('results-count').innerText = `Found ${filtered.length} matching publications`;
+    if (activeFilters.ct.length > 0 || activeFilters.tg || activeFilters.q || activeFilters.author) {
+        let resultsText = `Found ${filtered.length} matching publications`;
+        if (activeFilters.author) {
+            resultsText += ` by author "${activeFilters.author}"`;
+        }
+        document.getElementById('results-count').innerText = resultsText;
         clearBtn.classList.remove('hidden');
     } else {
         document.getElementById('results-count').innerText = `Total Publications: ${filtered.length}`;
@@ -172,17 +171,21 @@ function renderPostList() {
         card.className = "post-card";
 
         const bannerImg = item.Img || 'https://mainroute-core.github.io/src/social.png';
-        const catHtml = (item.Cat || []).map(c => `<span class="card-category-badge">${c}</span>`).join('');
-        const tagHtml = (item.Tags || []).map(t => `<span class="card-tag" onclick="clickCardTag('${t}', event)">#${t}</span>`).join('');
+        const catHtml = (item.Cat || []).map(c => `<span class="card-category-badge" title="Category: ${c}">${c}</span>`).join('');
+        const tagHtml = (item.Tags || []).map(t => `<span class="card-tag" onclick="clickCardTag('${t}', event)" title="Filter by tag: #${t}">#${t}</span>`).join('');
+        const displayAuthor = item.Author || 'Unknown';
 
         card.innerHTML = `
-          <div class="card-img-wrapper" onclick="openPost('${item.Article}')">
+          <div class="card-img-wrapper" onclick="openPost('${item.Article}')" title="Click to read: ${item.Name}">
             <img src="${bannerImg}" alt="${item.Name}" class="card-img" loading="lazy">
             <div class="card-category-container">${catHtml}</div>
           </div>
           <div class="card-content">
-            <div class="card-meta"><b>Updated:</b><span>${item.Date || ''}</span>&bull; <b>Author:</b><span>${item.Author || 'UnKnown'}</span></div>
-            <h2 class="card-title" onclick="openPost('${item.Article}')">${item.Name}</h2>
+            <div class="card-meta">
+              <b>Updated:</b><span>${item.Date || ''}</span> &bull; 
+              <b>Author:</b><span class="clickable-author" onclick="clickCardAuthor('${displayAuthor}', event)" title="Filter publications by ${displayAuthor}">${displayAuthor}</span>
+            </div>
+            <h2 class="card-title" onclick="openPost('${item.Article}')" title="Click to read: ${item.Name}">${item.Name}</h2>
             <p class="card-desc">${item.Desc || 'No description provided.'}</p>
             <div class="card-tags">${tagHtml}</div>
           </div>
@@ -204,13 +207,19 @@ function clickCardTag(tag, event) {
     updateUrlState();
 }
 
+function clickCardAuthor(author, event) {
+    event.stopPropagation();
+    activeFilters.author = author;
+    updateUrlState();
+}
+
 function handleSearchInput() {
     activeFilters.q = document.getElementById('search-bar').value;
     updateUrlState();
 }
 
 function clearFiltersAndHome() {
-    activeFilters = { ct: [], tg: null, q: "" };
+    activeFilters = { ct: [], tg: null, q: "", author: null };
     window.history.pushState({}, '', new URL(window.location.pathname, window.location.origin));
     processUrlParamsAndRoute();
 }
@@ -261,12 +270,22 @@ async function loadAndRenderFullPost(logId) {
 
         const postData = await response.json();
 
+        const displayAuthor = postData.Author || dbEntry.Author || "System Admin";
+
         document.getElementById('full-date').innerText = postData.Date || dbEntry.Date;
-        document.getElementById('full-author').innerText = postData.Author || "System Admin";
+        
+        const authorSpan = document.getElementById('full-author');
+        authorSpan.innerText = displayAuthor;
+        authorSpan.setAttribute('title', `Filter publications by ${displayAuthor}`);
+        authorSpan.onclick = (event) => {
+            clickCardAuthor(displayAuthor, event);
+            exitReaderView();
+        };
+
         document.getElementById('full-meta-block').style.display = 'flex';
 
-        const catBadges = (postData.Categories || dbEntry.Cat || []).map(c => `<span class="cat-badge">${c}</span>`).join('');
-        const tagBadges = (postData.Tags || []).map(t => `<span style="cursor:pointer;" onclick="clickCardTag('${t}', event); exitReaderView();">#${t}</span>`).join('');
+        const catBadges = (postData.Categories || dbEntry.Cat || []).map(c => `<span class="cat-badge" title="Category: ${c}">${c}</span>`).join('');
+        const tagBadges = (postData.Tags || []).map(t => `<span style="cursor:pointer;" onclick="clickCardTag('${t}', event); exitReaderView();" title="Filter by tag: #${t}">#${t}</span>`).join('');
         document.getElementById('full-tags').innerHTML = catBadges + tagBadges;
 
         const bodyContainer = document.getElementById('full-body');
