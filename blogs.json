@@ -1,5 +1,436 @@
 [
   {
+    "Article": "BootstrappedVsFundedWhatNoOneTellsYou",
+    "Name": "Bootstrapped vs Funded: What No One Tells You",
+    "Author": "Pro Bandey",
+    "Desc": "Explore the real differences between bootstrapped and funded startups, including growth, control, risks, expectations, and how to choose the right path for your business.",
+    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "Url": "BootstrappedVsFundedWhatNoOneTellsYou.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "software development",
+      "startups",
+      "business",
+      "saas",
+      "productivity",
+      "developer workflow",
+      "entrepreneurship",
+      "funding",
+      "bootstrapping",
+      "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowBrowsersActuallyLoadYourWebsite",
+    "Name": "How Browsers Actually Load Your Website",
+    "Author": "Core Lord",
+    "Desc": "Learn what happens behind the scenes when a user visits your website, from DNS lookups and network requests to rendering, JavaScript execution, and page display.",
+    "Img": "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2",
+    "Url": "HowBrowsersActuallyLoadYourWebsite.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "browser",
+      "performance",
+      "developer workflow",
+      "programming",
+      "coding",
+      "networking",
+      "html",
+      "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowDnsWorksForWebDevelopers",
+    "Name": "How DNS Works for Web Developers",
+    "Author": "Core Lord",
+    "Desc": "Learn how DNS works behind the scenes, how domain names connect to websites, and why every web developer should understand DNS fundamentals for troubleshooting and deployment.",
+    "Img": "https://images.unsplash.com/photo-1691435828932-911a7801adfb",
+    "Url": "HowDnsWorksForWebDevelopers.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "networking",
+      "dns",
+      "domains",
+      "hosting",
+      "developer workflow",
+      "programming",
+      "coding",
+      "internet"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToGetYourFirst100UsersWithoutAds",
+    "Name": "How to Get Your First 100 Users Without Ads",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical and proven strategies to get your first 100 users without spending money on advertising. Discover how successful founders use communities, content, outreach, and product feedback loops to grow organically.",
+    "Img": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+    "Url": "HowToGetYourFirst100UsersWithoutAds.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Marketing",
+      "Developer Relations",
+      "Bussines"
+    ],
+    "Tags": [
+      "startups",
+      "saas",
+      "productivity",
+      "developer workflow",
+      "software development",
+      "marketing",
+      "entrepreneurship",
+      "growth",
+      "web development",
+      "community"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToHandleChurnForDeveloperTools",
+    "Name": "How to Handle Churn for Developer Tools",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to reduce churn in developer tools by understanding user behavior, improving onboarding, fixing retention leaks, and building long-term product value.",
+    "Img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    "Url": "HowToHandleChurnForDeveloperTools.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "saas",
+      "churn",
+      "developer tools",
+      "product management",
+      "startup",
+      "retention",
+      "software development",
+      "growth",
+      "onboarding",
+      "user experience"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToKeepYourOpenSourceProjectMaintainedLongTerm",
+    "Name": "How to Keep Your Open Source Project Maintained Long-Term",
+    "Author": "Pro Bandey",
+    "Desc": "Learn practical strategies for maintaining an open source project over the long term, reducing burnout, managing contributors, and keeping your project healthy as it grows.",
+    "Img": "https://images.unsplash.com/photo-1649478680984-01586ce84ac0",
+    "Url": "HowToKeepYourOpenSourceProjectMaintainedLongTerm.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "open source",
+      "github",
+      "developer workflow",
+      "productivity",
+      "programming",
+      "coding",
+      "project management",
+      "community",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToReviewPrsLikeAMaintainer",
+    "Name": "How to Review PRs Like a Maintainer",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how experienced maintainers review pull requests, spot potential issues early, provide useful feedback, and keep software projects healthy without slowing down development.",
+    "Img": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
+    "Url": "HowToReviewPrsLikeAMaintainer.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "software development",
+      "github",
+      "open source",
+      "developer workflow",
+      "productivity",
+      "programming",
+      "coding",
+      "code review",
+      "pull requests",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToTakePerfectScreenshotsForDocs",
+    "Name": "How to Take Perfect Screenshots for Docs",
+    "Author": "Core Lord",
+    "Desc": "Learn how to capture clean, professional screenshots for technical documentation, tutorials, and blog posts that improve readability, clarity, and user experience.",
+    "Img": "https://i.ibb.co/d4W6FkcN/1672155-0-86685800-1772626314-cw-M365-vs-Google-Workspace-2000px.webp",
+    "Url": "HowToTakePerfectScreenshotsForDocs.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation"
+    ],
+    "Tags": [
+      "documentation",
+      "developer workflow",
+      "productivity",
+      "technical writing",
+      "ui design",
+      "web development",
+      "screenshots",
+      "tutorials",
+      "coding",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToUseAiToWriteBetterDocs",
+    "Name": "How to Use AI to Write Better Docs",
+    "Author": "MyWrite",
+    "Desc": "Learn how developers can use AI tools effectively to create clear, structured, and maintainable documentation without sacrificing accuracy or quality.",
+    "Img": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+    "Url": "HowToUseAiToWriteBetterDocs.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "documentation",
+      "software development",
+      "developer workflow",
+      "productivity",
+      "writing",
+      "coding",
+      "technical writing",
+      "devtools",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWritePromptsThatDonTWasteTokens",
+    "Name": "How to Write Prompts That Don’t Waste Tokens",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical prompt engineering techniques that reduce token usage, lower AI costs, improve response quality, and make conversations with AI models more efficient.",
+    "Img": "https://images.unsplash.com/photo-1676299081847-824916de030a",
+    "Url": "HowToWritePromptsThatDonTWasteTokens.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Productivity",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "prompt engineering",
+      "llm",
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "developer tools",
+      "machine learning"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TerminalShortcutsThatMakeYou2xFaster",
+    "Name": "Terminal Shortcuts That Make You 2x Faster",
+    "Author": "MyWrite",
+    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
+    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
+    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "terminal",
+      "command line",
+      "developer tools",
+      "web development",
+      "linux"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
+    "Name": "What Are Web Components and Why Devs Are Using Them Again",
+    "Author": "Pro Bandey",
+    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Productivity"
+    ],
+    "Tags": [
+      "web components",
+      "frontend",
+      "javascript",
+      "html",
+      "css",
+      "web development",
+      "ui components",
+      "developer workflow",
+      "programming",
+      "coding",
+      "frameworks"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsGraphqlVsRestIn1Page",
+    "Name": "What Is GraphQL vs REST in 1 Page",
+    "Author": "Core Lord",
+    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "WhatIsGraphqlVsRestIn1Page.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "api",
+      "graphql",
+      "rest api",
+      "programming",
+      "coding",
+      "developer workflow",
+      "backend development",
+      "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsServerlessAndWhenItMakesSense",
+    "Name": "What Is Serverless and When It Makes Sense",
+    "Author": "Pro Bandey",
+    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
+    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
+    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "serverless",
+      "cloud computing",
+      "backend",
+      "web development",
+      "software development",
+      "aws",
+      "devops",
+      "programming",
+      "architecture",
+      "scalability"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
+    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
+    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "performance",
+      "core web vitals",
+      "software development",
+      "developer workflow",
+      "html",
+      "css",
+      "javascript",
+      "optimization",
+      "coding"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "AiHallucinationsWhatTheyAreAndHowToReduceThem",
     "Name": "AI Hallucinations: What They Are and How to Reduce Them",
     "Author": "MyWrite",
