@@ -1,0 +1,265 @@
+[
+  {
+    "Article": "EmailNewslettersForDevelopersWhatToSend",
+    "Name": "Email Newsletters for Developers: What to Send",
+    "Author": "MyWrite",
+    "Desc": "Learn what to include in a developer-focused email newsletter that people actually want to read. Discover content ideas, formatting tips, and strategies to grow engagement without overwhelming subscribers.",
+    "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "Url": "EmailNewslettersForDevelopersWhatToSend.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Developer Marketing",
+      "Content Creation",
+      "Developer Relations"
+    ],
+    "Tags": [
+      "developer newsletter",
+      "email marketing",
+      "developer content",
+      "devrel",
+      "programming newsletter",
+      "audience growth",
+      "content strategy",
+      "developer community",
+      "email subscribers",
+      "tech newsletter"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "FreeAiToolsWorthTryingThisMonth",
+    "Name": "Free AI Tools Worth Trying This Month",
+    "Author": "Pro Bandey",
+    "Desc": "Discover the best free AI tools worth trying this month for writing, coding, design, research, productivity, and content creation. Explore practical tools that can save time and improve your workflow.",
+    "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    "Url": "FreeAiToolsWorthTryingThisMonth.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Technology",
+      "Artificial Intelligence",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "ai tools",
+      "free ai tools",
+      "artificial intelligence",
+      "productivity tools",
+      "ai writing",
+      "ai coding",
+      "ai design",
+      "developer tools",
+      "chatgpt alternatives",
+      "ai software"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "GitCommandsYouLlUseDailyExplainedSimply",
+    "Name": "Git Commands You'll Use Daily, Explained Simply",
+    "Author": "Core Lord",
+    "Desc": "Learn the most useful Git commands that developers use every day. Understand what each command does, when to use it, and how it fits into a modern development workflow.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "GitCommandsYouLlUseDailyExplainedSimply.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "git",
+      "github",
+      "version control",
+      "git commands",
+      "developer workflow",
+      "coding",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToDebugLayoutShiftsLikeAPro",
+    "Name": "How to Debug Layout Shifts Like a Pro?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to identify, measure, and fix layout shifts that hurt user experience and Core Web Vitals. A practical guide for web developers who want stable, professional websites.",
+    "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "Url": "HowToDebugLayoutShiftsLikeAPro.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development"
+    ],
+    "Tags": [
+      "layout shift",
+      "cls",
+      "cumulative layout shift",
+      "core web vitals",
+      "web performance",
+      "frontend development",
+      "debugging",
+      "chrome devtools",
+      "css",
+      "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToRecordACleanDemoVideoOfYourApp",
+    "Name": "How to Record a Clean Demo Video of Your App",
+    "Author": "MyWrite",
+    "Desc": "Learn how to create professional app demo videos that clearly showcase your product, highlight key features, and help users, clients, and potential customers understand its value.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "HowToRecordACleanDemoVideoOfYourApp.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "developer tools",
+      "productivity",
+      "software development",
+      "coding",
+      "developer workflow",
+      "app demo",
+      "screen recording",
+      "product demo",
+      "video creation",
+      "programming"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "MainrouteCore",
+    "Name": "MainRoute Core",
+    "Author": "Core Lord",
+    "Desc": "A specialized technology powerhouse engineering high-performance Progressive Web Apps, native mobile experiences, and robust enterprise software.",
+    "Img": "../assets/social.png",
+    "Url": "MainrouteCore.json",
+    "Date": "05-06-2026",
+    "Cat": [],
+    "Tags": [
+      "MainRoute Core",
+      "MainRoute",
+      "MRC",
+      "MR Core"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsWebassemblyAndShouldYouLearnIt",
+    "Name": "What Is WebAssembly and Should You Learn It?",
+    "Author": "MyWrite",
+    "Desc": "Learn what WebAssembly (Wasm) is, how it works, its real-world use cases, advantages, limitations, and whether web developers should invest time learning it in 2026.",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "Url": "WhatIsWebassemblyAndShouldYouLearnIt.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Web Development",
+      "Developer Tools",
+      "Faq"
+    ],
+    "Tags": [
+      "web development",
+      "programming",
+      "developer tools",
+      "coding",
+      "software development",
+      "webassembly",
+      "wasm",
+      "javascript",
+      "performance",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhySmallOssToolsBeatBigFrameworKsSometimes",
+    "Name": "Why Small OSS Tools Beat Big Framewor?ks Sometimes",
+    "Author": "MyWrite",
+    "Desc": "Discover why small open-source software (OSS) tools can sometimes outperform large frameworks. Learn the benefits of simplicity, speed, maintainability, and developer productivity in modern software development.",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "Url": "WhySmallOssToolsBeatBigFrameworKsSometimes.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Technology",
+      "Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "open source",
+      "oss",
+      "frameworks",
+      "developer tools",
+      "software engineering",
+      "web development",
+      "programming",
+      "productivity",
+      "maintainability",
+      "lightweight tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ActivateIdmForLifetimeUse",
+    "Name": "Activate IDM For Lifetime Use",
+    "Author": "Pro Bandey",
+    "Desc": "IDM (Internet Download Manager) is a popular download manager known for its fast download speeds and enhanced features. This repository provides a method to activate IDM for a lifetime, allowing you to enjoy its full capabilities without limitations.",
+    "Img": "",
+    "Url": "ActivateIdmForLifetimeUse.json",
+    "Date": "04-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Faq",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "idm",
+      "idm-activate",
+      "idm-license",
+      "activate-idm",
+      "idm-pro"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "FreeUpSpaceFromOldWindowsUpdateFiles",
+    "Name": "Free Up Space From Old Windows Update Files",
+    "Author": "Core Lord",
+    "Desc": "",
+    "Img": "https://mainroute-core.github.io/src/social.png",
+    "Url": "FreeUpSpaceFromOldWindowsUpdateFiles.json",
+    "Date": "04-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Tip & Tricks"
+    ],
+    "Tags": [],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsWebScrapping",
+    "Name": "What Is Web Scrapping?",
+    "Author": "MR Intelligence",
+    "Desc": "Web scraping is the process of extracting data from websites",
+    "Img": "",
+    "Url": "WhatIsWebScrapping.json",
+    "Date": "04-06-2026",
+    "Cat": [
+      "Faq",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "Web",
+      "Faq",
+      "data",
+      "data collection"
+    ],
+    "Status": "Pub"
+  }
+]
