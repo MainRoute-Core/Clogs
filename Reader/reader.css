@@ -1,27 +1,28 @@
-:root {
-  --bg: #fafbfc;
-  --fg: #121417;
-  --bar: #eff2f6;
-  --input: #fff;
-  --border: #e1e6ea;
-  --primary: #2563eb;
-  --primary-fade: #e0e7ff;
-  --radius: 10px;
-  --shadow: 0 4px 20px rgba(0, 0, 0, .05);
-  --danger: #ef4444;
-  --transition: 0.2s ease-in-out;
+[data-theme="dark"] {
+  --bg-main: #16100f;
+  --bg-card: #211816;
+  --text-main: #fff5f4;
+  --text-muted: #c7a5a1;
+  --border: #3b2623;
+  --primary: #f44234;
+  --primary-hover: #ff5b4f;
+  --danger: #ff5a4e;
 }
 
-[data-theme="dark"] {
-  --bg: #0f172a;
-  --fg: #f8fafc;
-  --bar: #1e293b;
-  --input: #0f172a;
-  --border: #334155;
-  --primary: #3b82f6;
-  --primary-fade: #1e3a8a;
+[data-theme="light"] {
+  --bg-main: #faf7f7;
+  --bg-card: #ffffff;
+  --text-main: #2b1614;
+  --text-muted: #7a5c58;
+  --border: #ecd6d3;
+  --primary: #f44234;
+  --primary-hover: #e23729;
+  --danger: #d92f21;
+  --radius: 10px;
+  --transition: 0.2s ease-in-out;
   --shadow: 0 4px 20px rgba(0, 0, 0, .3);
 }
+
 
 * {
   box-sizing: border-box;
@@ -29,8 +30,8 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--fg);
+  background: var(--bg-main);
+  color: var(--text-main);
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -64,8 +65,8 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
   border: 1px solid var(--border);
-  background: var(--bar);
-  color: var(--fg);
+  background: var(--bg-card);
+  color: var(--text-main);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -97,7 +98,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 15px 20px;
-  background: var(--bar);
+  background: var(--bg-card);
   border-radius: var(--radius);
   border: 1px solid var(--border);
   margin-bottom: 25px;
@@ -110,7 +111,7 @@ body {
   gap: 8px;
   font-weight: 700;
   font-size: 1.25rem;
-  color: var(--fg);
+  color: var(--text-main);
   cursor: pointer;
 }
 
@@ -133,7 +134,7 @@ body {
 }
 
 .status-badge.remote {
-  background: var(--primary-fade);
+  background: var(--primary-hover);
   color: var(--primary);
 }
 
@@ -143,20 +144,20 @@ body {
   margin-bottom: 25px;
 }
 
-.search-input {
+.search--bg-card {
   width: 100%;
   padding: 12px 20px 12px 45px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: var(--input);
-  color: var(--fg);
+  background: var(--bg-card);
+  color: var(--text-main);
   font-size: 1rem;
   outline: none;
   box-shadow: var(--shadow);
   transition: var(--transition);
 }
 
-.search-input:focus {
+.search--bg-card:focus {
   border-color: var(--primary);
 }
 
@@ -165,7 +166,7 @@ body {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--fg);
+  color: var(--text-main);
   opacity: 0.6;
 }
 
@@ -200,7 +201,7 @@ body {
 }
 
 .sidebar-card {
-  background: var(--bar);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 20px;
@@ -213,7 +214,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 15px;
-  color: var(--fg);
+  color: var(--text-main);
   opacity: 0.8;
   display: flex;
   align-items: center;
@@ -238,7 +239,7 @@ body {
   font-size: 0.9rem;
   cursor: pointer;
   transition: var(--transition);
-  color: var(--fg);
+  color: var(--text-main);
   opacity: 0.85;
 }
 
@@ -276,8 +277,8 @@ body {
 
 .filter-count {
   font-size: 0.75rem;
-  background: var(--input);
-  color: var(--fg);
+  background: var(--bg-card);
+  color: var(--text-main);
   padding: 2px 6px;
   border-radius: 12px;
   border: 1px solid var(--border);
@@ -290,7 +291,7 @@ body {
 }
 
 [data-theme="dark"] .filter-item.active .filter-count {
-  background: var(--primary-fade);
+  background: var(--primary-hover);
   color: var(--primary);
 }
 
@@ -320,7 +321,7 @@ body {
 
 /* POST CARDS */
 .post-card {
-  background: var(--bar);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -396,7 +397,7 @@ body {
   font-weight: 700;
   margin: 0 0 10px 0;
   line-height: 1.3;
-  color: var(--fg);
+  color: var(--text-main);
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -429,7 +430,7 @@ body {
   font-size: 0.75rem;
   padding: 4px 8px;
   border-radius: 12px;
-  background: var(--input);
+  background: var(--bg-card);
   border: 1px solid var(--border);
   opacity: 0.9;
   cursor: pointer;
@@ -445,7 +446,7 @@ body {
 
 /* Interactive Authors */
 .clickable-author {
-  color: var(--fg);
+  color: var(--text-main);
   cursor: pointer;
   font-weight: 500;
   transition: color var(--transition);
@@ -458,7 +459,7 @@ body {
 /* READER PANE */
 .reader-pane {
   display: none;
-  background: var(--bg);
+  background: var(--bg-main);
 }
 
 .reader-pane.active {
@@ -468,7 +469,7 @@ body {
 .clog-container {
   max-width: 850px;
   margin: 0 auto;
-  background: var(--input);
+  background: var(--bg-card);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -507,7 +508,7 @@ body {
   line-height: 1.2;
   margin: 0 0 20px 0;
   font-weight: 700;
-  color: var(--fg);
+  color: var(--text-main);
 }
 
 .clog-meta {
@@ -522,7 +523,7 @@ body {
 .clog-meta-sub {
   display: flex;
   gap: 20px;
-  color: var(--fg);
+  color: var(--text-main);
   opacity: 0.7;
   font-size: 0.95rem;
 }
@@ -539,8 +540,8 @@ body {
 }
 
 .clog-tags span {
-  background: var(--primary-fade);
-  color: var(--primary);
+  background: var(--border);
+  color: var(--text-muted);
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -576,30 +577,26 @@ body {
 /* Custom Github Markdown Overrides */
 [data-theme="dark"] .markdown-body pre,
 [data-theme="dark"] .markdown-body code {
-  background-color: #1e293b !important;
-  border: 1px solid #334155;
+  background-color: var(--border);
+  border: 1px solid var(--color-attention-subtle);
 }
 
 [data-theme="dark"] .markdown-body table tr {
-  background-color: #0f172a !important;
-  border-top-color: #334155 !important;
+  background-color: var(--color-border-default) !important;
+  border-top-color: var(--color-canvas-subtle) !important;
 }
 
 [data-theme="dark"] .markdown-body table tr:nth-child(2n) {
-  background-color: #1e293b !important;
+  background-color: var(--color-canvas-subtle) !important;
 }
 
 [data-theme="dark"] .markdown-body table td,
 [data-theme="dark"] .markdown-body table th {
-  border-color: #334155 !important;
+  border-color: var(--color-fg-muted) !important;
 }
 
-[data-theme="dark"] .markdown-body blockquote {
-  color: #94a3b8 !important;
-  border-left-color: #334155 !important;
-}
 
 [data-theme="dark"] .markdown-body h1,
 [data-theme="dark"] .markdown-body h2 {
-  border-bottom-color: #334155 !important;
+  border-bottom-color: var(--border) !important;
 }
