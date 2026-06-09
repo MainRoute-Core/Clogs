@@ -144,7 +144,7 @@ body {
   margin-bottom: 25px;
 }
 
-.search--bg-card {
+.search-input {
   width: 100%;
   padding: 12px 20px 12px 45px;
   border-radius: var(--radius);
@@ -157,7 +157,7 @@ body {
   transition: var(--transition);
 }
 
-.search--bg-card:focus {
+.search-input:focus {
   border-color: var(--primary);
 }
 
