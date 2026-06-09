@@ -5,7 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta name="theme-color" content="#181c24" />
+  <meta name="title" content="Clog Builder - JSON Markdown Blog Editor">
+  <meta name="description" content="Create Markdown blog posts, preview content, export structured JSON payloads, upload images and sync directly to GitHub.">
+  <meta name="keywords" content="markdown editor,json editor,blog builder,github blog editor,markdown preview,content management,pwa">
+  <meta name="author" content="Core Lord">
+  <meta name="robots" content="index,follow">
+  <meta name="application-name" content="Clog Builder">
+
+  <meta name="theme-color" content="#f44234">
+  <meta name="color-scheme" content="dark light">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Clog Builder">
+
+  <script> if ('serviceWorker' in navigator) { window.addEventListener('load', () => { navigator.serviceWorker.register('./sw.js'); }); }
+  </script>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="canonical" href="https://mainroute-core.github.io/Clogs/Builder">
+  <link rel="shortcut icon" type="image/x-icon" sizes="any" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/src/16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/src/32.png">
+  <link rel="icon" type="image/png" sizes="144x144" href="/src/144.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/src/192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/src/512.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/src/apple-touch-icon.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/src/apple-touch-167.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/src/apple-touch-152.png">
+  <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/src/apple-touch-120.png">
 
 
   <script src="libs/marked.min.js"></script>
@@ -253,8 +280,7 @@
             <use href="icons.svg#icon-note"></use>
           </svg>
         </button>
-        <button class="toolbar-btn" onclick="toggleCallout('warning')" title="Warning Callout (Ctrl+Shift+&#63;
-        )">
+        <button class="toolbar-btn" onclick="toggleCallout('warning')" title="Warning Callout (Ctrl+Shift+&#63;)">
           <svg class="icon">
             <use href="icons.svg#icon-warning"></use>
           </svg>
@@ -397,6 +423,319 @@
           <use href="icons.svg#icon-close"></use>
         </svg>
       </button>
+    </div>
+    <div class="side-panel-body">
+    
+      <!-- App Info -->
+      <div class="info-card">
+        <div class="info-title">
+          <svg class="icon">
+            <use href="icons.svg#icon-note"></use>
+          </svg>
+          <span>Clog Builder</span>
+        </div>
+    
+        <p class="info-desc">
+          JSON-powered Markdown blog editor for creating, previewing,
+          exporting and syncing blog posts directly to GitHub repositories.
+        </p>
+      </div>
+    
+      <!-- Features -->
+      <div class="info-card">
+        <div class="info-title">
+          <svg class="icon">
+            <use href="icons.svg#icon-settings"></use>
+          </svg>
+          <span>Features</span>
+        </div>
+    
+        <ul class="info-list">
+          <li>Markdown Editor</li>
+          <li>Live Preview</li>
+          <li>JSON Export</li>
+          <li>GitHub Sync</li>
+          <li>Image Upload</li>
+          <li>Dark / Light Theme</li>
+        </ul>
+      </div>
+    
+      <!-- Shortcuts -->
+      <div class="info-card">
+
+      </div>
+        <div class="shortcut-table-wrap">
+          <div class="table-title">
+          <svg class="icon">
+            <use href="icons.svg#icon-keyboard"></use>
+          </svg>
+          <span>Keyboard Shortcuts</span>
+        </div>
+          <table class="shortcut-table">
+            <thead style="position: sticky; top: 49px;">
+              <tr>
+                <th>Action</th>
+                <th>Key</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+              <!-- App -->
+
+              <tr>
+                <td>Toggle Theme</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd></td>
+                <td>Switch between light and dark theme</td>
+              </tr>
+
+              <tr>
+                <td>Open Info</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd></td>
+                <td>Open information drawer</td>
+              </tr>
+
+              <tr>
+                <td>Open Settings</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd></td>
+                <td>Open configuration panel</td>
+              </tr>
+
+              <tr>
+                <td>Toggle Metadata</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>M</kbd></td>
+                <td>Expand or collapse metadata section</td>
+              </tr>
+
+              <!-- Tabs -->
+
+              <tr>
+                <td>Editor Tab</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>E</kbd></td>
+                <td>Switch to markdown editor</td>
+              </tr>
+
+              <tr>
+                <td>Preview Tab</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></td>
+                <td>Switch to preview mode</td>
+              </tr>
+
+              <tr>
+                <td>JSON Output Tab</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>J</kbd></td>
+                <td>View generated JSON payload</td>
+              </tr>
+
+              <!-- File Actions -->
+
+              <tr>
+                <td>Copy Output</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>C</kbd></td>
+                <td>Copy JSON output</td>
+              </tr>
+
+              <tr>
+                <td>Download File</td>
+                <td><kbd>Ctrl</kbd> + <kbd>S</kbd></td>
+                <td>Download generated JSON file</td>
+              </tr>
+
+              <tr>
+                <td>Push Sync</td>
+                <td><kbd>Ctrl</kbd> + <kbd>P</kbd></td>
+                <td>Push post directly to GitHub</td>
+              </tr>
+
+              <tr>
+                <td>Clear Workspace</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd></td>
+                <td>Reset editor and metadata fields</td>
+              </tr>
+
+              <!-- Uploads -->
+
+              <tr>
+                <td>Banner Upload</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd></td>
+                <td>Upload banner image</td>
+              </tr>
+
+              <tr>
+                <td>Insert Image</td>
+                <td><kbd>Ctrl</kbd> + <kbd>G</kbd></td>
+                <td>Upload image into markdown content</td>
+              </tr>
+
+              <!-- Formatting -->
+
+              <tr>
+                <td>Bold</td>
+                <td><kbd>Ctrl</kbd> + <kbd>B</kbd></td>
+                <td>Toggle bold text</td>
+              </tr>
+
+              <tr>
+                <td>Italic</td>
+                <td><kbd>Ctrl</kbd> + <kbd>I</kbd></td>
+                <td>Toggle italic text</td>
+              </tr>
+
+              <tr>
+                <td>Highlight</td>
+                <td><kbd>Ctrl</kbd> + <kbd>H</kbd></td>
+                <td>Highlight selected text</td>
+              </tr>
+
+              <tr>
+                <td>Inline Code</td>
+                <td><kbd>Ctrl</kbd> + <kbd>`</kbd></td>
+                <td>Wrap selection with inline code</td>
+              </tr>
+
+              <tr>
+                <td>Code Block</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&lt;</kbd></td>
+                <td>Insert fenced code block</td>
+              </tr>
+
+              <!-- Headings -->
+
+              <tr>
+                <td>Heading 1</td>
+                <td><kbd>Ctrl</kbd> + <kbd>1</kbd></td>
+                <td>Insert H1 heading</td>
+              </tr>
+
+              <tr>
+                <td>Heading 2</td>
+                <td><kbd>Ctrl</kbd> + <kbd>2</kbd></td>
+                <td>Insert H2 heading</td>
+              </tr>
+
+              <tr>
+                <td>Heading 3</td>
+                <td><kbd>Ctrl</kbd> + <kbd>3</kbd></td>
+                <td>Insert H3 heading</td>
+              </tr>
+
+              <tr>
+                <td>Heading 4</td>
+                <td><kbd>Ctrl</kbd> + <kbd>4</kbd></td>
+                <td>Insert H4 heading</td>
+              </tr>
+
+              <tr>
+                <td>Heading 5</td>
+                <td><kbd>Ctrl</kbd> + <kbd>5</kbd></td>
+                <td>Insert H5 heading</td>
+              </tr>
+
+              <tr>
+                <td>Heading 6</td>
+                <td><kbd>Ctrl</kbd> + <kbd>6</kbd></td>
+                <td>Insert H6 heading</td>
+              </tr>
+
+              <!-- Lists -->
+
+              <tr>
+                <td>Bullet List</td>
+                <td><kbd>Ctrl</kbd> + <kbd>U</kbd></td>
+                <td>Create unordered list</td>
+              </tr>
+
+              <tr>
+                <td>Numbered List</td>
+                <td><kbd>Ctrl</kbd> + <kbd>O</kbd></td>
+                <td>Create ordered list</td>
+              </tr>
+
+              <tr>
+                <td>Task List</td>
+                <td><kbd>Ctrl</kbd> + <kbd>[</kbd></td>
+                <td>Create checklist items</td>
+              </tr>
+
+              <!-- Alignment -->
+
+              <tr>
+                <td>Align Left</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd></td>
+                <td>Wrap content in left-aligned container</td>
+              </tr>
+
+              <tr>
+                <td>Align Center</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+                <td>Wrap content in centered container</td>
+              </tr>
+
+              <tr>
+                <td>Align Right</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></td>
+                <td>Wrap content in right-aligned container</td>
+              </tr>
+
+              <!-- Blocks -->
+
+              <tr>
+                <td>Block Quote</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>"</kbd></td>
+                <td>Insert blockquote</td>
+              </tr>
+
+              <tr>
+                <td>Note Callout</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>!</kbd></td>
+                <td>Insert note callout block</td>
+              </tr>
+
+              <tr>
+                <td>Warning Callout</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>?</kbd></td>
+                <td>Insert warning callout block</td>
+              </tr>
+
+              <!-- Inserts -->
+
+              <tr>
+                <td>Insert Link</td>
+                <td><kbd>Ctrl</kbd> + <kbd>K</kbd></td>
+                <td>Insert markdown hyperlink</td>
+              </tr>
+
+              <tr>
+                <td>Insert Table</td>
+                <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\</kbd></td>
+                <td>Insert markdown table template</td>
+              </tr>
+
+              <tr>
+                <td>Horizontal Rule</td>
+                <td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
+                <td>Insert separator line</td>
+              </tr>
+
+              <!-- Indentation -->
+
+              <tr>
+                <td>Indent</td>
+                <td><kbd>Tab</kbd></td>
+                <td>Indent selected lines</td>
+              </tr>
+
+              <tr>
+                <td>Outdent</td>
+                <td><kbd>Shift</kbd> + <kbd>Tab</kbd></td>
+                <td>Remove indentation</td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+    
     </div>
   </div>
 

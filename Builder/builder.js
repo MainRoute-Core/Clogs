@@ -219,7 +219,7 @@ function getOutputJSON() {
 
 function updatePreview() {
     const data = getOutputJSON();
-    document.getElementById('prev-img').src = data.Img || 'social.png';
+    document.getElementById('prev-img').src = data.Img || 'preview.png';
     document.getElementById('prev-title').innerText = data.Title || "Untitled Post";
     document.getElementById('prev-date').innerText = data.Date; document.getElementById('prev-author').innerText = data.Author;
     document.getElementById('prev-cat').innerHTML = data.Categories.map(c => `<span class="cat-badge">${c}</span>`).join('');

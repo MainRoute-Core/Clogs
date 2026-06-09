@@ -1,0 +1,106 @@
+{
+  "name": "Clog Builder",
+  "short_name": "Clog Builder",
+  "description": "JSON Markdown Blog Editor with Preview, GitHub Sync, Image Upload and Export.",
+  "id": "/Clogs/Builder/",
+  "start_url": "/Clogs/Builder/",
+  "scope": "/Clogs/Builder/",
+  "dir": "auto",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#16100f",
+  "theme_color": "#f44234",
+  "lang": "en",
+  "categories": [
+    "developer",
+    "developer tools",
+    "development",
+    "productivity",
+    "utilities"
+  ],
+
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "./&tar=%s"
+    }
+  ],
+
+  "edge_side_panel": {},
+
+  "prefer_related_applications": false,
+
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/src/16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/maskable-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/src/192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/src/512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/src/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+
+  "screenshots": [
+    {
+      "src": "./social.png",
+      "form_factor": "wide",
+      "sizes": "1440x810",
+      "type": "image/png",
+      "description": "ScreenShot Of Site's Upper Part."
+    },
+    {
+      "src": "./social_2.png",
+      "sizes": "720x1440",
+      "type": "image/png",
+      "description": "ScreenShot Of Site's Upper Part."
+    }
+  ]
+}

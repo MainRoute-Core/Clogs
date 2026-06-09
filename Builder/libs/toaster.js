@@ -1,5 +1,5 @@
 window.UniversalToasterConfig = {
-  backgroundColor: "#000", // e.g. "#333" or null
+  backgroundColor: "var(--danger)", // e.g. "#333" or null
   textColor: "#fff", // e.g. "#fff" or null
 
   fontFamily: "inherit", // Uses page font
