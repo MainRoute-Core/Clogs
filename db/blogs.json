@@ -1,5 +1,475 @@
 [
   {
+    "Article": "AiHallucinationsWhatTheyAreAndHowToReduceThem",
+    "Name": "AI Hallucinations: What They Are and How to Reduce Them",
+    "Author": "MyWrite",
+    "Desc": "Learn what AI hallucinations are, why they happen, their real-world risks, and practical techniques developers, creators, and businesses can use to reduce inaccurate AI-generated content.",
+    "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    "Url": "AiHallucinationsWhatTheyAreAndHowToReduceThem.json",
+    "Date": "07-06-2026",
+    "Cat": ["Technology", "Developer Tools", "Artificial Intelligence"],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "ai hallucinations",
+      "llm",
+      "machine learning",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development",
+      "ai safety"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "BuildingAContactFormThatActuallyAvoidsSpam",
+    "Name": "Building a Contact Form That Actually Avoids Spam",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical techniques to build a contact form that reduces spam, protects your inbox, and maintains a smooth user experience without frustrating legitimate visitors.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "BuildingAContactFormThatActuallyAvoidsSpam.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "contact form",
+      "security",
+      "spam prevention",
+      "javascript",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "FineTuningVsPromptEngineeringWhichShouldYouPick",
+    "Name": "Fine-Tuning vs Prompt Engineering: Which Should You Pick?",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the differences between fine-tuning and prompt engineering, their advantages, limitations, costs, and how to choose the right approach for your AI project in 2026.",
+    "Img": "https://images.unsplash.com/photo-1770233621425-5d9ee7a0a700",
+    "Url": "FineTuningVsPromptEngineeringWhichShouldYouPick.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Tools",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "machine learning",
+      "llm",
+      "prompt engineering",
+      "fine tuning",
+      "developer tools",
+      "programming",
+      "software development",
+      "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "FromFigmaToCodeAPracticalHandoffChecklist",
+    "Name": "From Figma to Code: A Practical Handoff Checklist",
+    "Author": "Core Lord",
+    "Desc": "Learn how designers and developers can work together effectively using a practical Figma-to-code handoff checklist that reduces confusion, speeds up development, and improves product quality.",
+    "Img": "https://images.unsplash.com/photo-1606161290889-77950cfb67d3",
+    "Url": "FromFigmaToCodeAPracticalHandoffChecklist.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "developer workflow",
+      "productivity",
+      "figma",
+      "ui design",
+      "frontend development",
+      "coding",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HostingAStaticSiteForFreeIn2026",
+    "Name": "Hosting a Static Site for Free in 2026",
+    "Author": "Pro Bandey",
+    "Desc": "Learn the best ways to host a static website for free in 2026. Compare popular platforms, understand their limitations, and choose the right solution for personal projects, portfolios, blogs, and documentation sites.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "HostingAStaticSiteForFreeIn2026.json",
+    "Date": "07-06-2026",
+    "Cat": ["Web Development", "Developer Tools", "Open Source"],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "hosting",
+      "static site",
+      "github",
+      "deployment",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToAnswerWhatDoesADeveloperDo",
+    "Name": "How to Answer “What Does a Developer Do?”",
+    "Author": "Pro Bandey",
+    "Desc": "A simple and practical explanation of what developers do, the different types of developers, and how software developers create websites, apps, and digital products that people use every day.",
+    "Img": "https://images.unsplash.com/photo-1623479322729-28b25c16b011",
+    "Url": "HowToAnswerWhatDoesADeveloperDo.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "programming",
+      "coding",
+      "web development",
+      "developer workflow",
+      "productivity",
+      "career",
+      "developer tools",
+      "technology",
+      "learning"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToBackupYourCodeAutomatically",
+    "Name": "How to Backup Your Code Automatically",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to automatically back up your code using Git, cloud services, CI/CD workflows, and best practices that protect your projects from data loss and accidental mistakes.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToBackupYourCodeAutomatically.json",
+    "Date": "07-06-2026",
+    "Cat": ["Tutorial", "Developer Tools", "Developer Productivity"],
+    "Tags": [
+      "developer tools",
+      "productivity",
+      "git",
+      "github",
+      "backup",
+      "version control",
+      "coding",
+      "programming",
+      "software development",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToContributeDocumentationEvenIfYouDonTCode",
+    "Name": "How to Contribute Documentation Even If You Don’t Code",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to contribute to open source projects by improving documentation, fixing guides, writing tutorials, and helping users—even if you don't write code.",
+    "Img": "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    "Url": "HowToContributeDocumentationEvenIfYouDonTCode.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Relations"
+    ],
+    "Tags": [
+      "software development",
+      "developer workflow",
+      "productivity",
+      "open source",
+      "github",
+      "documentation",
+      "coding",
+      "programming",
+      "developer tools",
+      "community"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToUseChromeDevtoolsBeyondConsoleLog",
+    "Name": "How to Use Chrome DevTools Beyond `console.log`",
+    "Author": "Pro Bandey",
+    "Desc": "Learn powerful Chrome DevTools features that go far beyond console.log, including network analysis, performance profiling, debugging, accessibility checks, and advanced frontend troubleshooting.",
+    "Img": "https://images.unsplash.com/photo-1484417894907-623942c8ee29",
+    "Url": "HowToUseChromeDevtoolsBeyondConsoleLog.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Productivity",
+      "Developer Tools",
+      "Open Source"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "chrome devtools",
+      "javascript",
+      "debugging",
+      "developer workflow",
+      "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToValidateAnIdeaBeforeWritingCode",
+    "Name": "How to Validate an Idea Before Writing Code",
+    "Author": "Core Lord",
+    "Desc": "Learn practical ways to validate a startup, SaaS, app, or side-project idea before spending weeks or months building something nobody wants.",
+    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "Url": "HowToValidateAnIdeaBeforeWritingCode.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "startups",
+      "business",
+      "validation",
+      "saas",
+      "programming",
+      "coding",
+      "product development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWriteCleanCommitMessagesThatTeamsLove",
+    "Name": "How to Write Clean Commit Messages That Teams Love?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to write clear, consistent Git commit messages that improve collaboration, simplify code reviews, and make project history easier to understand.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToWriteCleanCommitMessagesThatTeamsLove.json",
+    "Date": "07-06-2026",
+    "Cat": ["Developer Tools", "Developer Productivity"],
+    "Tags": [
+      "git",
+      "github",
+      "version control",
+      "git commands",
+      "developer workflow",
+      "coding",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
+    "Name": "Product vs Project Mindset: The Shift That Changes Everything",
+    "Author": "MyWrite",
+    "Desc": "Learn the difference between a project mindset and a product mindset, why the distinction matters, and how adopting a product-focused approach can lead to better software, happier users, and long-term success.",
+    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "Url": "ProductVsProjectMindsetTheShiftThatChangesEverything.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "product development",
+      "project management",
+      "startups",
+      "developer tools",
+      "business"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ProgressiveWebAppsIn2026StillRelevant",
+    "Name": "Progressive Web Apps in 2026: Still Relevant?",
+    "Author": "Core Lord",
+    "Desc": "Explore the current state of Progressive Web Apps (PWAs) in 2026, their advantages, limitations, real-world use cases, and whether they remain a smart choice for modern web development.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "ProgressiveWebAppsIn2026StillRelevant.json",
+    "Date": "07-06-2026",
+    "Cat": ["Web Development", "Developer Tools"],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "progressive web apps",
+      "pwa",
+      "service workers",
+      "web performance",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": ["Software Development", "Developer Productivity"],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreServiceWorkersInSimpleTerms",
+    "Name": "What Are Service Workers in Simple Terms?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
+    "Date": "07-06-2026",
+    "Cat": ["Tutorial", "Web Development", "Developer Tools"],
+    "Tags": [
+      "eb development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "service workers",
+      "pwa",
+      "web performance",
+      "javascript",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
+    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
+    "Author": "Core Lord",
+    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
+    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
+    "Date": "07-06-2026",
+    "Cat": ["Tutorial", "Web Development", "Software Development"],
+    "Tags": [
+      "web development",
+      "software development",
+      "programming",
+      "coding",
+      "javascript",
+      "react",
+      "vue",
+      "svelte",
+      "frontend development",
+      "performance"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatLaptopShouldAWebDeveloperBuyIn2026",
+    "Name": "What Laptop Should a Web Developer Buy in 2026?",
+    "Author": "M Ramzan Ch",
+    "Desc": "Choosing a laptop for web development in 2026 can be overwhelming. This guide explains what specifications matter, what to avoid, and how to choose the right laptop based on your budget and workflow.",
+    "Img": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    "Url": "WhatLaptopShouldAWebDeveloperBuyIn2026.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Productivity",
+      "Developer Tools",
+      "Content Creation"
+    ],
+    "Tags": [
+      "software development",
+      "developer tools",
+      "programming",
+      "coding",
+      "web development",
+      "laptop",
+      "developer workflow",
+      "productivity",
+      "hardware",
+      "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WritingErrorMessagesUsersActuallyUnderstand",
+    "Name": "Writing Error Messages Users Actually Understand",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to write clear, helpful, and user-friendly error messages that reduce frustration, improve usability, and help people solve problems faster.",
+    "Img": "https://images.unsplash.com/photo-1623018035782-b269248df916",
+    "Url": "WritingErrorMessagesUsersActuallyUnderstand.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "web development",
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "user experience",
+      "ux",
+      "accessibility",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "EmailNewslettersForDevelopersWhatToSend",
     "Name": "Email Newsletters for Developers: What to Send",
     "Author": "MyWrite",
@@ -7,11 +477,7 @@
     "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
     "Url": "EmailNewslettersForDevelopersWhatToSend.json",
     "Date": "05-06-2026",
-    "Cat": [
-      "Developer Marketing",
-      "Content Creation",
-      "Developer Relations"
-    ],
+    "Cat": ["Developer Marketing", "Content Creation", "Developer Relations"],
     "Tags": [
       "developer newsletter",
       "email marketing",
@@ -29,16 +495,12 @@
   {
     "Article": "FreeAiToolsWorthTryingThisMonth",
     "Name": "Free AI Tools Worth Trying This Month",
-    "Author": "Pro Bandey",
+    "Author": "MyWrite",
     "Desc": "Discover the best free AI tools worth trying this month for writing, coding, design, research, productivity, and content creation. Explore practical tools that can save time and improve your workflow.",
     "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
     "Url": "FreeAiToolsWorthTryingThisMonth.json",
     "Date": "05-06-2026",
-    "Cat": [
-      "Technology",
-      "Artificial Intelligence",
-      "Tip & Tricks"
-    ],
+    "Cat": ["Technology", "Artificial Intelligence", "Tip & Tricks"],
     "Tags": [
       "ai tools",
       "free ai tools",
@@ -61,10 +523,7 @@
     "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
     "Url": "GitCommandsYouLlUseDailyExplainedSimply.json",
     "Date": "05-06-2026",
-    "Cat": [
-      "Developer Tools",
-      "Developer Productivity"
-    ],
+    "Cat": ["Developer Tools", "Developer Productivity"],
     "Tags": [
       "git",
       "github",
@@ -87,10 +546,7 @@
     "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
     "Url": "HowToDebugLayoutShiftsLikeAPro.json",
     "Date": "05-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development"
-    ],
+    "Cat": ["Tutorial", "Web Development"],
     "Tags": [
       "layout shift",
       "cls",
@@ -141,28 +597,19 @@
     "Img": "../assets/social.png",
     "Url": "MainrouteCore.json",
     "Date": "05-06-2026",
-    "Cat": [],
-    "Tags": [
-      "MainRoute Core",
-      "MainRoute",
-      "MRC",
-      "MR Core"
-    ],
+    "Cat": ["Technology", "Open Source", "Bussiness", "Faq"],
+    "Tags": ["MainRoute Core", "MainRoute", "MRC", "MR Core"],
     "Status": "Pub"
   },
   {
     "Article": "WhatIsWebassemblyAndShouldYouLearnIt",
     "Name": "What Is WebAssembly and Should You Learn It?",
-    "Author": "MyWrite",
+    "Author": "Pro Bandey",
     "Desc": "Learn what WebAssembly (Wasm) is, how it works, its real-world use cases, advantages, limitations, and whether web developers should invest time learning it in 2026.",
     "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
     "Url": "WhatIsWebassemblyAndShouldYouLearnIt.json",
     "Date": "05-06-2026",
-    "Cat": [
-      "Web Development",
-      "Developer Tools",
-      "Faq"
-    ],
+    "Cat": ["Web Development", "Developer Tools", "Faq"],
     "Tags": [
       "web development",
       "programming",
@@ -179,17 +626,13 @@
   },
   {
     "Article": "WhySmallOssToolsBeatBigFrameworKsSometimes",
-    "Name": "Why Small OSS Tools Beat Big Framewor?ks Sometimes",
-    "Author": "MyWrite",
+    "Name": "Why Small OSS Tools Beat Big Frameworks Sometimes?",
+    "Author": "Pro Bandey",
     "Desc": "Discover why small open-source software (OSS) tools can sometimes outperform large frameworks. Learn the benefits of simplicity, speed, maintainability, and developer productivity in modern software development.",
     "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
     "Url": "WhySmallOssToolsBeatBigFrameworKsSometimes.json",
     "Date": "05-06-2026",
-    "Cat": [
-      "Technology",
-      "Productivity",
-      "Open Source"
-    ],
+    "Cat": ["Technology", "Productivity", "Open Source"],
     "Tags": [
       "open source",
       "oss",
@@ -201,64 +644,6 @@
       "productivity",
       "maintainability",
       "lightweight tools"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "ActivateIdmForLifetimeUse",
-    "Name": "Activate IDM For Lifetime Use",
-    "Author": "Pro Bandey",
-    "Desc": "IDM (Internet Download Manager) is a popular download manager known for its fast download speeds and enhanced features. This repository provides a method to activate IDM for a lifetime, allowing you to enjoy its full capabilities without limitations.",
-    "Img": "",
-    "Url": "ActivateIdmForLifetimeUse.json",
-    "Date": "04-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Faq",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "idm",
-      "idm-activate",
-      "idm-license",
-      "activate-idm",
-      "idm-pro"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "FreeUpSpaceFromOldWindowsUpdateFiles",
-    "Name": "Free Up Space From Old Windows Update Files",
-    "Author": "Core Lord",
-    "Desc": "",
-    "Img": "https://mainroute-core.github.io/src/social.png",
-    "Url": "FreeUpSpaceFromOldWindowsUpdateFiles.json",
-    "Date": "04-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Tip & Tricks"
-    ],
-    "Tags": [],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsWebScrapping",
-    "Name": "What Is Web Scrapping?",
-    "Author": "MR Intelligence",
-    "Desc": "Web scraping is the process of extracting data from websites",
-    "Img": "",
-    "Url": "WhatIsWebScrapping.json",
-    "Date": "04-06-2026",
-    "Cat": [
-      "Faq",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "Web",
-      "Faq",
-      "data",
-      "data collection"
     ],
     "Status": "Pub"
   }
