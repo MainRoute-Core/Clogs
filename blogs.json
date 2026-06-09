@@ -1,5 +1,63 @@
 [
   {
+    "Article": "HowToBuildYourFirstResponsiveNavbarWithFlexbox",
+    "Name": "How to Build Your First Responsive Navbar with Flexbox",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to create a simple, responsive navigation bar using CSS Flexbox. This beginner-friendly guide covers layout structure, responsiveness, and common Flexbox techniques used in modern websites.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "HowToBuildYourFirstResponsiveNavbarWithFlexbox.json",
+    "Date": "09-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Tools",
+      "Content Creation",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "css",
+      "flexbox",
+      "responsive design",
+      "frontend",
+      "html",
+      "javascript",
+      "coding",
+      "programming",
+      "ui design"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToNameVariablesSoFutureYouThanksYou",
+    "Name": "How to Name Variables So Future-You Thanks You",
+    "Author": "MyWrite",
+    "Desc": "earn practical variable naming techniques that make code easier to read, maintain, and debug. Discover naming patterns that help teams move faster and reduce confusion.",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "Url": "HowToNameVariablesSoFutureYouThanksYou.json",
+    "Date": "09-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "coding",
+      "programming",
+      "clean code",
+      "developer workflow",
+      "javascript",
+      "code quality",
+      "best practices",
+      "productivity",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "BootstrappedVsFundedWhatNoOneTellsYou",
     "Name": "Bootstrapped vs Funded: What No One Tells You",
     "Author": "Pro Bandey",
