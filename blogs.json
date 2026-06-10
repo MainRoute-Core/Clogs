@@ -1,5 +1,205 @@
 [
   {
+    "Article": "AccessibleButtonsTheDetailsThatMatter",
+    "Name": "Accessible Buttons: The Details That Matter",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to create accessible buttons that work for everyone. Discover common mistakes, accessibility best practices, keyboard support, and design considerations for modern web applications.",
+    "Img": "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e",
+    "Url": "AccessibleButtonsTheDetailsThatMatter.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "accessibility",
+      "web development",
+      "frontend",
+      "html",
+      "css",
+      "javascript",
+      "ui design",
+      "user experience",
+      "coding",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToEvaluateIfAnAiToolIsActuallyGood",
+    "Name": "How to Evaluate if an AI Tool Is Actually Good",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to evaluate AI tools beyond marketing claims. Discover practical criteria for accuracy, reliability, usability, privacy, and real-world usefulness before adding an AI tool to your workflow.",
+    "Img": "https://images.unsplash.com/photo-1664575602276-acd073f104c1",
+    "Url": "HowToEvaluateIfAnAiToolIsActuallyGood.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "developer tools",
+      "software development",
+      "automation",
+      "machine learning",
+      "workflow",
+      "technology",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToFindYourFirstOpenSourceIssue",
+    "Name": "How to Find Your First Open Source Issue",
+    "Author": "Pro Bandey",
+    "Desc": "Learn practical ways to find beginner-friendly open source issues, understand project workflows, and make your first contribution with confidence.",
+    "Img": "https://images.unsplash.com/photo-1618477388954-7852f32655ec",
+    "Url": "HowToFindYourFirstOpenSourceIssue.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "open source",
+      "github",
+      "software development",
+      "coding",
+      "programming",
+      "developer workflow",
+      "contribution",
+      "github issues",
+      "productivity",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToSayNoToFeatureRequestsPolitely",
+    "Name": "How to Say No to Feature Requests Politely",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to decline feature requests professionally while maintaining good relationships with users, customers, and stakeholders. Discover practical communication strategies that protect your product vision.",
+    "Img": "https://images.unsplash.com/photo-1507099985932-87a4520ed1d5",
+    "Url": "HowToSayNoToFeatureRequestsPolitely.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Relations",
+      "Bussines"
+    ],
+    "Tags": [
+      "product management",
+      "software development",
+      "developer workflow",
+      "startup",
+      "saas",
+      "customer feedback",
+      "communication",
+      "product strategy",
+      "productivity",
+      "user experience"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToTestOpenSourceContributionsLocally",
+    "Name": "How to Test Open Source Contributions Locally",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to safely test open source contributions on your own machine before submitting a pull request. Discover practical workflows that help you catch issues early and improve your chances of getting merged.",
+    "Img": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
+    "Url": "HowToTestOpenSourceContributionsLocally.json",
+    "Date": "10-06-2026",
+    "Cat": [],
+    "Tags": [
+      "open source",
+      "github",
+      "software development",
+      "coding",
+      "programming",
+      "testing",
+      "developer workflow",
+      "git",
+      "contribution",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "RagExplainedWithoutTheJargon",
+    "Name": "RAG Explained Without the Jargon",
+    "Author": "Core Lord",
+    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
+    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
+    "Url": "RagExplainedWithoutTheJargon.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Artificial Intelligence",
+      "Bussines"
+    ],
+    "Tags": [
+      "ai",
+      "rag",
+      "artificial intelligence",
+      "llm",
+      "machine learning",
+      "developer tools",
+      "software development",
+      "ai applications",
+      "programming",
+      "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
+    "Name": "What Are Embeddings and Why Should Web Devs Care?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
+    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Technology",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "embeddings",
+      "artificial intelligence",
+      "machine learning",
+      "llm",
+      "vector databases",
+      "software development",
+      "web development",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToBuildYourFirstResponsiveNavbarWithFlexbox",
     "Name": "How to Build Your First Responsive Navbar with Flexbox",
     "Author": "Pro Bandey",
