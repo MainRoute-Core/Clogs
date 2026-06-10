@@ -1,4 +1,4 @@
-const CACHE_NAME = "clog-builder-v1";
+const CACHE_NAME = "clog-builder";
 
 self.addEventListener("install", e => {
     self.skipWaiting();
