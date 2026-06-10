@@ -1,18 +1,23 @@
 const DB_Path = "../db/blogs.json";
 const Logs_Path = "../Logs/";
 
-// const DB_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/output/blogs.json";
-// const Logs_Path = "https://raw.githubusercontent.com/MainRoute-Core/Clogs/main/Logs";
-
+// State tracking configurations
 let indexData = [];
-let activeFilters = { ct: [], tg: null, q: "", author: null };
+let activeFilters = { ct: [], tg: null, q: "", author: null, bookmarksOnly: false };
+let savedScrollPosition = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
     updateUIStyles();
     initializeClogReader();
+    setupGlobalEventListeners();
 });
 
 window.addEventListener('popstate', processUrlParamsAndRoute);
+
+// GLOBAL INITIALIZATIONS
+function setupGlobalEventListeners() {
+    window.addEventListener('scroll', handleReaderProgressScroll, { passive: true });
+}
 
 function updateUIStyles() {
     const badge = document.getElementById('source-badge');
@@ -47,6 +52,7 @@ async function initializeClogReader() {
     }
 }
 
+// ROUTING AND STATE SYSTEMS
 function processUrlParamsAndRoute() {
     const params = new URLSearchParams(window.location.search);
     const logId = params.get('log');
@@ -54,11 +60,20 @@ function processUrlParamsAndRoute() {
     activeFilters.q = params.get('q') || "";
     activeFilters.tg = params.get('tg') || null;
     activeFilters.author = params.get('author') || null;
+    activeFilters.bookmarksOnly = params.get('bookmarks') === "true";
 
     const ctParam = params.get('ct');
     activeFilters.ct = ctParam ? ctParam.split(',').filter(Boolean) : [];
 
     document.getElementById('search-bar').value = activeFilters.q;
+
+    // Update active visual state for bookmarks nav item
+    const bkmkBtn = document.getElementById('nav-bookmark-toggle');
+    if (activeFilters.bookmarksOnly) {
+        bkmkBtn.classList.add('active');
+    } else {
+        bkmkBtn.classList.remove('active');
+    }
 
     if (logId) {
         loadAndRenderFullPost(logId);
@@ -83,19 +98,97 @@ function updateUrlState() {
     if (activeFilters.q) url.searchParams.set('q', activeFilters.q);
     else url.searchParams.delete('q');
 
+    if (activeFilters.bookmarksOnly) url.searchParams.set('bookmarks', 'true');
+    else url.searchParams.delete('bookmarks');
+
     window.history.pushState({}, '', url);
     processUrlParamsAndRoute();
 }
 
 function showListView() {
+    // Hide Reader specific states
     document.getElementById('main-reader-pane').classList.remove('active');
-    document.getElementById('main-search-container').style.display = 'block';
+    document.getElementById('reading-progress-container').classList.add('hidden');
+
+    // Show Main interface panels
+    document.getElementById('main-search-container').style.display = 'flex';
     document.getElementById('main-layout-wrapper').style.display = 'grid';
 
     buildSidebarFilters();
     renderPostList();
+
+    // Scroll restoration mechanic
+    if (savedScrollPosition > 0) {
+        window.scrollTo({ top: savedScrollPosition, behavior: 'instant' });
+        savedScrollPosition = 0;
+    }
 }
 
+// SIDEBAR & DRAWER LAYOUT INTERACTION
+function toggleFilterDrawer() {
+    const sidebar = document.getElementById('sidebar-filters');
+    const overlay = document.getElementById('sidebar-overlay');
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
+
+function closeFilterDrawer() {
+    const sidebar = document.getElementById('sidebar-filters');
+    const overlay = document.getElementById('sidebar-overlay');
+    sidebar.classList.remove('active');
+    overlay.classList.remove('active');
+}
+
+// COMPACT DEBOUNCE FUNCTION (Ensuring optimized keystroke inputs)
+function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => {
+            func.apply(this, args);
+        }, delay);
+    };
+}
+
+const debouncedSearch = debounce(() => {
+    activeFilters.q = document.getElementById('search-bar').value;
+    updateUrlState();
+}, 500);
+
+function handleSearchInput() {
+    debouncedSearch();
+}
+
+// BOOKMARK LOCAL STORAGE INTERFACES
+function getBookmarkedArticles() {
+    try {
+        return JSON.parse(localStorage.getItem('clog_bookmarks')) || [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function isArticleBookmarked(articleId) {
+    return getBookmarkedArticles().includes(articleId);
+}
+
+function toggleArticleBookmark(articleId) {
+    let bookmarks = getBookmarkedArticles();
+    const index = bookmarks.indexOf(articleId);
+    if (index > -1) {
+        bookmarks.splice(index, 1);
+    } else {
+        bookmarks.push(articleId);
+    }
+    localStorage.setItem('clog_bookmarks', JSON.stringify(bookmarks));
+}
+
+function toggleBookmarkOnlyView() {
+    activeFilters.bookmarksOnly = !activeFilters.bookmarksOnly;
+    updateUrlState();
+}
+
+// FILTER PROCESSING & POST CARD CREATION
 function buildSidebarFilters() {
     const categoriesMap = {};
 
@@ -109,7 +202,10 @@ function buildSidebarFilters() {
         const isActive = activeFilters.ct.includes(cat);
         const li = document.createElement('li');
         li.className = `filter-item ${isActive ? 'active' : ''}`;
-        li.onclick = () => toggleCategoryFilter(cat);
+        li.onclick = () => {
+            toggleCategoryFilter(cat);
+            closeFilterDrawer();
+        };
         li.setAttribute('title', isActive ? `Click to deselect ${cat}` : `Click to filter by category: ${cat}`);
         li.innerHTML = `
           <div style="display:flex; align-items:center;">
@@ -126,7 +222,11 @@ function renderPostList() {
     const grid = document.getElementById('publication-grid');
     grid.innerHTML = "";
 
+    const bookmarkedList = getBookmarkedArticles();
+
     const filtered = indexData.filter(item => {
+        if (activeFilters.bookmarksOnly && !bookmarkedList.includes(item.Article)) return false;
+
         if (activeFilters.ct.length > 0) {
             if (!item.Cat || !activeFilters.ct.some(selected => item.Cat.includes(selected))) return false;
         }
@@ -149,10 +249,13 @@ function renderPostList() {
     });
 
     const clearBtn = document.getElementById('clear-filters-btn');
-    if (activeFilters.ct.length > 0 || activeFilters.tg || activeFilters.q || activeFilters.author) {
+    if (activeFilters.ct.length > 0 || activeFilters.tg || activeFilters.q || activeFilters.author || activeFilters.bookmarksOnly) {
         let resultsText = `Found ${filtered.length} matching publications`;
         if (activeFilters.author) {
             resultsText += ` by author "${activeFilters.author}"`;
+        }
+        if (activeFilters.bookmarksOnly) {
+            resultsText += ` in bookmarks`;
         }
         document.getElementById('results-count').innerText = resultsText;
         clearBtn.classList.remove('hidden');
@@ -174,6 +277,7 @@ function renderPostList() {
         const catHtml = (item.Cat || []).map(c => `<span class="card-category-badge" title="Category: ${c}">${c}</span>`).join('');
         const tagHtml = (item.Tags || []).map(t => `<span class="card-tag" onclick="clickCardTag('${t}', event)" title="Filter by tag: #${t}">#${t}</span>`).join('');
         const displayAuthor = item.Author || 'Unknown';
+        const bookmarked = bookmarkedList.includes(item.Article);
 
         card.innerHTML = `
           <div class="card-img-wrapper" onclick="openPost('${item.Article}')" title="Click to read: ${item.Name}">
@@ -188,6 +292,14 @@ function renderPostList() {
             <h2 class="card-title" onclick="openPost('${item.Article}')" title="Click to read: ${item.Name}">${item.Name}</h2>
             <p class="card-desc">${item.Desc || 'No description provided.'}</p>
             <div class="card-tags">${tagHtml}</div>
+            
+            <div class="card-actions-wrapper">
+              <button class="bookmark-btn ${bookmarked ? 'active' : ''}" onclick="toggleBookmarkAction('${item.Article}', event)" title="${bookmarked ? 'Remove Bookmark' : 'Save to Bookmarks'}">
+                <svg class="icon">
+                  <use href="#icon-${bookmarked ? 'bookmark-filled' : 'bookmark'}"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         `;
         grid.appendChild(card);
@@ -199,6 +311,12 @@ function toggleCategoryFilter(cat) {
     if (idx > -1) activeFilters.ct.splice(idx, 1);
     else activeFilters.ct.push(cat);
     updateUrlState();
+}
+
+function toggleBookmarkAction(articleId, event) {
+    event.stopPropagation();
+    toggleArticleBookmark(articleId);
+    renderPostList();
 }
 
 function clickCardTag(tag, event) {
@@ -213,18 +331,14 @@ function clickCardAuthor(author, event) {
     updateUrlState();
 }
 
-function handleSearchInput() {
-    activeFilters.q = document.getElementById('search-bar').value;
-    updateUrlState();
-}
-
 function clearFiltersAndHome() {
-    activeFilters = { ct: [], tg: null, q: "", author: null };
+    activeFilters = { ct: [], tg: null, q: "", author: null, bookmarksOnly: false };
     window.history.pushState({}, '', new URL(window.location.pathname, window.location.origin));
     processUrlParamsAndRoute();
 }
 
 function openPost(articleId) {
+    savedScrollPosition = window.scrollY; // Set memory path anchor
     const url = new URL(window.location);
     url.searchParams.set('log', articleId);
     window.history.pushState({}, '', url);
@@ -243,12 +357,21 @@ function toggleTheme() {
     html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
 }
 
-function toggleLoaderState(show) { document.getElementById('loader-status').style.display = show ? 'block' : 'none'; }
+function toggleLoaderState(show) {
+    document.getElementById('loader-status').style.display = show ? 'block' : 'none';
+}
 
+// FULL CONTENT PARSER & LOADING MECHANICS
 async function loadAndRenderFullPost(logId) {
     document.getElementById('main-search-container').style.display = 'none';
     document.getElementById('main-layout-wrapper').style.display = 'none';
-    document.getElementById('main-reader-pane').classList.add('active');
+
+    const readerPane = document.getElementById('main-reader-pane');
+    readerPane.classList.add('active');
+
+    // Ensure scroll begins at the top of the pane
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    document.getElementById('reading-progress-container').classList.remove('hidden');
 
     if (logId === '404') {
         render404Page();
@@ -269,11 +392,10 @@ async function loadAndRenderFullPost(logId) {
         if (!response.ok) throw new Error("File not found or access denied.");
 
         const postData = await response.json();
-
         const displayAuthor = postData.Author || dbEntry.Author || "System Admin";
 
         document.getElementById('full-date').innerText = postData.Date || dbEntry.Date;
-        
+
         const authorSpan = document.getElementById('full-author');
         authorSpan.innerText = displayAuthor;
         authorSpan.setAttribute('title', `Filter publications by ${displayAuthor}`);
@@ -288,9 +410,26 @@ async function loadAndRenderFullPost(logId) {
         const tagBadges = (postData.Tags || []).map(t => `<span style="cursor:pointer;" onclick="clickCardTag('${t}', event); exitReaderView();" title="Filter by tag: #${t}">#${t}</span>`).join('');
         document.getElementById('full-tags').innerHTML = catBadges + tagBadges;
 
+        // Reading Time Calculation Logic
+        const articleText = postData.Data || "";
+        document.getElementById('reading-time').innerText = getEstimatedReadingTime(articleText);
+
+        // Render Markdown content
         const bodyContainer = document.getElementById('full-body');
-        if (window.marked) bodyContainer.innerHTML = marked.parse(postData.Data || "");
-        else bodyContainer.innerHTML = `<p style="color:var(--danger)">Dependency Error: Marked.js missing.</p><pre>${postData.Data}</pre>`;
+        if (window.marked) {
+            bodyContainer.innerHTML = marked.parse(articleText);
+            generateTableOfContents();
+        } else {
+            bodyContainer.innerHTML = `<p style="color:var(--danger)">Dependency Error: Marked.js missing.</p><pre>${articleText}</pre>`;
+            document.getElementById('toc-container').style.display = 'none';
+        }
+
+        // Setup Bookmark Action Button inside reader pane
+        setupReaderBookmarkAction(logId);
+
+        // Setup Native Share Event handlers
+        const shareBtn = document.getElementById('share-action-btn');
+        shareBtn.onclick = () => shareTargetArticle(dbEntry.Name);
 
     } catch (err) {
         console.warn("Post load failure:", err);
@@ -300,6 +439,112 @@ async function loadAndRenderFullPost(logId) {
     }
 }
 
+// READING TIME CALCULATION ENGINE
+function getEstimatedReadingTime(text) {
+    const cleanText = text.replace(/[#*`~_\[\]()\-]/g, '');
+    const words = cleanText.trim().split(/\s+/).filter(Boolean).length;
+    const wpm = 200; // Words Per Minute (Average adult pace)
+    const minutes = Math.ceil(words / wpm);
+    return `${minutes} min read`;
+}
+
+// TABLE OF CONTENTS DYNAMIC INDEXER
+function generateTableOfContents() {
+    const tocContainer = document.getElementById('toc-container');
+    const tocList = document.getElementById('toc-list');
+    tocList.innerHTML = '';
+
+    const bodyContainer = document.getElementById('full-body');
+    const headings = bodyContainer.querySelectorAll('h2, h3');
+
+    if (headings.length === 0) {
+        tocContainer.style.display = 'none';
+        return;
+    }
+
+    tocContainer.removeAttribute('open'); // Initialize state closed
+    tocContainer.style.display = 'block';
+
+    headings.forEach((heading, index) => {
+        // Build slugified ID values securely
+        if (!heading.id) {
+            const rawText = heading.innerText.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+            heading.id = `clog-heading-${index}-${rawText}`;
+        }
+
+        const anchor = document.createElement('a');
+        anchor.href = `#${heading.id}`;
+        anchor.className = `toc-item ${heading.tagName.toLowerCase()}`;
+        anchor.innerText = heading.innerText;
+        anchor.onclick = (e) => {
+            e.preventDefault();
+            heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        };
+
+        tocList.appendChild(anchor);
+    });
+}
+
+// SCROLL PROGRESS THREAD LISTENER
+function handleReaderProgressScroll() {
+    const readerPane = document.getElementById('main-reader-pane');
+    if (!readerPane || !readerPane.classList.contains('active')) return;
+
+    const progressBar = document.getElementById('reading-progress-bar');
+    if (!progressBar) return;
+
+    const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    const contentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercentage = contentHeight > 0 ? (windowScroll / contentHeight) * 100 : 0;
+
+    progressBar.style.width = `${scrollPercentage}%`;
+}
+
+// BOOKMARK INTERACTION HANDLER inside reader view
+function setupReaderBookmarkAction(logId) {
+    const bkmkBtn = document.getElementById('bookmark-action-btn');
+
+    const updateReaderBkmkBtnState = () => {
+        const bookmarked = isArticleBookmarked(logId);
+        bkmkBtn.innerHTML = `
+          <svg class="icon">
+            <use href="#icon-${bookmarked ? 'bookmark-filled' : 'bookmark'}"></use>
+          </svg> ${bookmarked ? 'Saved' : 'Save'}
+        `;
+        bkmkBtn.setAttribute('title', bookmarked ? 'Remove Bookmark' : 'Save this Article');
+    };
+
+    updateReaderBkmkBtnState();
+    bkmkBtn.onclick = () => {
+        toggleArticleBookmark(logId);
+        updateReaderBkmkBtnState();
+    };
+}
+
+// NATIVE DEVICING WEB SHARE MANAGER
+async function shareTargetArticle(title) {
+    const shareData = {
+        title: title,
+        text: `Read "${title}" on Clog Reader`,
+        url: window.location.href
+    };
+    try {
+        if (navigator.share) {
+            await navigator.share(shareData);
+        } else {
+            await navigator.clipboard.writeText(window.location.href);
+            if (window.toaster && typeof window.toaster.show === 'function') {
+                window.toaster.show('Article link copied to clipboard.');
+            } else {
+                alert('Article link copied to clipboard.');
+            }
+        }
+    } catch (err) {
+        console.warn('System share error occurred:', err);
+    }
+}
+
+// REDIRECTS AND 404 STATE HANDLING
 function trigger404Redirect() {
     const url = new URL(window.location);
     url.searchParams.set('log', '404');
@@ -309,6 +554,7 @@ function trigger404Redirect() {
 
 async function render404Page() {
     document.getElementById('full-meta-block').style.display = 'none';
+    document.getElementById('toc-container').style.display = 'none';
 
     const bodyContainer = document.getElementById('full-body');
     try {
