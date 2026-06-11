@@ -100,8 +100,8 @@
  }
 
  .icon {
-   width: 2.25rem;
-   height: 2.25rem;
+   width: 1.25rem;
+   height: 1.25rem;
    fill: currentColor;
    vertical-align: middle;
    display: inline-block;
@@ -198,6 +198,11 @@
    border: 1px solid rgba(244, 66, 52, .2)
  }
 
+ @media (max-width: 480px) {
+  .status-badge {
+    display: none;
+  }
+ }
  #nav-bookmark-toggle.active {
    background: var(--primary);
    color: white;
@@ -275,7 +280,7 @@
  .sidebar {
    display: flex;
    flex-direction: column;
-   gap: 20px;
+   gap: 10px;
    transition: background-color var(--transition), border-color var(--transition)
  }
 
@@ -283,7 +288,7 @@
    background: var(--bg-card);
    border: 1px solid var(--border);
    border-radius: var(--radius);
-   padding: 20px;
+   padding: 10px;
    box-shadow: var(--shadow)
  }
 
@@ -303,10 +308,12 @@
  .filter-list {
    display: flex;
    flex-direction: column;
+   max-height: 400px;
+   overflow: hidden auto;
    gap: 5px;
    margin: 0;
    padding: 0;
-   list-style: none
+   list-style: none;
  }
 
  .filter-item {
@@ -793,17 +800,15 @@
 
    .sidebar {
      position: fixed;
-     top: 0;
-     right: -320px;
+     top: 40px;
+     right: -100%;
      width: 300px;
      height: 100vh;
-     background: var(--bg-card);
+     background:transparent;
      z-index: 999;
-     box-shadow: -4px 0 20px rgba(0, 0, 0, .25);
      transition: right .3s cubic-bezier(.4, 0, .2, 1);
      padding: 30px 20px;
      overflow-y: auto;
-     border-left: 1px solid var(--border)
    }
 
    .sidebar.active {
