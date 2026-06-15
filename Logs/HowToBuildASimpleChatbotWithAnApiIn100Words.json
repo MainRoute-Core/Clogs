@@ -1,0 +1,29 @@
+{
+  "Title": "How to Build a Simple Chatbot with an API in 100 Words",
+  "Desc": "Learn how to quickly build a basic chatbot using an API. This guide explains the core flow of sending user input, calling an AI endpoint, and returning responses in a minimal setup.",
+  "Author": "Pro Bandey",
+  "Id": "HowToBuildASimpleChatbotWithAnApiIn100Words",
+  "Tags": [
+    "chatbot",
+    "ai",
+    "api",
+    "javascript",
+    "web development",
+    "programming",
+    "llm",
+    "automation",
+    "developer tools",
+    "backend"
+  ],
+  "Categories": [
+    "Tutorial",
+    "Web Development",
+    "Software Development",
+    "Artificial Intelligence",
+    "Tip & Tricks"
+  ],
+  "Date": "14-06-2026",
+  "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+  "Status": "Pub",
+  "Data": "## A chatbot is just a loop between user input and an API response.\n\nFlow:\n\n```text\nUser Message\n↓\nSend to API\n↓\nAI Processes Input\n↓\nReturn Response\n↓\nDisplay Message\n```\n\nExample (JavaScript):\n\n```js\nasync function sendMessage(msg) {\n  const res = await fetch(\"https://api.example.com/chat\", {\n    method: \"POST\",\n    headers: { \"Content-Type\": \"application/json\" },\n    body: JSON.stringify({ message: msg })\n  });\n\n  const data = await res.json();\n  return data.reply;\n}\n```\n\nAdd UI input, call function on submit, and render responses in chat window.\n\nThat’s it—you now have a working chatbot.\n\nTo improve it, add history, streaming responses, and error handling for production use.\n"
+}
