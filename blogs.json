@@ -28,6 +28,62 @@
     "Status": "Pub"
   },
   {
+    "Article": "AiHallucinationsWhatTheyAreAndHowToReduceThem",
+    "Name": "AI Hallucinations: What They Are and How to Reduce Them",
+    "Author": "MyWrite",
+    "Desc": "Learn what AI hallucinations are, why they happen, their real-world risks, and practical techniques developers, creators, and businesses can use to reduce inaccurate AI-generated content.",
+    "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    "Url": "AiHallucinationsWhatTheyAreAndHowToReduceThem.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Technology",
+      "Developer Tools",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "ai hallucinations",
+      "llm",
+      "machine learning",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development",
+      "ai safety"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ApiTestingWithPostmanInsomniaIn5Minutes",
+    "Name": "API Testing with Postman/Insomnia in 5 Minutes",
+    "Author": "Pro Bandey",
+    "Desc": "Learn the basics of API testing using Postman and Insomnia. Understand how to send requests, inspect responses, and debug APIs quickly and effectively.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "ApiTestingWithPostmanInsomniaIn5Minutes.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "api",
+      "postman",
+      "insomnia",
+      "testing",
+      "software development",
+      "web development",
+      "backend",
+      "http",
+      "developer tools",
+      "programming"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToEvaluateIfAnAiToolIsActuallyGood",
     "Name": "How to Evaluate if an AI Tool Is Actually Good",
     "Author": "M Ramzan Ch",
@@ -689,33 +745,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "AiHallucinationsWhatTheyAreAndHowToReduceThem",
-    "Name": "AI Hallucinations: What They Are and How to Reduce Them",
-    "Author": "MyWrite",
-    "Desc": "Learn what AI hallucinations are, why they happen, their real-world risks, and practical techniques developers, creators, and businesses can use to reduce inaccurate AI-generated content.",
-    "Img": "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-    "Url": "AiHallucinationsWhatTheyAreAndHowToReduceThem.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Technology",
-      "Developer Tools",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "artificial intelligence",
-      "ai tools",
-      "ai hallucinations",
-      "llm",
-      "machine learning",
-      "developer tools",
-      "productivity",
-      "programming",
-      "software development",
-      "ai safety"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "BuildingAContactFormThatActuallyAvoidsSpam",
     "Name": "Building a Contact Form That Actually Avoids Spam",
     "Author": "M Ramzan Ch",
@@ -1268,6 +1297,58 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowPasskeysWorkAndWhyPasswordsAreDying",
+    "Name": "How Passkeys Work and Why Passwords Are Dying",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn what passkeys are, how they replace traditional passwords, and why they are becoming the new standard for secure and simple authentication on the web.",
+    "Img": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
+    "Url": "HowPasskeysWorkAndWhyPasswordsAreDying.json",
+    "Date": "14-06-2026",
+    "Cat": [],
+    "Tags": [
+      "authentication",
+      "passkeys",
+      "security",
+      "web development",
+      "login",
+      "passwordless",
+      "cybersecurity",
+      "ux",
+      "developer tools",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToBuildASimpleChatbotWithAnApiIn100Words",
+    "Name": "How to Build a Simple Chatbot with an API in 100 Words",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to quickly build a basic chatbot using an API. This guide explains the core flow of sending user input, calling an AI endpoint, and returning responses in a minimal setup.",
+    "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "Url": "HowToBuildASimpleChatbotWithAnApiIn100Words.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Artificial Intelligence",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "chatbot",
+      "ai",
+      "api",
+      "javascript",
+      "web development",
+      "programming",
+      "llm",
+      "automation",
+      "developer tools",
+      "backend"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToDebugLayoutShiftsLikeAPro",
     "Name": "How to Debug Layout Shifts Like a Pro?",
     "Author": "Pro Bandey",
@@ -1290,6 +1371,35 @@
       "chrome devtools",
       "css",
       "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToLearnCodingWithoutBurnout",
+    "Name": "How to Learn Coding Without Burnout",
+    "Author": "Core Lord",
+    "Desc": "Discover practical strategies for learning programming consistently without exhaustion. Learn how to stay motivated, avoid common mistakes, and build long-term coding skills sustainably.",
+    "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "Url": "HowToLearnCodingWithoutBurnout.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity"
+    ],
+    "Tags": [
+      "coding",
+      "programming",
+      "learning to code",
+      "developer productivity",
+      "software development",
+      "career growth",
+      "web development",
+      "productivity",
+      "developer workflow",
+      "programming tips"
     ],
     "Status": "Pub"
   },
@@ -1318,6 +1428,36 @@
       "product demo",
       "video creation",
       "programming"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWriteAGoodGithubIssueThatGetsAnswered",
+    "Name": "How to Write a Good GitHub Issue That Gets Answered",
+    "Author": "MyWrite",
+    "Desc": "Learn how to write clear, structured, and actionable GitHub issues that improve your chances of getting fast responses from maintainers and contributors.",
+    "Img": "",
+    "Url": "HowToWriteAGoodGithubIssueThatGetsAnswered.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "github",
+      "open source",
+      "software development",
+      "coding",
+      "programming",
+      "issues",
+      "bug reporting",
+      "developer workflow",
+      "communication",
+      "collaboration"
     ],
     "Status": "Pub"
   },
@@ -1374,6 +1514,36 @@
     "Status": "Pub"
   },
   {
+    "Article": "NpmScriptsYouShouldStopWritingManually",
+    "Name": "NPM Scripts You Should Stop Writing Manually",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to use NPM scripts to automate repetitive development tasks, improve productivity, and simplify project workflows without installing unnecessary tools.",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "Url": "NpmScriptsYouShouldStopWritingManually.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "npm",
+      "nodejs",
+      "javascript",
+      "web development",
+      "developer productivity",
+      "software development",
+      "automation",
+      "developer workflow",
+      "coding",
+      "programming"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatIsWebassemblyAndShouldYouLearnIt",
     "Name": "What Is WebAssembly and Should You Learn It?",
     "Author": "Pro Bandey",
@@ -1397,6 +1567,36 @@
       "javascript",
       "performance",
       "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsWebrtcUsedForBeyondVideoCalls",
+    "Name": "What Is WebRTC Used for Beyond Video Calls",
+    "Author": "Core Lord",
+    "Desc": "Learn what WebRTC is and explore its real-world use cases beyond video calling, including file sharing, gaming, live streaming, and peer-to-peer web applications.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "WhatIsWebrtcUsedForBeyondVideoCalls.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "webrtc",
+      "real-time communication",
+      "web development",
+      "javascript",
+      "networking",
+      "streaming",
+      "peer-to-peer",
+      "frontend",
+      "backend",
+      "developer tools"
     ],
     "Status": "Pub"
   },
