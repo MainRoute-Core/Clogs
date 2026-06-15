@@ -144,118 +144,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToSayNoToFeatureRequestsPolitely",
-    "Name": "How to Say No to Feature Requests Politely",
-    "Author": "Pro Bandey",
-    "Desc": "Learn how to decline feature requests professionally while maintaining good relationships with users, customers, and stakeholders. Discover practical communication strategies that protect your product vision.",
-    "Img": "https://images.unsplash.com/photo-1507099985932-87a4520ed1d5",
-    "Url": "HowToSayNoToFeatureRequestsPolitely.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Software Development",
-      "Productivity",
-      "Developer Relations",
-      "Bussines"
-    ],
-    "Tags": [
-      "product management",
-      "software development",
-      "developer workflow",
-      "startup",
-      "saas",
-      "customer feedback",
-      "communication",
-      "product strategy",
-      "productivity",
-      "user experience"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToTestOpenSourceContributionsLocally",
-    "Name": "How to Test Open Source Contributions Locally",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn how to safely test open source contributions on your own machine before submitting a pull request. Discover practical workflows that help you catch issues early and improve your chances of getting merged.",
-    "Img": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
-    "Url": "HowToTestOpenSourceContributionsLocally.json",
-    "Date": "10-06-2026",
-    "Cat": [],
-    "Tags": [
-      "open source",
-      "github",
-      "software development",
-      "coding",
-      "programming",
-      "testing",
-      "developer workflow",
-      "git",
-      "contribution",
-      "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "RagExplainedWithoutTheJargon",
-    "Name": "RAG Explained Without the Jargon",
-    "Author": "Core Lord",
-    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
-    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
-    "Url": "RagExplainedWithoutTheJargon.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Software Development",
-      "Productivity",
-      "Developer Productivity",
-      "Content Creation",
-      "Artificial Intelligence",
-      "Bussines"
-    ],
-    "Tags": [
-      "ai",
-      "rag",
-      "artificial intelligence",
-      "llm",
-      "machine learning",
-      "developer tools",
-      "software development",
-      "ai applications",
-      "programming",
-      "technology"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
-    "Name": "What Are Embeddings and Why Should Web Devs Care?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
-    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Technology",
-      "Software Development",
-      "Productivity",
-      "Developer Tools",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "embeddings",
-      "artificial intelligence",
-      "machine learning",
-      "llm",
-      "vector databases",
-      "software development",
-      "web development",
-      "programming",
-      "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "HowToBuildYourFirstResponsiveNavbarWithFlexbox",
     "Name": "How to Build Your First Responsive Navbar with Flexbox",
     "Author": "Pro Bandey",
@@ -339,6 +227,64 @@
       "funding",
       "bootstrapping",
       "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "BuildingAContactFormThatActuallyAvoidsSpam",
+    "Name": "Building a Contact Form That Actually Avoids Spam",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical techniques to build a contact form that reduces spam, protects your inbox, and maintains a smooth user experience without frustrating legitimate visitors.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "BuildingAContactFormThatActuallyAvoidsSpam.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "contact form",
+      "security",
+      "spam prevention",
+      "javascript",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "CanAiReplaceJuniorDevelopersARealisticLook",
+    "Name": "Can AI Replace Junior Developers? A Realistic Look",
+    "Author": "M Ramzan Ch",
+    "Desc": "Explore how AI is changing software development, what tasks it can automate, and why junior developers still play an important role in the future of programming.",
+    "Img": "https://images.unsplash.com/photo-1694903089438-bf28d4697d9a",
+    "Url": "CanAiReplaceJuniorDevelopersARealisticLook.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Marketing",
+      "Developer Relations",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "software development",
+      "programming",
+      "developers",
+      "automation",
+      "coding",
+      "career growth",
+      "web development",
+      "artificial intelligence",
+      "productivity"
     ],
     "Status": "Pub"
   },
@@ -515,264 +461,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToTakePerfectScreenshotsForDocs",
-    "Name": "How to Take Perfect Screenshots for Docs",
-    "Author": "Core Lord",
-    "Desc": "Learn how to capture clean, professional screenshots for technical documentation, tutorials, and blog posts that improve readability, clarity, and user experience.",
-    "Img": "https://i.ibb.co/d4W6FkcN/1672155-0-86685800-1772626314-cw-M365-vs-Google-Workspace-2000px.webp",
-    "Url": "HowToTakePerfectScreenshotsForDocs.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Productivity",
-      "Developer Productivity",
-      "Content Creation"
-    ],
-    "Tags": [
-      "documentation",
-      "developer workflow",
-      "productivity",
-      "technical writing",
-      "ui design",
-      "web development",
-      "screenshots",
-      "tutorials",
-      "coding",
-      "software development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToUseAiToWriteBetterDocs",
-    "Name": "How to Use AI to Write Better Docs",
-    "Author": "MyWrite",
-    "Desc": "Learn how developers can use AI tools effectively to create clear, structured, and maintainable documentation without sacrificing accuracy or quality.",
-    "Img": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-    "Url": "HowToUseAiToWriteBetterDocs.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Software Development",
-      "Productivity",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "documentation",
-      "software development",
-      "developer workflow",
-      "productivity",
-      "writing",
-      "coding",
-      "technical writing",
-      "devtools",
-      "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToWritePromptsThatDonTWasteTokens",
-    "Name": "How to Write Prompts That Don’t Waste Tokens",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn practical prompt engineering techniques that reduce token usage, lower AI costs, improve response quality, and make conversations with AI models more efficient.",
-    "Img": "https://images.unsplash.com/photo-1676299081847-824916de030a",
-    "Url": "HowToWritePromptsThatDonTWasteTokens.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Productivity",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "artificial intelligence",
-      "ai tools",
-      "prompt engineering",
-      "llm",
-      "productivity",
-      "developer workflow",
-      "software development",
-      "programming",
-      "developer tools",
-      "machine learning"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "TerminalShortcutsThatMakeYou2xFaster",
-    "Name": "Terminal Shortcuts That Make You 2x Faster",
-    "Author": "MyWrite",
-    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
-    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
-    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Productivity",
-      "Developer Productivity",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "productivity",
-      "developer workflow",
-      "software development",
-      "programming",
-      "coding",
-      "terminal",
-      "command line",
-      "developer tools",
-      "web development",
-      "linux"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
-    "Name": "What Are Web Components and Why Devs Are Using Them Again",
-    "Author": "Pro Bandey",
-    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
-    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
-      "Productivity"
-    ],
-    "Tags": [
-      "web components",
-      "frontend",
-      "javascript",
-      "html",
-      "css",
-      "web development",
-      "ui components",
-      "developer workflow",
-      "programming",
-      "coding",
-      "frameworks"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsGraphqlVsRestIn1Page",
-    "Name": "What Is GraphQL vs REST in 1 Page",
-    "Author": "Core Lord",
-    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
-    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-    "Url": "WhatIsGraphqlVsRestIn1Page.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Open Source",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "api",
-      "graphql",
-      "rest api",
-      "programming",
-      "coding",
-      "developer workflow",
-      "backend development",
-      "javascript"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsServerlessAndWhenItMakesSense",
-    "Name": "What Is Serverless and When It Makes Sense",
-    "Author": "Pro Bandey",
-    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
-    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
-    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Web Development",
-      "Software Development",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "serverless",
-      "cloud computing",
-      "backend",
-      "web development",
-      "software development",
-      "aws",
-      "devops",
-      "programming",
-      "architecture",
-      "scalability"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
-    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
-    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Productivity",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "web development",
-      "performance",
-      "core web vitals",
-      "software development",
-      "developer workflow",
-      "html",
-      "css",
-      "javascript",
-      "optimization",
-      "coding"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "BuildingAContactFormThatActuallyAvoidsSpam",
-    "Name": "Building a Contact Form That Actually Avoids Spam",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn practical techniques to build a contact form that reduces spam, protects your inbox, and maintains a smooth user experience without frustrating legitimate visitors.",
-    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "Url": "BuildingAContactFormThatActuallyAvoidsSpam.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Developer Tools",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "web development",
-      "developer tools",
-      "programming",
-      "coding",
-      "software development",
-      "contact form",
-      "security",
-      "spam prevention",
-      "javascript",
-      "developer workflow"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "FineTuningVsPromptEngineeringWhichShouldYouPick",
     "Name": "Fine-Tuning vs Prompt Engineering: Which Should You Pick?",
     "Author": "M Ramzan Ch",
@@ -939,142 +627,6 @@
       "programming",
       "developer tools",
       "community"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToUseChromeDevtoolsBeyondConsoleLog",
-    "Name": "How to Use Chrome DevTools Beyond `console.log`",
-    "Author": "Pro Bandey",
-    "Desc": "Learn powerful Chrome DevTools features that go far beyond console.log, including network analysis, performance profiling, debugging, accessibility checks, and advanced frontend troubleshooting.",
-    "Img": "https://images.unsplash.com/photo-1484417894907-623942c8ee29",
-    "Url": "HowToUseChromeDevtoolsBeyondConsoleLog.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Productivity",
-      "Developer Tools",
-      "Open Source"
-    ],
-    "Tags": [
-      "web development",
-      "developer tools",
-      "programming",
-      "coding",
-      "software development",
-      "chrome devtools",
-      "javascript",
-      "debugging",
-      "developer workflow",
-      "productivity"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToValidateAnIdeaBeforeWritingCode",
-    "Name": "How to Validate an Idea Before Writing Code",
-    "Author": "Core Lord",
-    "Desc": "Learn practical ways to validate a startup, SaaS, app, or side-project idea before spending weeks or months building something nobody wants.",
-    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-    "Url": "HowToValidateAnIdeaBeforeWritingCode.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Software Development",
-      "Productivity",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "software development",
-      "productivity",
-      "developer workflow",
-      "startups",
-      "business",
-      "validation",
-      "saas",
-      "programming",
-      "coding",
-      "product development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToWriteCleanCommitMessagesThatTeamsLove",
-    "Name": "How to Write Clean Commit Messages That Teams Love?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn how to write clear, consistent Git commit messages that improve collaboration, simplify code reviews, and make project history easier to understand.",
-    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    "Url": "HowToWriteCleanCommitMessagesThatTeamsLove.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Developer Tools",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "git",
-      "github",
-      "version control",
-      "git commands",
-      "developer workflow",
-      "coding",
-      "developer tools",
-      "productivity",
-      "programming",
-      "software development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
-    "Name": "Taxes and Legal Basics for Solo Developers",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
-    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
-    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Software Development",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "software development",
-      "productivity",
-      "developer workflow",
-      "programming",
-      "coding",
-      "freelancing",
-      "business",
-      "contracts",
-      "taxes",
-      "developers"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatAreServiceWorkersInSimpleTerms",
-    "Name": "What Are Service Workers in Simple Terms?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
-    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Developer Tools"
-    ],
-    "Tags": [
-      "eb development",
-      "developer tools",
-      "programming",
-      "coding",
-      "software development",
-      "service workers",
-      "pwa",
-      "web performance",
-      "javascript",
-      "developer workflow"
     ],
     "Status": "Pub"
   },
@@ -1353,6 +905,316 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToSayNoToFeatureRequestsPolitely",
+    "Name": "How to Say No to Feature Requests Politely",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to decline feature requests professionally while maintaining good relationships with users, customers, and stakeholders. Discover practical communication strategies that protect your product vision.",
+    "Img": "https://images.unsplash.com/photo-1507099985932-87a4520ed1d5",
+    "Url": "HowToSayNoToFeatureRequestsPolitely.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Relations",
+      "Bussines"
+    ],
+    "Tags": [
+      "product management",
+      "software development",
+      "developer workflow",
+      "startup",
+      "saas",
+      "customer feedback",
+      "communication",
+      "product strategy",
+      "productivity",
+      "user experience"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToTestOpenSourceContributionsLocally",
+    "Name": "How to Test Open Source Contributions Locally",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to safely test open source contributions on your own machine before submitting a pull request. Discover practical workflows that help you catch issues early and improve your chances of getting merged.",
+    "Img": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
+    "Url": "HowToTestOpenSourceContributionsLocally.json",
+    "Date": "10-06-2026",
+    "Cat": [],
+    "Tags": [
+      "open source",
+      "github",
+      "software development",
+      "coding",
+      "programming",
+      "testing",
+      "developer workflow",
+      "git",
+      "contribution",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
+    "Name": "What Are Embeddings and Why Should Web Devs Care?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
+    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Technology",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "embeddings",
+      "artificial intelligence",
+      "machine learning",
+      "llm",
+      "vector databases",
+      "software development",
+      "web development",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToTakePerfectScreenshotsForDocs",
+    "Name": "How to Take Perfect Screenshots for Docs",
+    "Author": "Core Lord",
+    "Desc": "Learn how to capture clean, professional screenshots for technical documentation, tutorials, and blog posts that improve readability, clarity, and user experience.",
+    "Img": "https://i.ibb.co/d4W6FkcN/1672155-0-86685800-1772626314-cw-M365-vs-Google-Workspace-2000px.webp",
+    "Url": "HowToTakePerfectScreenshotsForDocs.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation"
+    ],
+    "Tags": [
+      "documentation",
+      "developer workflow",
+      "productivity",
+      "technical writing",
+      "ui design",
+      "web development",
+      "screenshots",
+      "tutorials",
+      "coding",
+      "software development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToUseAiToWriteBetterDocs",
+    "Name": "How to Use AI to Write Better Docs",
+    "Author": "MyWrite",
+    "Desc": "Learn how developers can use AI tools effectively to create clear, structured, and maintainable documentation without sacrificing accuracy or quality.",
+    "Img": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+    "Url": "HowToUseAiToWriteBetterDocs.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "documentation",
+      "software development",
+      "developer workflow",
+      "productivity",
+      "writing",
+      "coding",
+      "technical writing",
+      "devtools",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWritePromptsThatDonTWasteTokens",
+    "Name": "How to Write Prompts That Don’t Waste Tokens",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical prompt engineering techniques that reduce token usage, lower AI costs, improve response quality, and make conversations with AI models more efficient.",
+    "Img": "https://images.unsplash.com/photo-1676299081847-824916de030a",
+    "Url": "HowToWritePromptsThatDonTWasteTokens.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Productivity",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "prompt engineering",
+      "llm",
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "developer tools",
+      "machine learning"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TerminalShortcutsThatMakeYou2xFaster",
+    "Name": "Terminal Shortcuts That Make You 2x Faster",
+    "Author": "MyWrite",
+    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
+    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
+    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "terminal",
+      "command line",
+      "developer tools",
+      "web development",
+      "linux"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
+    "Name": "What Are Web Components and Why Devs Are Using Them Again",
+    "Author": "Pro Bandey",
+    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Productivity"
+    ],
+    "Tags": [
+      "web components",
+      "frontend",
+      "javascript",
+      "html",
+      "css",
+      "web development",
+      "ui components",
+      "developer workflow",
+      "programming",
+      "coding",
+      "frameworks"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsServerlessAndWhenItMakesSense",
+    "Name": "What Is Serverless and When It Makes Sense",
+    "Author": "Pro Bandey",
+    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
+    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
+    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "serverless",
+      "cloud computing",
+      "backend",
+      "web development",
+      "software development",
+      "aws",
+      "devops",
+      "programming",
+      "architecture",
+      "scalability"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToUseChromeDevtoolsBeyondConsoleLog",
+    "Name": "How to Use Chrome DevTools Beyond `console.log`",
+    "Author": "Pro Bandey",
+    "Desc": "Learn powerful Chrome DevTools features that go far beyond console.log, including network analysis, performance profiling, debugging, accessibility checks, and advanced frontend troubleshooting.",
+    "Img": "https://images.unsplash.com/photo-1484417894907-623942c8ee29",
+    "Url": "HowToUseChromeDevtoolsBeyondConsoleLog.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Productivity",
+      "Developer Tools",
+      "Open Source"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "chrome devtools",
+      "javascript",
+      "debugging",
+      "developer workflow",
+      "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToValidateAnIdeaBeforeWritingCode",
+    "Name": "How to Validate an Idea Before Writing Code",
+    "Author": "Core Lord",
+    "Desc": "Learn practical ways to validate a startup, SaaS, app, or side-project idea before spending weeks or months building something nobody wants.",
+    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "Url": "HowToValidateAnIdeaBeforeWritingCode.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "startups",
+      "business",
+      "validation",
+      "saas",
+      "programming",
+      "coding",
+      "product development"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToWriteAGoodGithubIssueThatGetsAnswered",
     "Name": "How to Write a Good GitHub Issue That Gets Answered",
     "Author": "MyWrite",
@@ -1379,6 +1241,32 @@
       "developer workflow",
       "communication",
       "collaboration"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWriteCleanCommitMessagesThatTeamsLove",
+    "Name": "How to Write Clean Commit Messages That Teams Love?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to write clear, consistent Git commit messages that improve collaboration, simplify code reviews, and make project history easier to understand.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToWriteCleanCommitMessagesThatTeamsLove.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "git",
+      "github",
+      "version control",
+      "git commands",
+      "developer workflow",
+      "coding",
+      "developer tools",
+      "productivity",
+      "programming",
+      "software development"
     ],
     "Status": "Pub"
   },
@@ -1413,30 +1301,91 @@
     "Status": "Pub"
   },
   {
-    "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
-    "Name": "Product vs Project Mindset: The Shift That Changes Everything",
-    "Author": "MyWrite",
-    "Desc": "Learn the difference between a project mindset and a product mindset, why the distinction matters, and how adopting a product-focused approach can lead to better software, happier users, and long-term success.",
-    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-    "Url": "ProductVsProjectMindsetTheShiftThatChangesEverything.json",
-    "Date": "07-06-2026",
+    "Article": "RagExplainedWithoutTheJargon",
+    "Name": "RAG Explained Without the Jargon",
+    "Author": "Core Lord",
+    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
+    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
+    "Url": "RagExplainedWithoutTheJargon.json",
+    "Date": "10-06-2026",
     "Cat": [
-      "Technology",
-      "Web Development",
       "Software Development",
-      "Developer Productivity"
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Artificial Intelligence",
+      "Bussines"
     ],
     "Tags": [
+      "ai",
+      "rag",
+      "artificial intelligence",
+      "llm",
+      "machine learning",
+      "developer tools",
       "software development",
-      "productivity",
-      "developer workflow",
+      "ai applications",
+      "programming",
+      "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsGraphqlVsRestIn1Page",
+    "Name": "What Is GraphQL vs REST in 1 Page",
+    "Author": "Core Lord",
+    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "WhatIsGraphqlVsRestIn1Page.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "api",
+      "graphql",
+      "rest api",
       "programming",
       "coding",
-      "product development",
-      "project management",
-      "startups",
-      "developer tools",
-      "business"
+      "developer workflow",
+      "backend development",
+      "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
+    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
+    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "performance",
+      "core web vitals",
+      "software development",
+      "developer workflow",
+      "html",
+      "css",
+      "javascript",
+      "optimization",
+      "coding"
     ],
     "Status": "Pub"
   },
@@ -1463,6 +1412,32 @@
       "service workers",
       "web performance",
       "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
     ],
     "Status": "Pub"
   },
@@ -1546,6 +1521,34 @@
     "Status": "Pub"
   },
   {
+    "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
+    "Name": "Product vs Project Mindset: The Shift That Changes Everything",
+    "Author": "MyWrite",
+    "Desc": "Learn the difference between a project mindset and a product mindset, why the distinction matters, and how adopting a product-focused approach can lead to better software, happier users, and long-term success.",
+    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "Url": "ProductVsProjectMindsetTheShiftThatChangesEverything.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "product development",
+      "project management",
+      "startups",
+      "developer tools",
+      "business"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "RegexBasicsWith5RealExamples",
     "Name": "Regex Basics with 5 Real Examples",
     "Author": "MyWrite",
@@ -1571,6 +1574,33 @@
       "developer tools",
       "text processing",
       "validation"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreServiceWorkersInSimpleTerms",
+    "Name": "What Are Service Workers in Simple Terms?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "eb development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "service workers",
+      "pwa",
+      "web performance",
+      "javascript",
+      "developer workflow"
     ],
     "Status": "Pub"
   },
