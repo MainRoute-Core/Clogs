@@ -1,0 +1,28 @@
+{
+  "Title": "How to Make a Dark Mode Toggle with CSS + localStorage in 10 Lines",
+  "Desc": "Learn how to build a simple dark mode toggle using CSS and JavaScript with localStorage support so the theme persists across page reloads.",
+  "Author": "Pro Bandey",
+  "Id": "HowToMakeADarkModeToggleWithCssLocalstorageIn10Lines",
+  "Tags": [
+    "dark mode",
+    "css",
+    "javascript",
+    "localStorage",
+    "frontend",
+    "web development",
+    "ui",
+    "ux",
+    "developer tools",
+    "programming"
+  ],
+  "Categories": [
+    "Tutorial",
+    "Web Development",
+    "Developer Productivity",
+    "Tip & Tricks"
+  ],
+  "Date": "16-06-2026",
+  "Img": "https://images.unsplash.com/photo-1699040309386-11c615ed64d5",
+  "Status": "Pub",
+  "Data": "## Dark mode is now a standard feature in modern websites.\n\nUsers expect:\n\n```text\nLight Mode ↔ Dark Mode\n```\n\nThe good news?\n\nYou can build a working toggle with just a few lines of CSS and JavaScript.\n\n---\n\n## Step 1: Define CSS Variables\n\nWe use CSS variables for theme control.\n\n```css id=\"css-vars\"\n:root {\n  --bg: #ffffff;\n  --text: #111111;\n}\n\n[data-theme=\"dark\"] {\n  --bg: #111111;\n  --text: #ffffff;\n}\n\nbody {\n  background: var(--bg);\n  color: var(--text);\n}\n```\n\nThis allows instant theme switching.\n\n---\n\n## Step 2: Add a Toggle Button\n\n```html id=\"toggle-btn\"\n<button id=\"themeToggle\">Toggle Theme</button>\n```\n\nSimple UI element.\n\n---\n\n## Step 3: JavaScript Logic (Core)\n\n```js id=\"theme-js\"\nconst toggle = document.getElementById(\"themeToggle\");\nconst root = document.documentElement;\n\n// Load saved theme\nconst saved = localStorage.getItem(\"theme\");\nif (saved) root.setAttribute(\"data-theme\", saved);\n\n// Toggle theme\ntoggle.addEventListener(\"click\", () => {\n  const current = root.getAttribute(\"data-theme\");\n  const next = current === \"dark\" ? \"\" : \"dark\";\n\n  root.setAttribute(\"data-theme\", next);\n  localStorage.setItem(\"theme\", next);\n});\n```\n\n---\n\n## How It Works\n\nFlow:\n\n```text id=\"flow\"\nUser Clicks Button\n↓\nTheme Changes\n↓\nSaved In localStorage\n↓\nReload Page\n↓\nTheme Restored\n```\n\n---\n\n![Modern UI theme switching between light and dark mode](https://images.unsplash.com/photo-1498050108023-c5249f4df085)\n\n## Why This Approach Works\n\n### 1. CSS Variables\n\nThey make theme switching instant.\n\n---\n\n### 2. data-theme Attribute\n\nClean way to switch global styles.\n\n---\n\n### 3. localStorage\n\nPersists user preference across sessions.\n\n---\n\n## Common Improvements\n\n### Respect System Theme\n\nYou can detect system preference:\n\n```js id=\"system-theme\"\nwindow.matchMedia(\"(prefers-color-scheme: dark)\")\n```\n\n---\n\n### Smooth Transitions\n\nAdd this:\n\n```css id=\"transition\"\nbody {\n  transition: background 0.3s, color 0.3s;\n}\n```\n\n---\n\n### Better Accessibility\n\nAlways ensure contrast is readable in both themes.\n\n---\n\n## Common Mistakes\n\n### Hardcoding Colors\n\nBad:\n\n```css id=\"bad\"\nbody {\n  background: white;\n  color: black;\n}\n```\n\nThis breaks theme switching.\n\n---\n\n### Not Saving Preference\n\nWithout localStorage, users lose their theme on refresh.\n\n---\n\n### Inconsistent Variables\n\nAlways use variables across components.\n\n---\n\n## Real-World Use Cases\n\nDark mode is used in:\n\n* SaaS dashboards\n* Developer tools\n* Documentation sites\n* Mobile-first web apps\n\nIt improves:\n\n* User comfort\n* Battery usage (on OLED screens)\n* Visual accessibility\n\n---\n\n## FAQ\n\n### Is dark mode hard to implement?\n\nNo. With CSS variables and a small JS snippet, it’s simple.\n\n### Why use localStorage?\n\nTo remember user preference after page reload.\n\n### Can I auto-detect system theme?\n\nYes, using `prefers-color-scheme`.\n\n### Is dark mode necessary?\n\nNot required, but expected in modern UI.\n\n### Does it improve UX?\n\nYes, especially for long usage sessions.\n\n---\n\n## Final Thoughts\n\nDark mode is one of the easiest but most impactful UI features you can add.\n\n```text id=\"final-flow\"\nDefine Variables\n↓\nToggle Theme\n↓\nSave Preference\n↓\nRestore On Load\n```\n\nWith just a few lines of code, you improve both usability and modern UI expectations."
+}

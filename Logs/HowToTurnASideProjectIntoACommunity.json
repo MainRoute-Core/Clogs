@@ -1,0 +1,32 @@
+{
+  "Title": "How to Turn a Side Project Into a Community",
+  "Desc": "Learn how developers can grow a simple side project into an active community by focusing on users, feedback loops, open communication, and consistent engagement.",
+  "Author": "MyWrite",
+  "Id": "HowToTurnASideProjectIntoACommunity",
+  "Tags": [
+    "side project",
+    "community building",
+    "open source",
+    "startup",
+    "developer tools",
+    "growth",
+    "product development",
+    "web development",
+    "engagement",
+    "entrepreneurship"
+  ],
+  "Categories": [
+    "Web Development",
+    "Software Development",
+    "Productivity",
+    "Developer Productivity",
+    "Developer Marketing",
+    "Developer Relations",
+    "Open Source",
+    "Tip & Tricks"
+  ],
+  "Date": "16-06-2026",
+  "Img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+  "Status": "Pub",
+  "Data": "## Most side projects start like this:\n\n```text\nIdea\n↓\nCode\n↓\nLaunch\n↓\nNo Users\n```\n\nThe missing piece is usually not code.\n\nIt’s people.\n\nA project becomes a **community** when users start interacting, contributing, and shaping it.\n\n---\n\n## What Makes a Project a Community?\n\nA side project is:\n\n* Built by you\n* Used by others\n\nA community project is:\n\n* Shaped by users\n* Improved by feedback\n* Driven by shared ownership\n\nFlow:\n\n```text id=\"community-flow\"\nUsers\n↔\nProject\n↔\nContributor Growth\n```\n\n---\n\n## Step 1: Start With Real Users (Not Ideas)\n\nMany developers start with:\n\n```text id=\"idea-first\"\nCool Idea\n↓\nBuild First\n↓\nFind Users Later\n```\n\nBetter approach:"
+}
