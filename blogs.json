@@ -789,6 +789,37 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToFundYourOpenSourceWorkWithoutSellingOut",
+    "Name": "How to Fund Your Open Source Work Without Selling Out",
+    "Author": "Pro Bandey",
+    "Desc": "Learn practical ways to financially support your open source projects through sponsorships, consulting, donations, and sustainable business models while staying true to your community and values.",
+    "Img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    "Url": "HowToFundYourOpenSourceWorkWithoutSellingOut.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Developer Marketing",
+      "Developer Relations",
+      "Open Source",
+      "Bussines"
+    ],
+    "Tags": [
+      "open source",
+      "oss",
+      "funding",
+      "sponsorship",
+      "github",
+      "software development",
+      "developer productivity",
+      "freelancing",
+      "community",
+      "entrepreneurship"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToLearnCodingWithoutBurnout",
     "Name": "How to Learn Coding Without Burnout",
     "Author": "Core Lord",
