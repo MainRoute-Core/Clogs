@@ -1026,197 +1026,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
-    "Name": "Product vs Project Mindset: The Shift That Changes Everything",
-    "Author": "MyWrite",
-    "Desc": "Learn the difference between a project mindset and a product mindset, why the distinction matters, and how adopting a product-focused approach can lead to better software, happier users, and long-term success.",
-    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
-    "Url": "ProductVsProjectMindsetTheShiftThatChangesEverything.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Technology",
-      "Web Development",
-      "Software Development",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "software development",
-      "productivity",
-      "developer workflow",
-      "programming",
-      "coding",
-      "product development",
-      "project management",
-      "startups",
-      "developer tools",
-      "business"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "ProgressiveWebAppsIn2026StillRelevant",
-    "Name": "Progressive Web Apps in 2026: Still Relevant?",
-    "Author": "Core Lord",
-    "Desc": "Explore the current state of Progressive Web Apps (PWAs) in 2026, their advantages, limitations, real-world use cases, and whether they remain a smart choice for modern web development.",
-    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "Url": "ProgressiveWebAppsIn2026StillRelevant.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Web Development",
-      "Developer Tools"
-    ],
-    "Tags": [
-      "web development",
-      "developer tools",
-      "programming",
-      "coding",
-      "software development",
-      "progressive web apps",
-      "pwa",
-      "service workers",
-      "web performance",
-      "developer workflow"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
-    "Name": "Taxes and Legal Basics for Solo Developers",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
-    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
-    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Software Development",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "software development",
-      "productivity",
-      "developer workflow",
-      "programming",
-      "coding",
-      "freelancing",
-      "business",
-      "contracts",
-      "taxes",
-      "developers"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatAreServiceWorkersInSimpleTerms",
-    "Name": "What Are Service Workers in Simple Terms?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
-    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Developer Tools"
-    ],
-    "Tags": [
-      "eb development",
-      "developer tools",
-      "programming",
-      "coding",
-      "software development",
-      "service workers",
-      "pwa",
-      "web performance",
-      "javascript",
-      "developer workflow"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
-    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
-    "Author": "Core Lord",
-    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
-    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
-    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "programming",
-      "coding",
-      "javascript",
-      "react",
-      "vue",
-      "svelte",
-      "frontend development",
-      "performance"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatLaptopShouldAWebDeveloperBuyIn2026",
-    "Name": "What Laptop Should a Web Developer Buy in 2026?",
-    "Author": "M Ramzan Ch",
-    "Desc": "Choosing a laptop for web development in 2026 can be overwhelming. This guide explains what specifications matter, what to avoid, and how to choose the right laptop based on your budget and workflow.",
-    "Img": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-    "Url": "WhatLaptopShouldAWebDeveloperBuyIn2026.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Web Development",
-      "Productivity",
-      "Developer Tools",
-      "Content Creation"
-    ],
-    "Tags": [
-      "software development",
-      "developer tools",
-      "programming",
-      "coding",
-      "web development",
-      "laptop",
-      "developer workflow",
-      "productivity",
-      "hardware",
-      "technology"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WritingErrorMessagesUsersActuallyUnderstand",
-    "Name": "Writing Error Messages Users Actually Understand",
-    "Author": "Pro Bandey",
-    "Desc": "Learn how to write clear, helpful, and user-friendly error messages that reduce frustration, improve usability, and help people solve problems faster.",
-    "Img": "https://images.unsplash.com/photo-1623018035782-b269248df916",
-    "Url": "WritingErrorMessagesUsersActuallyUnderstand.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Productivity",
-      "Developer Tools"
-    ],
-    "Tags": [
-      "web development",
-      "productivity",
-      "developer workflow",
-      "software development",
-      "programming",
-      "coding",
-      "user experience",
-      "ux",
-      "accessibility",
-      "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "EmailNewslettersForDevelopersWhatToSend",
     "Name": "Email Newsletters for Developers: What to Send",
     "Author": "MyWrite",
@@ -1404,6 +1213,144 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToOptimizeImagesForCoreWebVitalsWithoutLosingQuality",
+    "Name": "How to Optimize Images for Core Web Vitals Without Losing Quality",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to optimize website images for faster loading, better Core Web Vitals scores, and improved SEO while maintaining excellent visual quality.",
+    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "Url": "HowToOptimizeImagesForCoreWebVitalsWithoutLosingQuality.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "core web vitals",
+      "image optimization",
+      "web performance",
+      "seo",
+      "web development",
+      "frontend",
+      "page speed",
+      "website optimization",
+      "images",
+      "developer productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
+    "Name": "Product vs Project Mindset: The Shift That Changes Everything",
+    "Author": "MyWrite",
+    "Desc": "Learn the difference between a project mindset and a product mindset, why the distinction matters, and how adopting a product-focused approach can lead to better software, happier users, and long-term success.",
+    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "Url": "ProductVsProjectMindsetTheShiftThatChangesEverything.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "product development",
+      "project management",
+      "startups",
+      "developer tools",
+      "business"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ProgressiveWebAppsIn2026StillRelevant",
+    "Name": "Progressive Web Apps in 2026: Still Relevant?",
+    "Author": "Core Lord",
+    "Desc": "Explore the current state of Progressive Web Apps (PWAs) in 2026, their advantages, limitations, real-world use cases, and whether they remain a smart choice for modern web development.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "ProgressiveWebAppsIn2026StillRelevant.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "progressive web apps",
+      "pwa",
+      "service workers",
+      "web performance",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
+    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
+    "Author": "Core Lord",
+    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
+    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "programming",
+      "coding",
+      "javascript",
+      "react",
+      "vue",
+      "svelte",
+      "frontend development",
+      "performance"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToRecordACleanDemoVideoOfYourApp",
     "Name": "How to Record a Clean Demo Video of Your App",
     "Author": "MyWrite",
@@ -1544,6 +1491,33 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhatAreServiceWorkersInSimpleTerms",
+    "Name": "What Are Service Workers in Simple Terms?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "eb development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "service workers",
+      "pwa",
+      "web performance",
+      "javascript",
+      "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatIsTheDifferenceBetweenAiMlAndLlms",
     "Name": "What Is the Difference Between AI, ML, and LLMs?",
     "Author": "Core Lord",
@@ -1631,6 +1605,34 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhatLaptopShouldAWebDeveloperBuyIn2026",
+    "Name": "What Laptop Should a Web Developer Buy in 2026?",
+    "Author": "M Ramzan Ch",
+    "Desc": "Choosing a laptop for web development in 2026 can be overwhelming. This guide explains what specifications matter, what to avoid, and how to choose the right laptop based on your budget and workflow.",
+    "Img": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    "Url": "WhatLaptopShouldAWebDeveloperBuyIn2026.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Productivity",
+      "Developer Tools",
+      "Content Creation"
+    ],
+    "Tags": [
+      "software development",
+      "developer tools",
+      "programming",
+      "coding",
+      "web development",
+      "laptop",
+      "developer workflow",
+      "productivity",
+      "hardware",
+      "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhyBuildItAndTheyWillComeFails",
     "Name": "Why “Build It and They Will Come” Fails",
     "Author": "Core Lord",
@@ -1658,6 +1660,35 @@
       "validation",
       "web development",
       "product marketing"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WritingErrorMessagesUsersActuallyUnderstand",
+    "Name": "Writing Error Messages Users Actually Understand",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to write clear, helpful, and user-friendly error messages that reduce frustration, improve usability, and help people solve problems faster.",
+    "Img": "https://images.unsplash.com/photo-1623018035782-b269248df916",
+    "Url": "WritingErrorMessagesUsersActuallyUnderstand.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "web development",
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "user experience",
+      "ux",
+      "accessibility",
+      "developer tools"
     ],
     "Status": "Pub"
   },
