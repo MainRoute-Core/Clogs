@@ -1026,6 +1026,32 @@
     "Status": "Pub"
   },
   {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "EmailNewslettersForDevelopersWhatToSend",
     "Name": "Email Newsletters for Developers: What to Send",
     "Author": "MyWrite",
@@ -1298,28 +1324,29 @@
     "Status": "Pub"
   },
   {
-    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
-    "Name": "Taxes and Legal Basics for Solo Developers",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
-    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
-    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Article": "WhatAreServiceWorkersInSimpleTerms",
+    "Name": "What Are Service Workers in Simple Terms?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
     "Date": "07-06-2026",
     "Cat": [
-      "Software Development",
-      "Developer Productivity"
+      "Tutorial",
+      "Web Development",
+      "Developer Tools"
     ],
     "Tags": [
-      "software development",
-      "productivity",
-      "developer workflow",
+      "eb development",
+      "developer tools",
       "programming",
       "coding",
-      "freelancing",
-      "business",
-      "contracts",
-      "taxes",
-      "developers"
+      "software development",
+      "service workers",
+      "pwa",
+      "web performance",
+      "javascript",
+      "developer workflow"
     ],
     "Status": "Pub"
   },
@@ -1491,29 +1518,31 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatAreServiceWorkersInSimpleTerms",
-    "Name": "What Are Service Workers in Simple Terms?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what Service Workers are, how they work behind the scenes, and why they are essential for Progressive Web Apps, offline functionality, caching, and modern web performance.",
-    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "Url": "WhatAreServiceWorkersInSimpleTerms.json",
-    "Date": "07-06-2026",
+    "Article": "RegexBasicsWith5RealExamples",
+    "Name": "Regex Basics with 5 Real Examples",
+    "Author": "MyWrite",
+    "Desc": "Learn the fundamentals of regular expressions (Regex) with practical examples that developers actually use for validation, searching, and text processing.",
+    "Img": "https://images.unsplash.com/photo-1605379399642-870262d3d051",
+    "Url": "RegexBasicsWith5RealExamples.json",
+    "Date": "16-06-2026",
     "Cat": [
+      "Technology",
       "Tutorial",
       "Web Development",
+      "Software Development",
       "Developer Tools"
     ],
     "Tags": [
-      "eb development",
-      "developer tools",
+      "regex",
+      "regular expressions",
+      "javascript",
       "programming",
       "coding",
+      "web development",
       "software development",
-      "service workers",
-      "pwa",
-      "web performance",
-      "javascript",
-      "developer workflow"
+      "developer tools",
+      "text processing",
+      "validation"
     ],
     "Status": "Pub"
   },
