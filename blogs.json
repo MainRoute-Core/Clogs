@@ -988,36 +988,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
-    "Name": "What Are Embeddings and Why Should Web Devs Care?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
-    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Technology",
-      "Software Development",
-      "Productivity",
-      "Developer Tools",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "embeddings",
-      "artificial intelligence",
-      "machine learning",
-      "llm",
-      "vector databases",
-      "software development",
-      "web development",
-      "programming",
-      "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "HowToTakePerfectScreenshotsForDocs",
     "Name": "How to Take Perfect Screenshots for Docs",
     "Author": "Core Lord",
@@ -1100,91 +1070,6 @@
       "programming",
       "developer tools",
       "machine learning"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "TerminalShortcutsThatMakeYou2xFaster",
-    "Name": "Terminal Shortcuts That Make You 2x Faster",
-    "Author": "MyWrite",
-    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
-    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
-    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Productivity",
-      "Developer Productivity",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "productivity",
-      "developer workflow",
-      "software development",
-      "programming",
-      "coding",
-      "terminal",
-      "command line",
-      "developer tools",
-      "web development",
-      "linux"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
-    "Name": "What Are Web Components and Why Devs Are Using Them Again",
-    "Author": "Pro Bandey",
-    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
-    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
-      "Productivity"
-    ],
-    "Tags": [
-      "web components",
-      "frontend",
-      "javascript",
-      "html",
-      "css",
-      "web development",
-      "ui components",
-      "developer workflow",
-      "programming",
-      "coding",
-      "frameworks"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsServerlessAndWhenItMakesSense",
-    "Name": "What Is Serverless and When It Makes Sense",
-    "Author": "Pro Bandey",
-    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
-    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
-    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Web Development",
-      "Software Development",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "serverless",
-      "cloud computing",
-      "backend",
-      "web development",
-      "software development",
-      "aws",
-      "devops",
-      "programming",
-      "architecture",
-      "scalability"
     ],
     "Status": "Pub"
   },
@@ -1302,6 +1187,31 @@
     "Status": "Pub"
   },
   {
+    "Article": "Http3VsHttp2WhatChangedForDevelopers",
+    "Name": "HTTP/3 vs HTTP/2: What Changed for Developers",
+    "Author": "Pro Bandey",
+    "Desc": "Understand the key differences between HTTP/2 and HTTP/3, how QUIC changes web performance, and what developers need to know when building modern web applications.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "Http3VsHttp2WhatChangedForDevelopers.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "developer productivity",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "LandingPageCopyFormulasForDevTools",
     "Name": "Landing Page Copy Formulas for Dev Tools",
     "Author": "Pro Bandey",
@@ -1362,6 +1272,93 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
+    "Name": "What Are Embeddings and Why Should Web Devs Care?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
+    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Technology",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "embeddings",
+      "artificial intelligence",
+      "machine learning",
+      "llm",
+      "vector databases",
+      "software development",
+      "web development",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TerminalShortcutsThatMakeYou2xFaster",
+    "Name": "Terminal Shortcuts That Make You 2x Faster",
+    "Author": "MyWrite",
+    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
+    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
+    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "terminal",
+      "command line",
+      "developer tools",
+      "web development",
+      "linux"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
+    "Name": "What Are Web Components and Why Devs Are Using Them Again",
+    "Author": "Pro Bandey",
+    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Productivity"
+    ],
+    "Tags": [
+      "web components",
+      "frontend",
+      "javascript",
+      "html",
+      "css",
+      "web development",
+      "ui components",
+      "developer workflow",
+      "programming",
+      "coding",
+      "frameworks"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatIsGraphqlVsRestIn1Page",
     "Name": "What Is GraphQL vs REST in 1 Page",
     "Author": "Core Lord",
@@ -1388,6 +1385,34 @@
       "developer workflow",
       "backend development",
       "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsServerlessAndWhenItMakesSense",
+    "Name": "What Is Serverless and When It Makes Sense",
+    "Author": "Pro Bandey",
+    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
+    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
+    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "serverless",
+      "cloud computing",
+      "backend",
+      "web development",
+      "software development",
+      "aws",
+      "devops",
+      "programming",
+      "architecture",
+      "scalability"
     ],
     "Status": "Pub"
   },
@@ -1469,33 +1494,6 @@
       "contracts",
       "taxes",
       "developers"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
-    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
-    "Author": "Core Lord",
-    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
-    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
-    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "programming",
-      "coding",
-      "javascript",
-      "react",
-      "vue",
-      "svelte",
-      "frontend development",
-      "performance"
     ],
     "Status": "Pub"
   },
@@ -1632,6 +1630,33 @@
       "web performance",
       "javascript",
       "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
+    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
+    "Author": "Core Lord",
+    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
+    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "programming",
+      "coding",
+      "javascript",
+      "react",
+      "vue",
+      "svelte",
+      "frontend development",
+      "performance"
     ],
     "Status": "Pub"
   },
