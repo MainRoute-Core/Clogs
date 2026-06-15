@@ -144,6 +144,35 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToSayNoToFeatureRequestsPolitely",
+    "Name": "How to Say No to Feature Requests Politely",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to decline feature requests professionally while maintaining good relationships with users, customers, and stakeholders. Discover practical communication strategies that protect your product vision.",
+    "Img": "https://images.unsplash.com/photo-1507099985932-87a4520ed1d5",
+    "Url": "HowToSayNoToFeatureRequestsPolitely.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Relations",
+      "Bussines"
+    ],
+    "Tags": [
+      "product management",
+      "software development",
+      "developer workflow",
+      "startup",
+      "saas",
+      "customer feedback",
+      "communication",
+      "product strategy",
+      "productivity",
+      "user experience"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToBuildYourFirstResponsiveNavbarWithFlexbox",
     "Name": "How to Build Your First Responsive Navbar with Flexbox",
     "Author": "Pro Bandey",
@@ -227,6 +256,35 @@
       "funding",
       "bootstrapping",
       "technology"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToReviewPrsLikeAMaintainer",
+    "Name": "How to Review PRs Like a Maintainer",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how experienced maintainers review pull requests, spot potential issues early, provide useful feedback, and keep software projects healthy without slowing down development.",
+    "Img": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
+    "Url": "HowToReviewPrsLikeAMaintainer.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "software development",
+      "github",
+      "open source",
+      "developer workflow",
+      "productivity",
+      "programming",
+      "coding",
+      "code review",
+      "pull requests",
+      "developer tools"
     ],
     "Status": "Pub"
   },
@@ -432,31 +490,30 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToReviewPrsLikeAMaintainer",
-    "Name": "How to Review PRs Like a Maintainer",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn how experienced maintainers review pull requests, spot potential issues early, provide useful feedback, and keep software projects healthy without slowing down development.",
-    "Img": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
-    "Url": "HowToReviewPrsLikeAMaintainer.json",
+    "Article": "HowToTakePerfectScreenshotsForDocs",
+    "Name": "How to Take Perfect Screenshots for Docs",
+    "Author": "Core Lord",
+    "Desc": "Learn how to capture clean, professional screenshots for technical documentation, tutorials, and blog posts that improve readability, clarity, and user experience.",
+    "Img": "https://i.ibb.co/d4W6FkcN/1672155-0-86685800-1772626314-cw-M365-vs-Google-Workspace-2000px.webp",
+    "Url": "HowToTakePerfectScreenshotsForDocs.json",
     "Date": "08-06-2026",
     "Cat": [
       "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Open Source",
-      "Tip & Tricks"
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation"
     ],
     "Tags": [
-      "software development",
-      "github",
-      "open source",
+      "documentation",
       "developer workflow",
       "productivity",
-      "programming",
+      "technical writing",
+      "ui design",
+      "web development",
+      "screenshots",
+      "tutorials",
       "coding",
-      "code review",
-      "pull requests",
-      "developer tools"
+      "software development"
     ],
     "Status": "Pub"
   },
@@ -849,6 +906,34 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToMakeADarkModeToggleWithCssLocalstorageIn10Lines",
+    "Name": "How to Make a Dark Mode Toggle with CSS + localStorage in 10 Lines",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to build a simple dark mode toggle using CSS and JavaScript with localStorage support so the theme persists across page reloads.",
+    "Img": "https://images.unsplash.com/photo-1699040309386-11c615ed64d5",
+    "Url": "HowToMakeADarkModeToggleWithCssLocalstorageIn10Lines.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "dark mode",
+      "css",
+      "javascript",
+      "localStorage",
+      "frontend",
+      "web development",
+      "ui",
+      "ux",
+      "developer tools",
+      "programming"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToOptimizeImagesForCoreWebVitalsWithoutLosingQuality",
     "Name": "How to Optimize Images for Core Web Vitals Without Losing Quality",
     "Author": "Pro Bandey",
@@ -936,35 +1021,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToSayNoToFeatureRequestsPolitely",
-    "Name": "How to Say No to Feature Requests Politely",
-    "Author": "Pro Bandey",
-    "Desc": "Learn how to decline feature requests professionally while maintaining good relationships with users, customers, and stakeholders. Discover practical communication strategies that protect your product vision.",
-    "Img": "https://images.unsplash.com/photo-1507099985932-87a4520ed1d5",
-    "Url": "HowToSayNoToFeatureRequestsPolitely.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Software Development",
-      "Productivity",
-      "Developer Relations",
-      "Bussines"
-    ],
-    "Tags": [
-      "product management",
-      "software development",
-      "developer workflow",
-      "startup",
-      "saas",
-      "customer feedback",
-      "communication",
-      "product strategy",
-      "productivity",
-      "user experience"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "HowToTestOpenSourceContributionsLocally",
     "Name": "How to Test Open Source Contributions Locally",
     "Author": "M Ramzan Ch",
@@ -988,30 +1044,64 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToTakePerfectScreenshotsForDocs",
-    "Name": "How to Take Perfect Screenshots for Docs",
-    "Author": "Core Lord",
-    "Desc": "Learn how to capture clean, professional screenshots for technical documentation, tutorials, and blog posts that improve readability, clarity, and user experience.",
-    "Img": "https://i.ibb.co/d4W6FkcN/1672155-0-86685800-1772626314-cw-M365-vs-Google-Workspace-2000px.webp",
-    "Url": "HowToTakePerfectScreenshotsForDocs.json",
-    "Date": "08-06-2026",
+    "Article": "HowToTurnASideProjectIntoACommunity",
+    "Name": "How to Turn a Side Project Into a Community",
+    "Author": "MyWrite",
+    "Desc": "Learn how developers can grow a simple side project into an active community by focusing on users, feedback loops, open communication, and consistent engagement.",
+    "Img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    "Url": "HowToTurnASideProjectIntoACommunity.json",
+    "Date": "16-06-2026",
     "Cat": [
-      "Tutorial",
+      "Web Development",
+      "Software Development",
       "Productivity",
       "Developer Productivity",
-      "Content Creation"
+      "Developer Marketing",
+      "Developer Relations",
+      "Open Source",
+      "Tip & Tricks"
     ],
     "Tags": [
-      "documentation",
-      "developer workflow",
-      "productivity",
-      "technical writing",
-      "ui design",
+      "side project",
+      "community building",
+      "open source",
+      "startup",
+      "developer tools",
+      "growth",
+      "product development",
       "web development",
-      "screenshots",
-      "tutorials",
-      "coding",
-      "software development"
+      "engagement",
+      "entrepreneurship"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "RagExplainedWithoutTheJargon",
+    "Name": "RAG Explained Without the Jargon",
+    "Author": "Core Lord",
+    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
+    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
+    "Url": "RagExplainedWithoutTheJargon.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Artificial Intelligence",
+      "Bussines"
+    ],
+    "Tags": [
+      "ai",
+      "rag",
+      "artificial intelligence",
+      "llm",
+      "machine learning",
+      "developer tools",
+      "software development",
+      "ai applications",
+      "programming",
+      "technology"
     ],
     "Status": "Pub"
   },
@@ -1042,34 +1132,6 @@
       "technical writing",
       "devtools",
       "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToWritePromptsThatDonTWasteTokens",
-    "Name": "How to Write Prompts That Don’t Waste Tokens",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn practical prompt engineering techniques that reduce token usage, lower AI costs, improve response quality, and make conversations with AI models more efficient.",
-    "Img": "https://images.unsplash.com/photo-1676299081847-824916de030a",
-    "Url": "HowToWritePromptsThatDonTWasteTokens.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Productivity",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "artificial intelligence",
-      "ai tools",
-      "prompt engineering",
-      "llm",
-      "productivity",
-      "developer workflow",
-      "software development",
-      "programming",
-      "developer tools",
-      "machine learning"
     ],
     "Status": "Pub"
   },
@@ -1187,6 +1249,65 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToWriteMarkdownTipsForBetterReadmeFiles",
+    "Name": "How to Write Markdown Tips for Better README Files",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to write clean, readable Markdown for README files that improve documentation quality, developer experience, and open source project adoption.",
+    "Img": "https://images.unsplash.com/photo-1566241440091-ec10de8db2e1",
+    "Url": "HowToWriteMarkdownTipsForBetterReadmeFiles.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "markdown",
+      "readme",
+      "documentation",
+      "github",
+      "open source",
+      "web development",
+      "software development",
+      "developer tools",
+      "writing",
+      "best practices"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToWritePromptsThatDonTWasteTokens",
+    "Name": "How to Write Prompts That Don’t Waste Tokens",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical prompt engineering techniques that reduce token usage, lower AI costs, improve response quality, and make conversations with AI models more efficient.",
+    "Img": "https://images.unsplash.com/photo-1676299081847-824916de030a",
+    "Url": "HowToWritePromptsThatDonTWasteTokens.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Productivity",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "artificial intelligence",
+      "ai tools",
+      "prompt engineering",
+      "llm",
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "developer tools",
+      "machine learning"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "Http3VsHttp2WhatChangedForDevelopers",
     "Name": "HTTP/3 vs HTTP/2: What Changed for Developers",
     "Author": "Pro Bandey",
@@ -1242,32 +1363,138 @@
     "Status": "Pub"
   },
   {
-    "Article": "RagExplainedWithoutTheJargon",
-    "Name": "RAG Explained Without the Jargon",
-    "Author": "Core Lord",
-    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
-    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
-    "Url": "RagExplainedWithoutTheJargon.json",
-    "Date": "10-06-2026",
+    "Article": "WhatIsServerlessAndWhenItMakesSense",
+    "Name": "What Is Serverless and When It Makes Sense",
+    "Author": "Pro Bandey",
+    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
+    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
+    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
+    "Date": "08-06-2026",
     "Cat": [
+      "Technology",
+      "Web Development",
       "Software Development",
-      "Productivity",
-      "Developer Productivity",
-      "Content Creation",
-      "Artificial Intelligence",
-      "Bussines"
+      "Tip & Tricks"
     ],
     "Tags": [
-      "ai",
-      "rag",
-      "artificial intelligence",
-      "llm",
-      "machine learning",
-      "developer tools",
+      "serverless",
+      "cloud computing",
+      "backend",
+      "web development",
       "software development",
-      "ai applications",
+      "aws",
+      "devops",
       "programming",
-      "technology"
+      "architecture",
+      "scalability"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
+    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
+    "Author": "Core Lord",
+    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
+    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "programming",
+      "coding",
+      "javascript",
+      "react",
+      "vue",
+      "svelte",
+      "frontend development",
+      "performance"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "MainrouteCore",
+    "Name": "MainRoute Core",
+    "Author": "Core Lord",
+    "Desc": "A specialized technology powerhouse engineering high-performance Progressive Web Apps, native mobile experiences, and robust enterprise software.",
+    "Img": "https://mainroute-core.github.io/src/social.png",
+    "Url": "MainrouteCore.json",
+    "Date": "05-06-2026",
+    "Cat": [
+      "Technology",
+      "Open Source",
+      "Bussiness",
+      "Faq"
+    ],
+    "Tags": [
+      "MainRoute Core",
+      "MainRoute",
+      "MRC",
+      "MR Core"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "MetricsThatMatterBeforeRevenueInASaasProduct",
+    "Name": "Metrics That Matter Before Revenue in a SaaS Product",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn which early-stage SaaS metrics actually matter before you focus on revenue, including activation, retention, engagement, and user behavior signals.",
+    "Img": "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    "Url": "MetricsThatMatterBeforeRevenueInASaasProduct.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "saas",
+      "startup",
+      "metrics",
+      "analytics",
+      "product management",
+      "growth",
+      "developer tools",
+      "web development",
+      "entrepreneurship",
+      "product development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "NpmScriptsYouShouldStopWritingManually",
+    "Name": "NPM Scripts You Should Stop Writing Manually",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how to use NPM scripts to automate repetitive development tasks, improve productivity, and simplify project workflows without installing unnecessary tools.",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "Url": "NpmScriptsYouShouldStopWritingManually.json",
+    "Date": "14-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "npm",
+      "nodejs",
+      "javascript",
+      "web development",
+      "developer productivity",
+      "software development",
+      "automation",
+      "developer workflow",
+      "coding",
+      "programming"
     ],
     "Status": "Pub"
   },
@@ -1298,34 +1525,6 @@
       "web development",
       "programming",
       "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "TerminalShortcutsThatMakeYou2xFaster",
-    "Name": "Terminal Shortcuts That Make You 2x Faster",
-    "Author": "MyWrite",
-    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
-    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
-    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Productivity",
-      "Developer Productivity",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "productivity",
-      "developer workflow",
-      "software development",
-      "programming",
-      "coding",
-      "terminal",
-      "command line",
-      "developer tools",
-      "web development",
-      "linux"
     ],
     "Status": "Pub"
   },
@@ -1389,34 +1588,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatIsServerlessAndWhenItMakesSense",
-    "Name": "What Is Serverless and When It Makes Sense",
-    "Author": "Pro Bandey",
-    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
-    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
-    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Web Development",
-      "Software Development",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "serverless",
-      "cloud computing",
-      "backend",
-      "web development",
-      "software development",
-      "aws",
-      "devops",
-      "programming",
-      "architecture",
-      "scalability"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
     "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
     "Author": "Pro Bandey",
@@ -1446,110 +1617,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "ProgressiveWebAppsIn2026StillRelevant",
-    "Name": "Progressive Web Apps in 2026: Still Relevant?",
-    "Author": "Core Lord",
-    "Desc": "Explore the current state of Progressive Web Apps (PWAs) in 2026, their advantages, limitations, real-world use cases, and whether they remain a smart choice for modern web development.",
-    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "Url": "ProgressiveWebAppsIn2026StillRelevant.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Web Development",
-      "Developer Tools"
-    ],
-    "Tags": [
-      "web development",
-      "developer tools",
-      "programming",
-      "coding",
-      "software development",
-      "progressive web apps",
-      "pwa",
-      "service workers",
-      "web performance",
-      "developer workflow"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
-    "Name": "Taxes and Legal Basics for Solo Developers",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
-    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
-    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Software Development",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "software development",
-      "productivity",
-      "developer workflow",
-      "programming",
-      "coding",
-      "freelancing",
-      "business",
-      "contracts",
-      "taxes",
-      "developers"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "MainrouteCore",
-    "Name": "MainRoute Core",
-    "Author": "Core Lord",
-    "Desc": "A specialized technology powerhouse engineering high-performance Progressive Web Apps, native mobile experiences, and robust enterprise software.",
-    "Img": "https://mainroute-core.github.io/src/social.png",
-    "Url": "MainrouteCore.json",
-    "Date": "05-06-2026",
-    "Cat": [
-      "Technology",
-      "Open Source",
-      "Bussiness",
-      "Faq"
-    ],
-    "Tags": [
-      "MainRoute Core",
-      "MainRoute",
-      "MRC",
-      "MR Core"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "NpmScriptsYouShouldStopWritingManually",
-    "Name": "NPM Scripts You Should Stop Writing Manually",
-    "Author": "Pro Bandey",
-    "Desc": "Learn how to use NPM scripts to automate repetitive development tasks, improve productivity, and simplify project workflows without installing unnecessary tools.",
-    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
-    "Url": "NpmScriptsYouShouldStopWritingManually.json",
-    "Date": "14-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Productivity",
-      "Developer Tools",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "npm",
-      "nodejs",
-      "javascript",
-      "web development",
-      "developer productivity",
-      "software development",
-      "automation",
-      "developer workflow",
-      "coding",
-      "programming"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
     "Name": "Product vs Project Mindset: The Shift That Changes Everything",
     "Author": "MyWrite",
@@ -1574,6 +1641,32 @@
       "startups",
       "developer tools",
       "business"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "ProgressiveWebAppsIn2026StillRelevant",
+    "Name": "Progressive Web Apps in 2026: Still Relevant?",
+    "Author": "Core Lord",
+    "Desc": "Explore the current state of Progressive Web Apps (PWAs) in 2026, their advantages, limitations, real-world use cases, and whether they remain a smart choice for modern web development.",
+    "Img": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "Url": "ProgressiveWebAppsIn2026StillRelevant.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Web Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "web development",
+      "developer tools",
+      "programming",
+      "coding",
+      "software development",
+      "progressive web apps",
+      "pwa",
+      "service workers",
+      "web performance",
+      "developer workflow"
     ],
     "Status": "Pub"
   },
@@ -1607,6 +1700,60 @@
     "Status": "Pub"
   },
   {
+    "Article": "TerminalShortcutsThatMakeYou2xFaster",
+    "Name": "Terminal Shortcuts That Make You 2x Faster",
+    "Author": "MyWrite",
+    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
+    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
+    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "terminal",
+      "command line",
+      "developer tools",
+      "web development",
+      "linux"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatAreServiceWorkersInSimpleTerms",
     "Name": "What Are Service Workers in Simple Terms?",
     "Author": "Pro Bandey",
@@ -1630,33 +1777,6 @@
       "web performance",
       "javascript",
       "developer workflow"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
-    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
-    "Author": "Core Lord",
-    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
-    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
-    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "programming",
-      "coding",
-      "javascript",
-      "react",
-      "vue",
-      "svelte",
-      "frontend development",
-      "performance"
     ],
     "Status": "Pub"
   },
@@ -1686,6 +1806,37 @@
       "web development",
       "developer tools",
       "automation",
+      "programming"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsTheRiseOfBunDenoAndNodeAlternatives",
+    "Name": "What Is the Rise of Bun, Deno, and Node Alternatives?",
+    "Author": "Pro Bandey",
+    "Desc": "Explore modern JavaScript runtimes like Bun and Deno, how they compare with Node.js, and why developers are considering faster, more secure alternatives.",
+    "Img": "https://images.unsplash.com/photo-1650234083227-74c0700b295a",
+    "Url": "WhatIsTheRiseOfBunDenoAndNodeAlternatives.json",
+    "Date": "16-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Developer Tools",
+      "Developer Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "nodejs",
+      "bun",
+      "deno",
+      "javascript",
+      "runtime",
+      "web development",
+      "backend",
+      "developer tools",
+      "performance",
       "programming"
     ],
     "Status": "Pub"
