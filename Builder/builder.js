@@ -32,7 +32,7 @@ document.addEventListener('keydown', (e) => {
 
             case (alt && "e"): e.preventDefault(); switchTab('editor'); break;
             case (alt && "p"): e.preventDefault(); switchTab('preview'); break;
-            case (alt && "j"): e.preventDefault(); switchTab('json'); break;
+            case (alt && "o"): e.preventDefault(); switchTab('json'); break;
 
             case (alt && "c"): e.preventDefault(); copyJSON(); break;
             case `s`: e.preventDefault(); saveJSON(); break;
@@ -296,7 +296,7 @@ async function pushToGithub() {
     const path = resolveGhPath(), base64 = btoa(unescape(encodeURIComponent(JSON.stringify(getOutputJSON(), null, 2)))), url = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`, headers = { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' };
     try {
         showStatus("Syncing...", "info"); let sha = null; const getRes = await fetch(url, { headers }); if (getRes.ok) sha = (await getRes.json()).sha;
-        const updateRes = await fetch(url, { method: 'PUT', headers, body: JSON.stringify({ message: `Cloud Save ${inputs.id.value || 'post'}`, content: base64, branch, sha }) });
+        const updateRes = await fetch(url, { method: 'PUT', headers, body: JSON.stringify({ message: `Saved ${inputs.id.value || 'post'}.json to Github By Clog Builder`, content: base64, branch, sha }) });
         updateRes.ok ? showStatus("Pushed to GitHub!", "success") : showStatus(`Failed: ${(await updateRes.json()).message}`, "error");
     } catch (e) { showStatus(`Sync failed: ${e.message}`, "error"); }
 }
