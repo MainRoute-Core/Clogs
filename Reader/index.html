@@ -7,25 +7,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#181c24" />
 
-  <!-- Marked.js Markdown Parser -->
   <script src="libs/marked.min.js"></script>
-  <!-- GitHub Styled Markdown CSS -->
   <link rel="stylesheet" href="libs/github-markdown.min.css">
   <link rel="stylesheet" href="reader.css">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <!-- Fonts -->
   <link href="https://mainroute-core.github.io/src/CoreSans-Regular_en.otf" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- READING PROGRESS BAR -->
   <div id="reading-progress-container" class="progress-container hidden">
     <div id="reading-progress-bar" class="progress-bar"></div>
   </div>
 
-  <!-- INLINE SVGs -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="icon-book" viewBox="0 0 24 24">
       <path d="M21 4H7c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7 18V6h14v12H7zM3 8h2v12H3z" />
@@ -69,7 +64,6 @@
   </svg>
 
   <div id="app">
-    <!-- NAVIGATION -->
     <nav class="navbar">
       <a class="brand" onclick="clearFiltersAndHome()" title="Home | Reset all filters">
         <img class="icon" src="favicon.ico" alt="logo" />
@@ -90,7 +84,6 @@
       </div>
     </nav>
 
-    <!-- SEARCH & MOBILE FILTER ROW -->
     <div class="search-and-filter-bar" id="main-search-container">
       <div class="search-wrapper">
         <svg class="icon search-icon">
@@ -105,15 +98,11 @@
       </button>
     </div>
 
-    <!-- MOBILE SIDEBAR OVERLAY BACKDROP -->
     <div class="sidebar-overlay" id="sidebar-overlay" onclick="toggleFilterDrawer()"></div>
 
-    <!-- LAYOUT GRID -->
     <div class="layout-grid" id="main-layout-wrapper">
 
-      <!-- SIDEBAR FILTERS -->
       <aside class="sidebar" id="sidebar-filters">
-        <!-- Categories Multi-Select -->
         <div class="sidebar-card">
           <div class="sidebar-title" title="Select one or multiple categories to filter publications">
             <svg class="icon">
@@ -121,12 +110,10 @@
             </svg> Categories
           </div>
           <ul class="filter-list" id="category-filter-list">
-            <!-- Populated by JS -->
           </ul>
         </div>
       </aside>
 
-      <!-- MAIN PUBLICATIONS -->
       <main class="content-area">
         <div class="grid-header">
           <span id="results-count">Retrieving publications...</span>
@@ -138,7 +125,6 @@
         </div>
         
         <div class="post-grid" id="publication-grid">
-          <!-- INITIAL SKELETON CARDS FOR SMOOTHER PERCEIVED PERFORMANCE -->
           <div class="skeleton-card">
             <div class="skeleton-img"></div>
             <div class="skeleton-content">
@@ -170,7 +156,6 @@
       </main>
     </div>
 
-    <!-- SINGLE POST READER -->
     <div class="reader-pane" id="main-reader-pane">
       <div class="back-btn-wrapper">
         <button class="btn" onclick="exitReaderView()" title="Return to publication list">
@@ -203,24 +188,20 @@
             </div>
           </div>
 
-          <!-- COLLAPSIBLE TABLE OF CONTENTS -->
           <details class="clog-toc-wrapper" id="toc-container">
             <summary class="toc-title">
               <svg class="icon"><use href="#icon-toc"></use></svg> Table of Contents
             </summary>
             <nav class="toc-list" id="toc-list">
-              <!-- Dynamically populated via reader.js -->
             </nav>
           </details>
 
           <div class="markdown-body" style="background: transparent;" id="full-body">
-            <!-- Markdown content or 404 injected here -->
           </div>
         </div>
       </article>
     </div>
 
-    <!-- LOADER -->
     <div id="loader-status" style="display:none;">
       <div class="loading-spinner">
         <svg class="icon" style="width: 3rem; height: 3rem; color: var(--primary); animation: spin 1s linear infinite;">
