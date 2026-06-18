@@ -1393,6 +1393,36 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhatIsGraphqlVsRestIn1Page",
+    "Name": "What Is GraphQL vs REST in 1 Page",
+    "Author": "Core Lord",
+    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "WhatIsGraphqlVsRestIn1Page.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "api",
+      "graphql",
+      "rest api",
+      "programming",
+      "coding",
+      "developer workflow",
+      "backend development",
+      "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatIsServerlessAndWhenItMakesSense",
     "Name": "What Is Serverless and When It Makes Sense",
     "Author": "Pro Bandey",
@@ -1417,33 +1447,6 @@
       "programming",
       "architecture",
       "scalability"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
-    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
-    "Author": "Core Lord",
-    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
-    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
-    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "programming",
-      "coding",
-      "javascript",
-      "react",
-      "vue",
-      "svelte",
-      "frontend development",
-      "performance"
     ],
     "Status": "Pub"
   },
@@ -1588,36 +1591,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatIsGraphqlVsRestIn1Page",
-    "Name": "What Is GraphQL vs REST in 1 Page",
-    "Author": "Core Lord",
-    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
-    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-    "Url": "WhatIsGraphqlVsRestIn1Page.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Open Source",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "api",
-      "graphql",
-      "rest api",
-      "programming",
-      "coding",
-      "developer workflow",
-      "backend development",
-      "javascript"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "ProductVsProjectMindsetTheShiftThatChangesEverything",
     "Name": "Product vs Project Mindset: The Shift That Changes Everything",
     "Author": "MyWrite",
@@ -1755,6 +1728,64 @@
     "Status": "Pub"
   },
   {
+    "Article": "VsCodeExtensionsThatSpeedUpYourWorkflow",
+    "Name": "VS Code Extensions That Speed Up Your Workflow",
+    "Author": "Pro Bandey",
+    "Desc": "Discover useful VS Code extensions that can help developers write code faster, reduce repetitive work, improve code quality, and boost overall productivity.",
+    "Img": "https://images.unsplash.com/photo-1515876305429-1d5f0d8e5f4b",
+    "Url": "VsCodeExtensionsThatSpeedUpYourWorkflow.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "vscode",
+      "visual studio code",
+      "developer tools",
+      "programming",
+      "web development",
+      "software development",
+      "productivity",
+      "coding",
+      "extensions",
+      "developer productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
+    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
+    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "performance",
+      "core web vitals",
+      "software development",
+      "developer workflow",
+      "html",
+      "css",
+      "javascript",
+      "optimization",
+      "coding"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatAreServiceWorkersInSimpleTerms",
     "Name": "What Are Service Workers in Simple Terms?",
     "Author": "Pro Bandey",
@@ -1778,6 +1809,33 @@
       "web performance",
       "javascript",
       "developer workflow"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte",
+    "Name": "What Is Hydration and Why It Matters in React, Vue, and Svelte",
+    "Author": "Core Lord",
+    "Desc": "Learn what hydration is, how it works in modern frontend frameworks, why it affects performance and SEO, and how developers can avoid common hydration issues.",
+    "Img": "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    "Url": "WhatIsHydrationAndWhyItMattersInReactVueAndSvelte.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "programming",
+      "coding",
+      "javascript",
+      "react",
+      "vue",
+      "svelte",
+      "frontend development",
+      "performance"
     ],
     "Status": "Pub"
   },
@@ -1843,31 +1901,30 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
-    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
-    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
-    "Date": "08-06-2026",
+    "Article": "WhatLaptopShouldAWebDeveloperBuyIn2026",
+    "Name": "What Laptop Should a Web Developer Buy in 2026?",
+    "Author": "M Ramzan Ch",
+    "Desc": "Choosing a laptop for web development in 2026 can be overwhelming. This guide explains what specifications matter, what to avoid, and how to choose the right laptop based on your budget and workflow.",
+    "Img": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
+    "Url": "WhatLaptopShouldAWebDeveloperBuyIn2026.json",
+    "Date": "07-06-2026",
     "Cat": [
-      "Tutorial",
       "Web Development",
-      "Software Development",
       "Productivity",
-      "Tip & Tricks"
+      "Developer Tools",
+      "Content Creation"
     ],
     "Tags": [
-      "web development",
-      "performance",
-      "core web vitals",
       "software development",
+      "developer tools",
+      "programming",
+      "coding",
+      "web development",
+      "laptop",
       "developer workflow",
-      "html",
-      "css",
-      "javascript",
-      "optimization",
-      "coding"
+      "productivity",
+      "hardware",
+      "technology"
     ],
     "Status": "Pub"
   },
@@ -1925,34 +1982,6 @@
       "frontend",
       "backend",
       "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatLaptopShouldAWebDeveloperBuyIn2026",
-    "Name": "What Laptop Should a Web Developer Buy in 2026?",
-    "Author": "M Ramzan Ch",
-    "Desc": "Choosing a laptop for web development in 2026 can be overwhelming. This guide explains what specifications matter, what to avoid, and how to choose the right laptop based on your budget and workflow.",
-    "Img": "https://images.unsplash.com/photo-1531297484001-80022131f5a1",
-    "Url": "WhatLaptopShouldAWebDeveloperBuyIn2026.json",
-    "Date": "07-06-2026",
-    "Cat": [
-      "Web Development",
-      "Productivity",
-      "Developer Tools",
-      "Content Creation"
-    ],
-    "Tags": [
-      "software development",
-      "developer tools",
-      "programming",
-      "coding",
-      "web development",
-      "laptop",
-      "developer workflow",
-      "productivity",
-      "hardware",
-      "technology"
     ],
     "Status": "Pub"
   },
