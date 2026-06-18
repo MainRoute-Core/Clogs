@@ -4,7 +4,7 @@ const inputs = { title: document.getElementById('title'), id: document.getElemen
 let uploadTarget = 'editor';
 
 function toggleMeta() { document.getElementById('meta-content').classList.toggle('show'); }
-const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Software Development", "Productivity", "Developer Tools", "Developer Productivity", "Developer Marketing", "Developer Relations", "Entrepreneurship", "Content Creation", "Artificial Intelligence", "Open Source", "Bussines", "Tip & Tricks"];
+const AVAILABLE_CATEGORIES = ["Technology", "Tutorial", "Web Development", "Software Development", "Productivity", "Developer Tools", "Developer Productivity", "Developer Marketing", "Developer Relations", "Entrepreneurship", "Content Creation", "Artificial Intelligence", "Open Source", "Bussiness", "Tip & Tricks"];
 AVAILABLE_CATEGORIES.forEach(cat => { const lbl = document.createElement('label'); lbl.innerHTML = `<input type="checkbox" value="${cat}" class="cat-checkbox"> ${cat}`; document.getElementById('categories-list').appendChild(lbl); });
 function toggleDropdown(id) { document.getElementById(id).classList.toggle('show'); }
 document.addEventListener('click', (e) => { if (!e.target.closest('.multi-select')) document.getElementById('categories-list').classList.remove('show'); });
