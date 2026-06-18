@@ -173,6 +173,29 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToTestOpenSourceContributionsLocally",
+    "Name": "How to Test Open Source Contributions Locally",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to safely test open source contributions on your own machine before submitting a pull request. Discover practical workflows that help you catch issues early and improve your chances of getting merged.",
+    "Img": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
+    "Url": "HowToTestOpenSourceContributionsLocally.json",
+    "Date": "10-06-2026",
+    "Cat": [],
+    "Tags": [
+      "open source",
+      "github",
+      "software development",
+      "coding",
+      "programming",
+      "testing",
+      "developer workflow",
+      "git",
+      "contribution",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToBuildYourFirstResponsiveNavbarWithFlexbox",
     "Name": "How to Build Your First Responsive Navbar with Flexbox",
     "Author": "Pro Bandey",
@@ -1051,29 +1074,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToTestOpenSourceContributionsLocally",
-    "Name": "How to Test Open Source Contributions Locally",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn how to safely test open source contributions on your own machine before submitting a pull request. Discover practical workflows that help you catch issues early and improve your chances of getting merged.",
-    "Img": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb",
-    "Url": "HowToTestOpenSourceContributionsLocally.json",
-    "Date": "10-06-2026",
-    "Cat": [],
-    "Tags": [
-      "open source",
-      "github",
-      "software development",
-      "coding",
-      "programming",
-      "testing",
-      "developer workflow",
-      "git",
-      "contribution",
-      "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "HowToTurnASideProjectIntoACommunity",
     "Name": "How to Turn a Side Project Into a Community",
     "Author": "MyWrite",
@@ -1191,6 +1191,36 @@
       "debugging",
       "developer workflow",
       "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToUseVectorDatabasesInPlainEnglish",
+    "Name": "How to Use Vector Databases in Plain English",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn what vector databases are, how they work, and why they are becoming essential for AI applications, semantic search, recommendation systems, and RAG workflows.",
+    "Img": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e",
+    "Url": "HowToUseVectorDatabasesInPlainEnglish.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "vector database",
+      "ai",
+      "embeddings",
+      "rag",
+      "semantic search",
+      "machine learning",
+      "web development",
+      "software development",
+      "artificial intelligence",
+      "developer tools"
     ],
     "Status": "Pub"
   },
