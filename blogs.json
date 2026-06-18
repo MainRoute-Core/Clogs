@@ -84,66 +84,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToEvaluateIfAnAiToolIsActuallyGood",
-    "Name": "How to Evaluate if an AI Tool Is Actually Good",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn how to evaluate AI tools beyond marketing claims. Discover practical criteria for accuracy, reliability, usability, privacy, and real-world usefulness before adding an AI tool to your workflow.",
-    "Img": "https://images.unsplash.com/photo-1664575602276-acd073f104c1",
-    "Url": "HowToEvaluateIfAnAiToolIsActuallyGood.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Web Development",
-      "Software Development",
-      "Productivity",
-      "Developer Tools",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "artificial intelligence",
-      "productivity",
-      "developer tools",
-      "software development",
-      "automation",
-      "machine learning",
-      "workflow",
-      "technology",
-      "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToFindYourFirstOpenSourceIssue",
-    "Name": "How to Find Your First Open Source Issue",
-    "Author": "Pro Bandey",
-    "Desc": "Learn practical ways to find beginner-friendly open source issues, understand project workflows, and make your first contribution with confidence.",
-    "Img": "https://images.unsplash.com/photo-1618477388954-7852f32655ec",
-    "Url": "HowToFindYourFirstOpenSourceIssue.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Productivity",
-      "Developer Productivity",
-      "Open Source"
-    ],
-    "Tags": [
-      "open source",
-      "github",
-      "software development",
-      "coding",
-      "programming",
-      "developer workflow",
-      "contribution",
-      "github issues",
-      "productivity",
-      "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "HowToSayNoToFeatureRequestsPolitely",
     "Name": "How to Say No to Feature Requests Politely",
     "Author": "Pro Bandey",
@@ -226,34 +166,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "HowToNameVariablesSoFutureYouThanksYou",
-    "Name": "How to Name Variables So Future-You Thanks You",
-    "Author": "MyWrite",
-    "Desc": "earn practical variable naming techniques that make code easier to read, maintain, and debug. Discover naming patterns that help teams move faster and reduce confusion.",
-    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
-    "Url": "HowToNameVariablesSoFutureYouThanksYou.json",
-    "Date": "09-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Software Development",
-      "Productivity",
-      "Developer Productivity"
-    ],
-    "Tags": [
-      "software development",
-      "coding",
-      "programming",
-      "clean code",
-      "developer workflow",
-      "javascript",
-      "code quality",
-      "best practices",
-      "productivity",
-      "web development"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "BootstrappedVsFundedWhatNoOneTellsYou",
     "Name": "Bootstrapped vs Funded: What No One Tells You",
     "Author": "Pro Bandey",
@@ -279,35 +191,6 @@
       "funding",
       "bootstrapping",
       "technology"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToReviewPrsLikeAMaintainer",
-    "Name": "How to Review PRs Like a Maintainer",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn how experienced maintainers review pull requests, spot potential issues early, provide useful feedback, and keep software projects healthy without slowing down development.",
-    "Img": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
-    "Url": "HowToReviewPrsLikeAMaintainer.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Open Source",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "software development",
-      "github",
-      "open source",
-      "developer workflow",
-      "productivity",
-      "programming",
-      "coding",
-      "code review",
-      "pull requests",
-      "developer tools"
     ],
     "Status": "Pub"
   },
@@ -366,6 +249,94 @@
       "web development",
       "artificial intelligence",
       "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToEvaluateIfAnAiToolIsActuallyGood",
+    "Name": "How to Evaluate if an AI Tool Is Actually Good",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how to evaluate AI tools beyond marketing claims. Discover practical criteria for accuracy, reliability, usability, privacy, and real-world usefulness before adding an AI tool to your workflow.",
+    "Img": "https://images.unsplash.com/photo-1664575602276-acd073f104c1",
+    "Url": "HowToEvaluateIfAnAiToolIsActuallyGood.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "artificial intelligence",
+      "productivity",
+      "developer tools",
+      "software development",
+      "automation",
+      "machine learning",
+      "workflow",
+      "technology",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToFindYourFirstOpenSourceIssue",
+    "Name": "How to Find Your First Open Source Issue",
+    "Author": "Pro Bandey",
+    "Desc": "Learn practical ways to find beginner-friendly open source issues, understand project workflows, and make your first contribution with confidence.",
+    "Img": "https://images.unsplash.com/photo-1618477388954-7852f32655ec",
+    "Url": "HowToFindYourFirstOpenSourceIssue.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "open source",
+      "github",
+      "software development",
+      "coding",
+      "programming",
+      "developer workflow",
+      "contribution",
+      "github issues",
+      "productivity",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToNameVariablesSoFutureYouThanksYou",
+    "Name": "How to Name Variables So Future-You Thanks You",
+    "Author": "MyWrite",
+    "Desc": "earn practical variable naming techniques that make code easier to read, maintain, and debug. Discover naming patterns that help teams move faster and reduce confusion.",
+    "Img": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    "Url": "HowToNameVariablesSoFutureYouThanksYou.json",
+    "Date": "09-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "coding",
+      "programming",
+      "clean code",
+      "developer workflow",
+      "javascript",
+      "code quality",
+      "best practices",
+      "productivity",
+      "web development"
     ],
     "Status": "Pub"
   },
@@ -508,6 +479,35 @@
       "coding",
       "project management",
       "community",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToReviewPrsLikeAMaintainer",
+    "Name": "How to Review PRs Like a Maintainer",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn how experienced maintainers review pull requests, spot potential issues early, provide useful feedback, and keep software projects healthy without slowing down development.",
+    "Img": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
+    "Url": "HowToReviewPrsLikeAMaintainer.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "software development",
+      "github",
+      "open source",
+      "developer workflow",
+      "productivity",
+      "programming",
+      "coding",
+      "code review",
+      "pull requests",
       "developer tools"
     ],
     "Status": "Pub"
@@ -843,6 +843,95 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToBuildInPublicWithoutFeelingCringe",
+    "Name": "How to Build in Public Without Feeling Cringe",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn practical ways to build in public, share your progress consistently, attract opportunities, and grow an audience without feeling like you're constantly self-promoting.",
+    "Img": "https://images.unsplash.com/photo-1517048676732-d65bc937f952",
+    "Url": "HowToBuildInPublicWithoutFeelingCringe.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Marketing",
+      "Developer Relations",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "build in public",
+      "indie hacking",
+      "startup",
+      "developer productivity",
+      "personal branding",
+      "entrepreneurship",
+      "software development",
+      "community building",
+      "growth",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToChooseTheRightTechStackWithoutOverthinking",
+    "Name": "How to Choose the Right Tech Stack Without Overthinking",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn a practical way to choose a tech stack for web or software projects without getting stuck in endless comparisons and analysis paralysis.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToChooseTheRightTechStackWithoutOverthinking.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Open Source"
+    ],
+    "Tags": [
+      "tech stack",
+      "programming",
+      "web development",
+      "software development",
+      "backend",
+      "frontend",
+      "javascript",
+      "career growth",
+      "developer productivity",
+      "startups"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToDebugCodeFasterWithoutGettingStuckForHours",
+    "Name": "How to Debug Code Faster (Without Getting Stuck for Hours)",
+    "Author": "Pro Bandey",
+    "Desc": "Learn practical debugging strategies developers use to quickly find and fix bugs using logs, isolation techniques, and systematic thinking instead of guessing.",
+    "Img": "https://images.unsplash.com/photo-1526379879527-8559ecfcaec0",
+    "Url": "HowToDebugCodeFasterWithoutGettingStuckForHours.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Developer Tools"
+    ],
+    "Tags": [
+      "debugging",
+      "programming",
+      "software development",
+      "web development",
+      "developer tools",
+      "troubleshooting",
+      "coding",
+      "problem solving",
+      "backend development",
+      "frontend development"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToDebugLayoutShiftsLikeAPro",
     "Name": "How to Debug Layout Shifts Like a Pro?",
     "Author": "Pro Bandey",
@@ -865,6 +954,37 @@
       "chrome devtools",
       "css",
       "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToDesignCleanApisThatDevelopersActuallyEnjoyUsing",
+    "Name": "How to Design Clean APIs That Developers Actually Enjoy Using",
+    "Author": "Core Lord",
+    "Desc": "Learn the principles behind well-designed APIs, including consistency, naming, error handling, and structure so your APIs are easier to use, debug, and scale.",
+    "Img": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    "Url": "HowToDesignCleanApisThatDevelopersActuallyEnjoyUsing.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation"
+    ],
+    "Tags": [
+      "api design",
+      "rest api",
+      "backend development",
+      "software development",
+      "web development",
+      "developer experience",
+      "programming",
+      "system design",
+      "clean code",
+      "developer tools"
     ],
     "Status": "Pub"
   },
@@ -1074,6 +1194,64 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToTestApisQuickly",
+    "Name": "How to Test APIs Quickly",
+    "Author": "Pro Bandey",
+    "Desc": "Learn fast and practical methods for testing APIs using modern tools, command-line utilities, and browser-based workflows without wasting time.",
+    "Img": "https://images.unsplash.com/photo-1504639725590-34d0984388bd",
+    "Url": "HowToTestApisQuickly.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "api testing",
+      "api",
+      "postman",
+      "rest api",
+      "web development",
+      "software development",
+      "developer tools",
+      "backend development",
+      "debugging",
+      "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToThinkLikeASeniorDeveloperWithoutYearsOfExperience",
+    "Name": "How to Think Like a Senior Developer (Without Years of Experience)",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how senior developers approach problems, make decisions, and write better code by focusing on systems thinking, trade-offs, and real-world constraints.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToThinkLikeASeniorDeveloperWithoutYearsOfExperience.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Relations"
+    ],
+    "Tags": [
+      "senior developer",
+      "software engineering",
+      "coding mindset",
+      "system design",
+      "web development",
+      "programming",
+      "developer productivity",
+      "career growth",
+      "software architecture",
+      "problem solving"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToTurnASideProjectIntoACommunity",
     "Name": "How to Turn a Side Project Into a Community",
     "Author": "MyWrite",
@@ -1102,6 +1280,37 @@
       "web development",
       "engagement",
       "entrepreneurship"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToTurnSmallSideProjectsIntoRealIncome",
+    "Name": "How to Turn Small Side Projects Into Real Income",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how developers can transform small side projects into income-generating products using validation, distribution, and simple monetization strategies.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToTurnSmallSideProjectsIntoRealIncome.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Entrepreneurship",
+      "Web Development",
+      "Software Development",
+      "Developer Marketing",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "side projects",
+      "passive income",
+      "startup",
+      "indie hacking",
+      "web development",
+      "saas",
+      "developer productivity",
+      "freelancing",
+      "product building",
+      "monetization"
     ],
     "Status": "Pub"
   },
@@ -1191,6 +1400,36 @@
       "debugging",
       "developer workflow",
       "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "HowToUseOpenSourceAsMarketingRealExamples",
+    "Name": "How to Use Open Source as Marketing: Real Examples",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how developers, startups, and SaaS founders use open source projects to build trust, attract users, grow communities, and market products without relying heavily on ads.",
+    "Img": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    "Url": "HowToUseOpenSourceAsMarketingRealExamples.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Marketing",
+      "Open Source"
+    ],
+    "Tags": [
+      "open source",
+      "marketing",
+      "github",
+      "startup",
+      "saas",
+      "developer tools",
+      "community building",
+      "software development",
+      "growth",
+      "entrepreneurship"
     ],
     "Status": "Pub"
   },
@@ -1340,6 +1579,36 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
+    "Name": "What Are Embeddings and Why Should Web Devs Care?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
+    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Technology",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "embeddings",
+      "artificial intelligence",
+      "machine learning",
+      "llm",
+      "vector databases",
+      "software development",
+      "web development",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToWritePromptsThatDonTWasteTokens",
     "Name": "How to Write Prompts That Don’t Waste Tokens",
     "Author": "M Ramzan Ch",
@@ -1419,64 +1688,6 @@
       "product marketing",
       "web development",
       "productivity"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsGraphqlVsRestIn1Page",
-    "Name": "What Is GraphQL vs REST in 1 Page",
-    "Author": "Core Lord",
-    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
-    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-    "Url": "WhatIsGraphqlVsRestIn1Page.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Open Source",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "web development",
-      "software development",
-      "api",
-      "graphql",
-      "rest api",
-      "programming",
-      "coding",
-      "developer workflow",
-      "backend development",
-      "javascript"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsServerlessAndWhenItMakesSense",
-    "Name": "What Is Serverless and When It Makes Sense",
-    "Author": "Pro Bandey",
-    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
-    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
-    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Web Development",
-      "Software Development",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "serverless",
-      "cloud computing",
-      "backend",
-      "web development",
-      "software development",
-      "aws",
-      "devops",
-      "programming",
-      "architecture",
-      "scalability"
     ],
     "Status": "Pub"
   },
@@ -1562,36 +1773,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
-    "Name": "What Are Embeddings and Why Should Web Devs Care?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
-    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Technology",
-      "Software Development",
-      "Productivity",
-      "Developer Tools",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "embeddings",
-      "artificial intelligence",
-      "machine learning",
-      "llm",
-      "vector databases",
-      "software development",
-      "web development",
-      "programming",
-      "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
     "Name": "What Are Web Components and Why Devs Are Using Them Again",
     "Author": "Pro Bandey",
@@ -1617,6 +1798,64 @@
       "programming",
       "coding",
       "frameworks"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsGraphqlVsRestIn1Page",
+    "Name": "What Is GraphQL vs REST in 1 Page",
+    "Author": "Core Lord",
+    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "WhatIsGraphqlVsRestIn1Page.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "api",
+      "graphql",
+      "rest api",
+      "programming",
+      "coding",
+      "developer workflow",
+      "backend development",
+      "javascript"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsServerlessAndWhenItMakesSense",
+    "Name": "What Is Serverless and When It Makes Sense",
+    "Author": "Pro Bandey",
+    "Desc": "A simple guide to serverless computing, how it works, its benefits, limitations, and when developers should choose it over traditional server-based architectures.",
+    "Img": "https://images.unsplash.com/photo-1700936655615-65a2aef3b4e7",
+    "Url": "WhatIsServerlessAndWhenItMakesSense.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "serverless",
+      "cloud computing",
+      "backend",
+      "web development",
+      "software development",
+      "aws",
+      "devops",
+      "programming",
+      "architecture",
+      "scalability"
     ],
     "Status": "Pub"
   },
@@ -1783,35 +2022,6 @@
       "coding",
       "extensions",
       "developer productivity"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
-    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
-    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Tutorial",
-      "Web Development",
-      "Software Development",
-      "Productivity",
-      "Tip & Tricks"
-    ],
-    "Tags": [
-      "web development",
-      "performance",
-      "core web vitals",
-      "software development",
-      "developer workflow",
-      "html",
-      "css",
-      "javascript",
-      "optimization",
-      "coding"
     ],
     "Status": "Pub"
   },
@@ -2016,6 +2226,35 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhatMakesDocumentationActuallyUseful",
+    "Name": "What Makes Documentation Actually Useful?",
+    "Author": "Core Lord",
+    "Desc": "Learn the principles of effective documentation, why many docs fail, and how to create documentation that genuinely helps users solve problems quickly.",
+    "Img": "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    "Url": "WhatMakesDocumentationActuallyUseful.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Developer Relations"
+    ],
+    "Tags": [
+      "documentation",
+      "technical writing",
+      "developer tools",
+      "software development",
+      "web development",
+      "open source",
+      "github",
+      "productivity",
+      "programming",
+      "developer experience"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhatToPutInADeveloperPortfolio",
     "Name": "What to Put in a Developer Portfolio",
     "Author": "M Ramzan Ch",
@@ -2074,6 +2313,95 @@
       "validation",
       "web development",
       "product marketing"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyMostDevelopersStruggleWithConsistencyAndHowToFixIt",
+    "Name": "Why Most Developers Struggle With Consistency (and How to Fix It)",
+    "Author": "Pro Bandey",
+    "Desc": "Learn why developers often fail to stay consistent in learning and building, and how to create systems that make coding progress sustainable over the long term.",
+    "Img": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+    "Url": "WhyMostDevelopersStruggleWithConsistencyAndHowToFixIt.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Technology",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "consistency",
+      "learning to code",
+      "developer productivity",
+      "programming",
+      "habits",
+      "web development",
+      "software development",
+      "motivation",
+      "career growth",
+      "self improvement"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhySimpleProductsOftenBeatFeatureRichProducts",
+    "Name": "Why Simple Products Often Beat Feature-Rich Products",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn why simplicity is a competitive advantage in software development, how feature overload hurts adoption, and why many successful products focus on doing fewer things exceptionally well.",
+    "Img": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+    "Url": "WhySimpleProductsOftenBeatFeatureRichProducts.json",
+    "Date": "18-06-2026",
+    "Cat": [
+      "Technology",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Bussines",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "product development",
+      "startup",
+      "saas",
+      "software development",
+      "user experience",
+      "developer productivity",
+      "entrepreneurship",
+      "web development",
+      "growth",
+      "product management"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
+    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
+    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "performance",
+      "core web vitals",
+      "software development",
+      "developer workflow",
+      "html",
+      "css",
+      "javascript",
+      "optimization",
+      "coding"
     ],
     "Status": "Pub"
   },
