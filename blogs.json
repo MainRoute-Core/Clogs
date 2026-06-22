@@ -541,6 +541,36 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToUseAiToWriteBetterDocs",
+    "Name": "How to Use AI to Write Better Docs",
+    "Author": "MyWrite",
+    "Desc": "Learn how developers can use AI tools effectively to create clear, structured, and maintainable documentation without sacrificing accuracy or quality.",
+    "Img": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
+    "Url": "HowToUseAiToWriteBetterDocs.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "documentation",
+      "software development",
+      "developer workflow",
+      "productivity",
+      "writing",
+      "coding",
+      "technical writing",
+      "devtools",
+      "web development"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "FineTuningVsPromptEngineeringWhichShouldYouPick",
     "Name": "Fine-Tuning vs Prompt Engineering: Which Should You Pick?",
     "Author": "M Ramzan Ch",
@@ -1223,6 +1253,35 @@
     "Status": "Pub"
   },
   {
+    "Article": "HowToThinkInSystemsInsteadOfIsolatedCode",
+    "Name": "How to Think in Systems Instead of Isolated Code",
+    "Author": "Core Lord",
+    "Desc": "Learn how system thinking helps developers understand architecture, improve scalability, and build software that works well beyond individual functions or files.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "HowToThinkInSystemsInsteadOfIsolatedCode.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "System Design",
+      "Software Development"
+    ],
+    "Tags": [
+      "system design",
+      "software architecture",
+      "programming",
+      "developer mindset",
+      "scalability",
+      "web development",
+      "software engineering",
+      "backend development",
+      "coding",
+      "problem solving"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "HowToThinkLikeASeniorDeveloperWithoutYearsOfExperience",
     "Name": "How to Think Like a Senior Developer (Without Years of Experience)",
     "Author": "Pro Bandey",
@@ -1311,66 +1370,6 @@
       "freelancing",
       "product building",
       "monetization"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "RagExplainedWithoutTheJargon",
-    "Name": "RAG Explained Without the Jargon",
-    "Author": "Core Lord",
-    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
-    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
-    "Url": "RagExplainedWithoutTheJargon.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Software Development",
-      "Productivity",
-      "Developer Productivity",
-      "Content Creation",
-      "Artificial Intelligence",
-      "Bussiness"
-    ],
-    "Tags": [
-      "ai",
-      "rag",
-      "artificial intelligence",
-      "llm",
-      "machine learning",
-      "developer tools",
-      "software development",
-      "ai applications",
-      "programming",
-      "technology"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "HowToUseAiToWriteBetterDocs",
-    "Name": "How to Use AI to Write Better Docs",
-    "Author": "MyWrite",
-    "Desc": "Learn how developers can use AI tools effectively to create clear, structured, and maintainable documentation without sacrificing accuracy or quality.",
-    "Img": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5",
-    "Url": "HowToUseAiToWriteBetterDocs.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Software Development",
-      "Productivity",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "documentation",
-      "software development",
-      "developer workflow",
-      "productivity",
-      "writing",
-      "coding",
-      "technical writing",
-      "devtools",
-      "web development"
     ],
     "Status": "Pub"
   },
@@ -1579,36 +1578,6 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
-    "Name": "What Are Embeddings and Why Should Web Devs Care?",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
-    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
-    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
-    "Date": "10-06-2026",
-    "Cat": [
-      "Technology",
-      "Software Development",
-      "Productivity",
-      "Developer Tools",
-      "Developer Productivity",
-      "Artificial Intelligence"
-    ],
-    "Tags": [
-      "ai",
-      "embeddings",
-      "artificial intelligence",
-      "machine learning",
-      "llm",
-      "vector databases",
-      "software development",
-      "web development",
-      "programming",
-      "developer tools"
-    ],
-    "Status": "Pub"
-  },
-  {
     "Article": "HowToWritePromptsThatDonTWasteTokens",
     "Name": "How to Write Prompts That Don’t Waste Tokens",
     "Author": "M Ramzan Ch",
@@ -1688,6 +1657,60 @@
       "product marketing",
       "web development",
       "productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TerminalShortcutsThatMakeYou2xFaster",
+    "Name": "Terminal Shortcuts That Make You 2x Faster",
+    "Author": "MyWrite",
+    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
+    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
+    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "developer workflow",
+      "software development",
+      "programming",
+      "coding",
+      "terminal",
+      "command line",
+      "developer tools",
+      "web development",
+      "linux"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
+    "Name": "Taxes and Legal Basics for Solo Developers",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
+    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
+    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
+    "Date": "07-06-2026",
+    "Cat": [
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "software development",
+      "productivity",
+      "developer workflow",
+      "programming",
+      "coding",
+      "freelancing",
+      "business",
+      "contracts",
+      "taxes",
+      "developers"
     ],
     "Status": "Pub"
   },
@@ -1773,61 +1796,32 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
-    "Name": "What Are Web Components and Why Devs Are Using Them Again",
-    "Author": "Pro Bandey",
-    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
-    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
-    "Date": "08-06-2026",
-    "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
-      "Productivity"
-    ],
-    "Tags": [
-      "web components",
-      "frontend",
-      "javascript",
-      "html",
-      "css",
-      "web development",
-      "ui components",
-      "developer workflow",
-      "programming",
-      "coding",
-      "frameworks"
-    ],
-    "Status": "Pub"
-  },
-  {
-    "Article": "WhatIsGraphqlVsRestIn1Page",
-    "Name": "What Is GraphQL vs REST in 1 Page",
+    "Article": "RagExplainedWithoutTheJargon",
+    "Name": "RAG Explained Without the Jargon",
     "Author": "Core Lord",
-    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
-    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-    "Url": "WhatIsGraphqlVsRestIn1Page.json",
-    "Date": "08-06-2026",
+    "Desc": "Learn what Retrieval-Augmented Generation (RAG) is, how it works, and why it has become one of the most important techniques for building reliable AI applications.",
+    "Img": "https://images.unsplash.com/photo-1694903110330-cc64b7e1d21d",
+    "Url": "RagExplainedWithoutTheJargon.json",
+    "Date": "10-06-2026",
     "Cat": [
-      "Technology",
-      "Tutorial",
-      "Web Development",
       "Software Development",
-      "Open Source",
-      "Tip & Tricks"
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Artificial Intelligence",
+      "Bussiness"
     ],
     "Tags": [
-      "web development",
+      "ai",
+      "rag",
+      "artificial intelligence",
+      "llm",
+      "machine learning",
+      "developer tools",
       "software development",
-      "api",
-      "graphql",
-      "rest api",
+      "ai applications",
       "programming",
-      "coding",
-      "developer workflow",
-      "backend development",
-      "javascript"
+      "technology"
     ],
     "Status": "Pub"
   },
@@ -1943,56 +1937,150 @@
     "Status": "Pub"
   },
   {
-    "Article": "TerminalShortcutsThatMakeYou2xFaster",
-    "Name": "Terminal Shortcuts That Make You 2x Faster",
-    "Author": "MyWrite",
-    "Desc": "Discover practical terminal shortcuts and command-line productivity tricks that can significantly speed up your daily workflow as a developer, system administrator, or power user.",
-    "Img": "https://images.unsplash.com/photo-1762242298589-582f5f6c3fb1",
-    "Url": "TerminalShortcutsThatMakeYou2xFaster.json",
-    "Date": "08-06-2026",
+    "Article": "The8020RuleOfSoftwareDevelopmentFocusOnWhatActuallyMatters",
+    "Name": "The 80/20 Rule of Software Development: Focus on What Actually Matters",
+    "Author": "Pro Bandey",
+    "Desc": "Learn how the 80/20 principle applies to software development and discover how focusing on high-impact work can dramatically improve productivity, learning, and project success.",
+    "Img": "https://images.unsplash.com/photo-1518186233392-c232efbf2373",
+    "Url": "The8020RuleOfSoftwareDevelopmentFocusOnWhatActuallyMatters.json",
+    "Date": "22-06-2026",
     "Cat": [
-      "Tutorial",
+      "Technology",
+      "Software Development",
       "Productivity",
       "Developer Productivity",
+      "Content Creation",
       "Tip & Tricks"
     ],
     "Tags": [
+      "80 20 rule",
       "productivity",
-      "developer workflow",
       "software development",
       "programming",
-      "coding",
-      "terminal",
-      "command line",
-      "developer tools",
+      "developer productivity",
+      "project management",
       "web development",
-      "linux"
+      "coding",
+      "time management",
+      "career growth"
     ],
     "Status": "Pub"
   },
   {
-    "Article": "TaxesAndLegalBasicsForSoloDevelopers",
-    "Name": "Taxes and Legal Basics for Solo Developers",
-    "Author": "M Ramzan Ch",
-    "Desc": "Learn the essential tax and legal concepts every solo developer should understand, from business structures and contracts to invoicing and record keeping.",
-    "Img": "https://images.unsplash.com/photo-1554224155-6726b3ff858f",
-    "Url": "TaxesAndLegalBasicsForSoloDevelopers.json",
-    "Date": "07-06-2026",
+    "Article": "TheBiggestMistakeDevelopersMakeWhenLearningNewTechnologies",
+    "Name": "The Biggest Mistake Developers Make When Learning New Technologies",
+    "Author": "Core Lord",
+    "Desc": "Learn why constantly chasing new frameworks and tools slows progress, and discover a better approach to learning technologies that leads to deeper expertise and real-world results.",
+    "Img": "https://images.unsplash.com/photo-1634084462412-b54873c0a56d",
+    "Url": "TheBiggestMistakeDevelopersMakeWhenLearningNewTechnologies.json",
+    "Date": "22-06-2026",
     "Cat": [
+      "Web Development",
       "Software Development",
+      "Productivity",
       "Developer Productivity"
     ],
     "Tags": [
+      "learning programming",
       "software development",
-      "productivity",
-      "developer workflow",
+      "developer productivity",
+      "web development",
       "programming",
+      "frameworks",
+      "career growth",
       "coding",
-      "freelancing",
-      "business",
-      "contracts",
-      "taxes",
-      "developers"
+      "technology trends",
+      "self learning"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TheDifferenceBetweenBeingBusyAndBeingProductiveAsADeveloper",
+    "Name": "The Difference Between Being Busy and Being Productive as a Developer",
+    "Author": "Pro Bandey",
+    "Desc": "Learn why many developers stay busy all day but make little progress, and discover practical ways to focus on meaningful work that actually moves projects forward.",
+    "Img": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+    "Url": "TheDifferenceBetweenBeingBusyAndBeingProductiveAsADeveloper.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Developer Productivity",
+      "Developer Marketing",
+      "Developer Relations",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "developer productivity",
+      "programming",
+      "software development",
+      "time management",
+      "focus",
+      "deep work",
+      "web development",
+      "coding",
+      "career growth"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TheHiddenCostOfContextSwitchingForDevelopers",
+    "Name": "The Hidden Cost of Context Switching for Developers",
+    "Author": "Core Lord",
+    "Desc": "Learn how context switching impacts productivity, code quality, and focus, and discover practical ways to protect deep work while building software.",
+    "Img": "https://images.unsplash.com/photo-1516321497487-e288fb19713f",
+    "Url": "TheHiddenCostOfContextSwitchingForDevelopers.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "productivity",
+      "deep work",
+      "developer productivity",
+      "programming",
+      "software development",
+      "focus",
+      "time management",
+      "web development",
+      "coding",
+      "remote work"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "TheRealSecretBehindBecomingASeniorDeveloper",
+    "Name": "The Real Secret Behind Becoming a Senior Developer",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn what truly separates senior developers from beginners, and how experience, decision-making, and system thinking matter more than just writing code.",
+    "Img": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935",
+    "Url": "TheRealSecretBehindBecomingASeniorDeveloper.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Web Development",
+      "Career Growth",
+      "Software Development",
+      "Developer Marketing",
+      "Developer Relations"
+    ],
+    "Tags": [
+      "senior developer",
+      "software engineering",
+      "career growth",
+      "programming",
+      "system design",
+      "developer mindset",
+      "experience",
+      "coding",
+      "leadership",
+      "software architecture"
     ],
     "Status": "Pub"
   },
@@ -2022,6 +2110,95 @@
       "coding",
       "extensions",
       "developer productivity"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreEmbeddingsAndWhyShouldWebDevsCare",
+    "Name": "What Are Embeddings and Why Should Web Devs Care?",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what embeddings are in simple terms, how they power modern AI applications, and why web developers should understand them when building search, recommendation, and AI-powered features.",
+    "Img": "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    "Url": "WhatAreEmbeddingsAndWhyShouldWebDevsCare.json",
+    "Date": "10-06-2026",
+    "Cat": [
+      "Technology",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Artificial Intelligence"
+    ],
+    "Tags": [
+      "ai",
+      "embeddings",
+      "artificial intelligence",
+      "machine learning",
+      "llm",
+      "vector databases",
+      "software development",
+      "web development",
+      "programming",
+      "developer tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain",
+    "Name": "What Are Web Components and Why Devs Are Using Them Again",
+    "Author": "Pro Bandey",
+    "Desc": "Understand Web Components in a simple way, how they work under the hood, and why modern developers are returning to them for reusable, framework-agnostic UI development.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "WhatAreWebComponentsAndWhyDevsAreUsingThemAgain.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Productivity"
+    ],
+    "Tags": [
+      "web components",
+      "frontend",
+      "javascript",
+      "html",
+      "css",
+      "web development",
+      "ui components",
+      "developer workflow",
+      "programming",
+      "coding",
+      "frameworks"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhatIsGraphqlVsRestIn1Page",
+    "Name": "What Is GraphQL vs REST in 1 Page",
+    "Author": "Core Lord",
+    "Desc": "A simple comparison of GraphQL and REST APIs, including how they work, their advantages, disadvantages, and when developers should choose one over the other.",
+    "Img": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    "Url": "WhatIsGraphqlVsRestIn1Page.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Open Source",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "software development",
+      "api",
+      "graphql",
+      "rest api",
+      "programming",
+      "coding",
+      "developer workflow",
+      "backend development",
+      "javascript"
     ],
     "Status": "Pub"
   },
@@ -2317,6 +2494,126 @@
     "Status": "Pub"
   },
   {
+    "Article": "WhyCleanCodeMattersMoreThanCleverCode",
+    "Name": "Why Clean Code Matters More Than Clever Code",
+    "Author": "Pro Bandey",
+    "Desc": "Learn why simple, readable code beats overly clever solutions, and how clean code improves collaboration, debugging, and long-term project success.",
+    "Img": "https://images.unsplash.com/photo-1516259762381-22954d7d3ad2",
+    "Url": "WhyCleanCodeMattersMoreThanCleverCode.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "clean code",
+      "software development",
+      "programming",
+      "code quality",
+      "developer productivity",
+      "refactoring",
+      "web development",
+      "coding best practices",
+      "software engineering",
+      "maintainability"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyDebuggingIsASkillMoreImportantThanCoding",
+    "Name": "Why Debugging Is a Skill More Important Than Coding",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn why the ability to debug effectively matters more than writing code, and how strong debugging skills make you a faster, more reliable, and more confident developer.",
+    "Img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "Url": "WhyDebuggingIsASkillMoreImportantThanCoding.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Tools",
+      "Developer Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "debugging",
+      "programming",
+      "software development",
+      "developer skills",
+      "problem solving",
+      "coding",
+      "web development",
+      "engineering",
+      "troubleshooting",
+      "career growth"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyLearningByBuildingBeatsLearningByWatching",
+    "Name": "Why Learning by Building Beats Learning by Watching",
+    "Author": "Pro Bandey",
+    "Desc": "Learn why building real projects accelerates learning, improves problem-solving skills, and helps developers gain practical experience faster than consuming endless tutorials.",
+    "Img": "https://images.unsplash.com/photo-1516321165247-4aa89a48be28",
+    "Url": "WhyLearningByBuildingBeatsLearningByWatching.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity",
+      "Content Creation",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "learning to code",
+      "programming",
+      "software development",
+      "web development",
+      "developer productivity",
+      "coding projects",
+      "self learning",
+      "programming tutorials",
+      "career growth",
+      "problem solving"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyMostDevelopersNeverFinishTheirProjects",
+    "Name": "Why Most Developers Never Finish Their Projects",
+    "Author": "Pro Bandey",
+    "Desc": "Learn the real reasons developers abandon projects, how unfinished work slows growth, and practical strategies to consistently ship and complete what you start.",
+    "Img": "https://images.unsplash.com/photo-1496171367470-9ed9a91ea931",
+    "Url": "WhyMostDevelopersNeverFinishTheirProjects.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "management",
+      "developer productivity",
+      "software development",
+      "side projects",
+      "programming",
+      "web development",
+      "motivation",
+      "productivity",
+      "coding",
+      "indie hacking"
+    ],
+    "Status": "Pub"
+  },
+  {
     "Article": "WhyMostDevelopersStruggleWithConsistencyAndHowToFixIt",
     "Name": "Why Most Developers Struggle With Consistency (and How to Fix It)",
     "Author": "Pro Bandey",
@@ -2343,6 +2640,94 @@
       "motivation",
       "career growth",
       "self improvement"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyMostSideProjectsFailBeforeTheyGetUsers",
+    "Name": "Why Most Side Projects Fail Before They Get Users",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn the real reasons side projects fail, why building alone is not enough, and how developers can increase their chances of attracting users and gaining traction.",
+    "Img": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    "Url": "WhyMostSideProjectsFailBeforeTheyGetUsers.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Developer Relations",
+      "Entrepreneurship",
+      "Bussiness"
+    ],
+    "Tags": [
+      "side projects",
+      "startup",
+      "indie hacking",
+      "product development",
+      "software development",
+      "web development",
+      "developer productivity",
+      "entrepreneurship",
+      "saas",
+      "growth"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyMostSoftwareFeaturesNobodyUsesStillGetBuilt",
+    "Name": "Why Most Software Features Nobody Uses Still Get Built",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn why teams often build features that users never touch, how feature bloat happens, and how focusing on user needs can lead to better products and faster development.",
+    "Img": "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    "Url": "WhyMostSoftwareFeaturesNobodyUsesStillGetBuilt.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Product Development",
+      "Web Development",
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "product development",
+      "software development",
+      "user experience",
+      "product management",
+      "startups",
+      "web development",
+      "software engineering",
+      "developer productivity",
+      "saas",
+      "product design"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyShippingFastBeatsBuildingPerfectSoftware",
+    "Name": "Why Shipping Fast Beats Building Perfect Software",
+    "Author": "Pro Bandey",
+    "Desc": "Learn why successful developers and startups prioritize shipping quickly, gathering feedback, and improving over time instead of waiting for perfect software.",
+    "Img": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+    "Url": "WhyShippingFastBeatsBuildingPerfectSoftware.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Web Development",
+      "Software Development",
+      "Developer Productivity",
+      "Entrepreneurship",
+      "Bussiness"
+    ],
+    "Tags": [
+      "product development",
+      "startup",
+      "software development",
+      "developer productivity",
+      "agile development",
+      "mvp",
+      "web development",
+      "entrepreneurship",
+      "indie hacking",
+      "growth"
     ],
     "Status": "Pub"
   },
@@ -2377,31 +2762,31 @@
     "Status": "Pub"
   },
   {
-    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
-    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
-    "Author": "Pro Bandey",
-    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
-    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
-    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
-    "Date": "08-06-2026",
+    "Article": "WhySimplicityScalesBetterThanComplexityInSoftwareProjects",
+    "Name": "Why Simplicity Scales Better Than Complexity in Software Projects",
+    "Author": "M Ramzan Ch",
+    "Desc": "Learn why simple software systems are easier to maintain, scale, and improve, and how developers can avoid unnecessary complexity that slows down projects.",
+    "Img": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    "Url": "WhySimplicityScalesBetterThanComplexityInSoftwareProjects.json",
+    "Date": "22-06-2026",
     "Cat": [
       "Tutorial",
       "Web Development",
       "Software Development",
-      "Productivity",
+      "Developer Productivity",
       "Tip & Tricks"
     ],
     "Tags": [
-      "web development",
-      "performance",
-      "core web vitals",
+      "software architecture",
+      "clean code",
       "software development",
-      "developer workflow",
-      "html",
-      "css",
-      "javascript",
-      "optimization",
-      "coding"
+      "programming",
+      "scalability",
+      "developer productivity",
+      "system design",
+      "web development",
+      "coding",
+      "engineering"
     ],
     "Status": "Pub"
   },
@@ -2458,6 +2843,64 @@
       "productivity",
       "maintainability",
       "lightweight tools"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyUnderstandingFundamentalsBeatsMemorizingFrameworks",
+    "Name": "Why Understanding Fundamentals Beats Memorizing Frameworks",
+    "Author": "Pro Bandey",
+    "Desc": "Learn why strong fundamentals in programming outperform memorizing frameworks, and how mastering core concepts makes you adaptable to any technology.",
+    "Img": "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    "Url": "WhyUnderstandingFundamentalsBeatsMemorizingFrameworks.json",
+    "Date": "22-06-2026",
+    "Cat": [
+      "Technology",
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Developer Productivity"
+    ],
+    "Tags": [
+      "programming fundamentals",
+      "software development",
+      "web development",
+      "coding",
+      "learning to code",
+      "developer skills",
+      "career growth",
+      "javascript",
+      "backend",
+      "frontend"
+    ],
+    "Status": "Pub"
+  },
+  {
+    "Article": "WhyYourSiteFeelsSlow3RenderBlockingFixes",
+    "Name": "Why Your Site Feels Slow: 3 Render-Blocking Fixes",
+    "Author": "Pro Bandey",
+    "Desc": "Learn what render-blocking resources are, why they make websites feel slow, and three practical fixes that can significantly improve loading speed, Core Web Vitals, and user experience.",
+    "Img": "https://images.unsplash.com/photo-1460925895917-afdab827c52f",
+    "Url": "WhyYourSiteFeelsSlow3RenderBlockingFixes.json",
+    "Date": "08-06-2026",
+    "Cat": [
+      "Tutorial",
+      "Web Development",
+      "Software Development",
+      "Productivity",
+      "Tip & Tricks"
+    ],
+    "Tags": [
+      "web development",
+      "performance",
+      "core web vitals",
+      "software development",
+      "developer workflow",
+      "html",
+      "css",
+      "javascript",
+      "optimization",
+      "coding"
     ],
     "Status": "Pub"
   }
