@@ -1,7 +1,6 @@
 const DB_Path = "../db/blogs.json";
 const Logs_Path = "../Logs/";
 
-// State tracking configurations
 let indexData = [];
 let activeFilters = { ct: [], tg: null, q: "", author: null, bookmarksOnly: false };
 let savedScrollPosition = 0;
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 window.addEventListener('popstate', processUrlParamsAndRoute);
 
-// GLOBAL INITIALIZATIONS
 function setupGlobalEventListeners() {
     window.addEventListener('scroll', handleReaderProgressScroll, { passive: true });
 }
@@ -23,7 +21,6 @@ function updateUIStyles() {
     const badge = document.getElementById('source-badge');
     badge.innerText = DB_Path.includes('http') ? "Cloud Synced" : "Local Database";
     if (DB_Path.includes('http')) badge.classList.add('remote');
-
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         document.documentElement.setAttribute('data-theme', 'dark');
     }
@@ -34,11 +31,9 @@ async function initializeClogReader() {
     try {
         const response = await fetch(DB_Path);
         if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
-
         let data = await response.json();
         indexData = Array.isArray(data) ? data : (data.blogs || []);
         indexData = indexData.filter(item => item.Status === "Pub");
-
         processUrlParamsAndRoute();
     } catch (err) {
         document.getElementById('publication-grid').innerHTML = `
@@ -52,29 +47,22 @@ async function initializeClogReader() {
     }
 }
 
-// ROUTING AND STATE SYSTEMS
 function processUrlParamsAndRoute() {
     const params = new URLSearchParams(window.location.search);
     const logId = params.get('log');
-
     activeFilters.q = params.get('q') || "";
     activeFilters.tg = params.get('tg') || null;
     activeFilters.author = params.get('author') || null;
     activeFilters.bookmarksOnly = params.get('bookmarks') === "true";
-
     const ctParam = params.get('ct');
     activeFilters.ct = ctParam ? ctParam.split(',').filter(Boolean) : [];
-
     document.getElementById('search-bar').value = activeFilters.q;
-
-    // Update active visual state for bookmarks nav item
     const bkmkBtn = document.getElementById('nav-bookmark-toggle');
     if (activeFilters.bookmarksOnly) {
         bkmkBtn.classList.add('active');
     } else {
         bkmkBtn.classList.remove('active');
     }
-
     if (logId) {
         loadAndRenderFullPost(logId);
     } else {
@@ -85,46 +73,32 @@ function processUrlParamsAndRoute() {
 function updateUrlState() {
     const url = new URL(window.location);
     url.searchParams.delete('log');
-
     if (activeFilters.ct.length > 0) url.searchParams.set('ct', activeFilters.ct.join(','));
     else url.searchParams.delete('ct');
-
     if (activeFilters.tg) url.searchParams.set('tg', activeFilters.tg);
     else url.searchParams.delete('tg');
-
     if (activeFilters.author) url.searchParams.set('author', activeFilters.author);
     else url.searchParams.delete('author');
-
     if (activeFilters.q) url.searchParams.set('q', activeFilters.q);
     else url.searchParams.delete('q');
-
     if (activeFilters.bookmarksOnly) url.searchParams.set('bookmarks', 'true');
     else url.searchParams.delete('bookmarks');
-
     window.history.pushState({}, '', url);
     processUrlParamsAndRoute();
 }
 
 function showListView() {
-    // Hide Reader specific states
     document.getElementById('main-reader-pane').classList.remove('active');
     document.getElementById('reading-progress-container').classList.add('hidden');
-
-    // Show Main interface panels
     document.getElementById('main-search-container').style.display = 'flex';
     document.getElementById('main-layout-wrapper').style.display = 'grid';
-
     buildSidebarFilters();
     renderPostList();
-
-    // Scroll restoration mechanic
     if (savedScrollPosition > 0) {
         window.scrollTo({ top: savedScrollPosition, behavior: 'instant' });
         savedScrollPosition = 0;
     }
 }
-
-// SIDEBAR & DRAWER LAYOUT INTERACTION
 function toggleFilterDrawer() {
     const sidebar = document.getElementById('sidebar-filters');
     const overlay = document.getElementById('sidebar-overlay');
@@ -139,7 +113,6 @@ function closeFilterDrawer() {
     overlay.classList.remove('active');
 }
 
-// COMPACT DEBOUNCE FUNCTION (Ensuring optimized keystroke inputs)
 function debounce(func, delay) {
     let timeoutId;
     return function (...args) {
@@ -159,7 +132,6 @@ function handleSearchInput() {
     debouncedSearch();
 }
 
-// BOOKMARK LOCAL STORAGE INTERFACES
 function getBookmarkedArticles() {
     try {
         return JSON.parse(localStorage.getItem('clog_bookmarks')) || [];
@@ -188,14 +160,11 @@ function toggleBookmarkOnlyView() {
     updateUrlState();
 }
 
-// FILTER PROCESSING & POST CARD CREATION
 function buildSidebarFilters() {
     const categoriesMap = {};
-
     indexData.forEach(item => {
         (item.Cat || []).forEach(c => { if (c) categoriesMap[c] = (categoriesMap[c] || 0) + 1; });
     });
-
     const catList = document.getElementById('category-filter-list');
     catList.innerHTML = '';
     Object.keys(categoriesMap).sort().forEach(cat => {
@@ -221,21 +190,16 @@ function buildSidebarFilters() {
 function renderPostList() {
     const grid = document.getElementById('publication-grid');
     grid.innerHTML = "";
-
     const bookmarkedList = getBookmarkedArticles();
-
     const filtered = indexData.filter(item => {
         if (activeFilters.bookmarksOnly && !bookmarkedList.includes(item.Article)) return false;
-
         if (activeFilters.ct.length > 0) {
             if (!item.Cat || !activeFilters.ct.some(selected => item.Cat.includes(selected))) return false;
         }
         if (activeFilters.tg && (!item.Tags || !item.Tags.includes(activeFilters.tg))) return false;
-
         if (activeFilters.author) {
             if (!item.Author || item.Author.toLowerCase() !== activeFilters.author.toLowerCase()) return false;
         }
-
         if (activeFilters.q) {
             const query = activeFilters.q.toLowerCase();
             const inTitle = item.Name && item.Name.toLowerCase().includes(query);
@@ -263,22 +227,18 @@ function renderPostList() {
         document.getElementById('results-count').innerText = `Total Publications: ${filtered.length}`;
         clearBtn.classList.add('hidden');
     }
-
     if (filtered.length === 0) {
         grid.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; opacity: 0.7;">No publications match your exact filter parameters.</div>`;
         return;
     }
-
     filtered.forEach(item => {
         const card = document.createElement('article');
         card.className = "post-card";
-
         const bannerImg = item.Img || 'https://mainroute-core.github.io/src/social.png';
         const catHtml = (item.Cat || []).map(c => `<span class="card-category-badge" title="Category: ${c}">${c}</span>`).join('');
         const tagHtml = (item.Tags || []).map(t => `<span class="card-tag" onclick="clickCardTag('${t}', event)" title="Filter by tag: #${t}">#${t}</span>`).join('');
         const displayAuthor = item.Author || 'Unknown';
         const bookmarked = bookmarkedList.includes(item.Article);
-
         card.innerHTML = `
           <div class="card-img-wrapper" onclick="openPost('${item.Article}')" title="Click to read: ${item.Name}">
             <img src="${bannerImg}" alt="${item.Name}" class="card-img" loading="lazy">
@@ -361,41 +321,30 @@ function toggleLoaderState(show) {
     document.getElementById('loader-status').style.display = show ? 'block' : 'none';
 }
 
-// FULL CONTENT PARSER & LOADING MECHANICS
 async function loadAndRenderFullPost(logId) {
     document.getElementById('main-search-container').style.display = 'none';
     document.getElementById('main-layout-wrapper').style.display = 'none';
-
     const readerPane = document.getElementById('main-reader-pane');
     readerPane.classList.add('active');
-
-    // Ensure scroll begins at the top of the pane
     window.scrollTo({ top: 0, behavior: 'instant' });
     document.getElementById('reading-progress-container').classList.remove('hidden');
-
     if (logId === '404') {
         render404Page();
         return;
     }
-
     const dbEntry = indexData.find(item => item.Article === logId);
     if (!dbEntry) {
         trigger404Redirect();
         return;
     }
-
     toggleLoaderState(true);
     const postUrl = `${Logs_Path.replace(/\/$/, '')}/${dbEntry.Url}`;
-
     try {
         const response = await fetch(postUrl);
         if (!response.ok) throw new Error("File not found or access denied.");
-
         const postData = await response.json();
         const displayAuthor = postData.Author || dbEntry.Author || "System Admin";
-
         document.getElementById('full-date').innerText = postData.Date || dbEntry.Date;
-
         const authorSpan = document.getElementById('full-author');
         authorSpan.innerText = displayAuthor;
         authorSpan.setAttribute('title', `Filter publications by ${displayAuthor}`);
@@ -403,18 +352,12 @@ async function loadAndRenderFullPost(logId) {
             clickCardAuthor(displayAuthor, event);
             exitReaderView();
         };
-
         document.getElementById('full-meta-block').style.display = 'flex';
-
         const catBadges = (postData.Categories || dbEntry.Cat || []).map(c => `<span class="cat-badge" title="Category: ${c}">${c}</span>`).join('');
         const tagBadges = (postData.Tags || []).map(t => `<span style="cursor:pointer;" onclick="clickCardTag('${t}', event); exitReaderView();" title="Filter by tag: #${t}">#${t}</span>`).join('');
         document.getElementById('full-tags').innerHTML = catBadges + tagBadges;
-
-        // Reading Time Calculation Logic
         const articleText = postData.Data || "";
         document.getElementById('reading-time').innerText = getEstimatedReadingTime(articleText);
-
-        // Render Markdown content
         const bodyContainer = document.getElementById('full-body');
         if (window.marked) {
             bodyContainer.innerHTML = marked.parse(articleText);
@@ -423,14 +366,9 @@ async function loadAndRenderFullPost(logId) {
             bodyContainer.innerHTML = `<p style="color:var(--danger)">Dependency Error: Marked.js missing.</p><pre>${articleText}</pre>`;
             document.getElementById('toc-container').style.display = 'none';
         }
-
-        // Setup Bookmark Action Button inside reader pane
         setupReaderBookmarkAction(logId);
-
-        // Setup Native Share Event handlers
         const shareBtn = document.getElementById('share-action-btn');
         shareBtn.onclick = () => shareTargetArticle(dbEntry.Name);
-
     } catch (err) {
         console.warn("Post load failure:", err);
         trigger404Redirect();
@@ -439,39 +377,31 @@ async function loadAndRenderFullPost(logId) {
     }
 }
 
-// READING TIME CALCULATION ENGINE
 function getEstimatedReadingTime(text) {
     const cleanText = text.replace(/[#*`~_\[\]()\-]/g, '');
     const words = cleanText.trim().split(/\s+/).filter(Boolean).length;
-    const wpm = 200; // Words Per Minute (Average adult pace)
+    const wpm = 200;
     const minutes = Math.ceil(words / wpm);
     return `${minutes} min read`;
 }
 
-// TABLE OF CONTENTS DYNAMIC INDEXER
 function generateTableOfContents() {
     const tocContainer = document.getElementById('toc-container');
     const tocList = document.getElementById('toc-list');
     tocList.innerHTML = '';
-
     const bodyContainer = document.getElementById('full-body');
     const headings = bodyContainer.querySelectorAll('h2, h3');
-
     if (headings.length === 0) {
         tocContainer.style.display = 'none';
         return;
     }
-
     tocContainer.removeAttribute('open'); // Initialize state closed
     tocContainer.style.display = 'block';
-
     headings.forEach((heading, index) => {
-        // Build slugified ID values securely
         if (!heading.id) {
             const rawText = heading.innerText.toLowerCase().replace(/[^a-z0-9]+/g, '-');
             heading.id = `clog-heading-${index}-${rawText}`;
         }
-
         const anchor = document.createElement('a');
         anchor.href = `#${heading.id}`;
         anchor.className = `toc-item ${heading.tagName.toLowerCase()}`;
@@ -480,30 +410,23 @@ function generateTableOfContents() {
             e.preventDefault();
             heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
         };
-
         tocList.appendChild(anchor);
     });
 }
 
-// SCROLL PROGRESS THREAD LISTENER
 function handleReaderProgressScroll() {
     const readerPane = document.getElementById('main-reader-pane');
     if (!readerPane || !readerPane.classList.contains('active')) return;
-
     const progressBar = document.getElementById('reading-progress-bar');
     if (!progressBar) return;
-
     const windowScroll = document.documentElement.scrollTop || document.body.scrollTop;
     const contentHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrollPercentage = contentHeight > 0 ? (windowScroll / contentHeight) * 100 : 0;
-
     progressBar.style.width = `${scrollPercentage}%`;
 }
 
-// BOOKMARK INTERACTION HANDLER inside reader view
 function setupReaderBookmarkAction(logId) {
     const bkmkBtn = document.getElementById('bookmark-action-btn');
-
     const updateReaderBkmkBtnState = () => {
         const bookmarked = isArticleBookmarked(logId);
         bkmkBtn.innerHTML = `
@@ -513,7 +436,6 @@ function setupReaderBookmarkAction(logId) {
         `;
         bkmkBtn.setAttribute('title', bookmarked ? 'Remove Bookmark' : 'Save this Article');
     };
-
     updateReaderBkmkBtnState();
     bkmkBtn.onclick = () => {
         toggleArticleBookmark(logId);
@@ -521,7 +443,6 @@ function setupReaderBookmarkAction(logId) {
     };
 }
 
-// NATIVE DEVICING WEB SHARE MANAGER
 async function shareTargetArticle(title) {
     const shareData = {
         title: title,
@@ -544,7 +465,6 @@ async function shareTargetArticle(title) {
     }
 }
 
-// REDIRECTS AND 404 STATE HANDLING
 function trigger404Redirect() {
     const url = new URL(window.location);
     url.searchParams.set('log', '404');
@@ -555,7 +475,6 @@ function trigger404Redirect() {
 async function render404Page() {
     document.getElementById('full-meta-block').style.display = 'none';
     document.getElementById('toc-container').style.display = 'none';
-
     const bodyContainer = document.getElementById('full-body');
     try {
         const res = await fetch('404.html');
